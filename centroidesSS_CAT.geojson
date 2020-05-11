@@ -1,0 +1,325 @@
+{
+    "type": "FeatureCollection",
+    "bbox": [0.485029, 40.930449, 2.990077, 42.746039],
+    "features": [
+    {
+        "type": "Feature",
+        "bbox": [1.485505, 41.226588, 1.485505, 41.226588],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [1.4855051513, 41.2265879269]
+        },
+        "properties": {
+            "SectorSanitariCodi":"6258"
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [2.203465, 41.406244, 2.203465, 41.406244],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [2.2034650841, 41.4062444237]
+        },
+        "properties": {
+            "SectorSanitariCodi":"7847"
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [2.174908, 41.374912, 2.174908, 41.374912],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [2.1749079477, 41.3749123353]
+        },
+        "properties": {
+            "SectorSanitariCodi":"7846"
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [0.861356, 41.700491, 0.861356, 41.700491],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [0.8613563215, 41.7004909113]
+        },
+        "properties": {
+            "SectorSanitariCodi":"6156"
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [1.520551, 41.679165, 1.520551, 41.679165],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [1.5205507851, 41.6791645657]
+        },
+        "properties": {
+            "SectorSanitariCodi":"6735"
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [1.366534, 42.366861, 1.366534, 42.366861],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [1.3665343125, 42.3668606142]
+        },
+        "properties": {
+            "SectorSanitariCodi":"7164"
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [2.152472, 41.351229, 2.152472, 41.351229],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [2.1524722181, 41.3512289570]
+        },
+        "properties": {
+            "SectorSanitariCodi":"7849"
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [1.889344, 41.527537, 1.889344, 41.527537],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [1.8893439701, 41.5275372686]
+        },
+        "properties": {
+            "SectorSanitariCodi":"7831"
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [2.696289, 41.897476, 2.696289, 41.897476],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [2.6962892775, 41.8974757924]
+        },
+        "properties": {
+            "SectorSanitariCodi":"6462"
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [0.852032, 42.725893, 0.852032, 42.725893],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [0.8520319869, 42.7258932772]
+        },
+        "properties": {
+            "SectorSanitariCodi":"7107"
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [0.554087, 40.930449, 0.554087, 40.930449],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [0.5540867133, 40.9304493359]
+        },
+        "properties": {
+            "SectorSanitariCodi":"6360"
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [0.924319, 41.150121, 0.924319, 41.150121],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [0.9243194648, 41.1501209016]
+        },
+        "properties": {
+            "SectorSanitariCodi":"6259"
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [2.015155, 41.358418, 2.015155, 41.358418],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [2.0151548586, 41.3584180184]
+        },
+        "properties": {
+            "SectorSanitariCodi":"7866"
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [1.220271, 41.372653, 1.220271, 41.372653],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [1.2202713472, 41.3726529774]
+        },
+        "properties": {
+            "SectorSanitariCodi":"6257"
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [1.732894, 41.353009, 1.732894, 41.353009],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [1.7328944792, 41.3530085904]
+        },
+        "properties": {
+            "SectorSanitariCodi":"7865"
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [2.381814, 41.525214, 2.381814, 41.525214],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [2.3818137921, 41.5252138230]
+        },
+        "properties": {
+            "SectorSanitariCodi":"7867"
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [2.989897, 42.117591, 2.989897, 42.117591],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [2.9898974416, 42.1175911952]
+        },
+        "properties": {
+            "SectorSanitariCodi":"6461"
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [1.606990, 41.943464, 1.606990, 41.943464],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [1.6069897730, 41.9434641680]
+        },
+        "properties": {
+            "SectorSanitariCodi":"6763"
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [2.166032, 41.393453, 2.166032, 41.393453],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [2.1660324270, 41.3934526399]
+        },
+        "properties": {
+            "SectorSanitariCodi":"7851"
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [2.143988, 41.428590, 2.143988, 41.428590],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [2.1439878364, 41.4285897002]
+        },
+        "properties": {
+            "SectorSanitariCodi":"7853"
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [2.196869, 41.437353, 2.196869, 41.437353],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [2.1968687025, 41.4373534116]
+        },
+        "properties": {
+            "SectorSanitariCodi":"7855"
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [2.327801, 41.648772, 2.327801, 41.648772],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [2.3278010031, 41.6487722291]
+        },
+        "properties": {
+            "SectorSanitariCodi":"7842"
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [2.105598, 41.580288, 2.105598, 41.580288],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [2.1055982621, 41.5802881757]
+        },
+        "properties": {
+            "SectorSanitariCodi":"7844"
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [2.233640, 41.950948, 2.233640, 41.950948],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [2.2336396673, 41.9509481145]
+        },
+        "properties": {
+            "SectorSanitariCodi":"6745"
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [2.107940, 41.413446, 2.107940, 41.413446],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [2.1079404752, 41.4134457955]
+        },
+        "properties": {
+            "SectorSanitariCodi":"7850"
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [2.172613, 41.446804, 2.172613, 41.446804],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [2.1726133294, 41.4468044780]
+        },
+        "properties": {
+            "SectorSanitariCodi":"7854"
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [2.013557, 41.536419, 2.013557, 41.536419],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [2.0135570041, 41.5364188674]
+        },
+        "properties": {
+            "SectorSanitariCodi":"7843"
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [2.155016, 41.410292, 2.155016, 41.410292],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [2.1550159803, 41.4102920707]
+        },
+        "properties": {
+            "SectorSanitariCodi":"7852"
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [2.121919, 41.388481, 2.121919, 41.388481],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [2.1219191409, 41.3884810244]
+        },
+        "properties": {
+            "SectorSanitariCodi":"7848"
+        }
+    }    
+    ]
+}

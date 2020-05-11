@@ -1,0 +1,83 @@
+{
+    "type": "FeatureCollection",
+    "bbox": [0.498143, 40.930449, 2.853000, 42.418366],
+    "features": [
+    {
+        "type": "Feature",
+        "bbox": [1.896061, 41.877996, 1.896061, 41.877996],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [1.8960606154, 41.8779961806]
+        },
+        "properties": {
+            "RegioSanitariaCodi":"67"
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [0.861356, 41.700491, 0.861356, 41.700491],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [0.8613563215, 41.7004909113]
+        },
+        "properties": {
+            "RegioSanitariaCodi":"61"
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [1.347247, 42.406549, 1.347247, 42.406549],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [1.3472474293, 42.4065489924]
+        },
+        "properties": {
+            "RegioSanitariaCodi":"71"
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [2.850547, 42.032591, 2.850547, 42.032591],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [2.8505466711, 42.0325913531]
+        },
+        "properties": {
+            "RegioSanitariaCodi":"64"
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [2.090085, 41.500789, 2.090085, 41.500789],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [2.0900850352, 41.5007889078]
+        },
+        "properties": {
+            "RegioSanitariaCodi":"78"
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [1.161597, 41.244217, 1.161597, 41.244217],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [1.1615966825, 41.2442172341]
+        },
+        "properties": {
+            "RegioSanitariaCodi":"62"
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [0.554087, 40.930449, 0.554087, 40.930449],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [0.5540867133, 40.9304493359]
+        },
+        "properties": {
+            "RegioSanitariaCodi":"63"
+        }
+    }    
+    ]
+}
