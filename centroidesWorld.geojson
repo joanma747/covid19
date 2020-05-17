@@ -1,0 +1,3862 @@
+{
+    "type": "FeatureCollection",
+    "bbox": [-135.000000, -51.796300, 178.065000, 71.706900],
+    "features": [
+    {
+        "type": "Feature",
+        "bbox": [65.000000, 33.000000, 65.000000, 33.000000],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [65.0000000000, 33.0000000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Afghanistan",
+            "Population":38041754,
+            "Urban Population":9510438,
+            "Land Area":652860822296
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [20.168300, 41.153300, 20.168300, 41.153300],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [20.1683000000, 41.1533000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Albania",
+            "Population":2880917,
+            "Urban Population":1814978,
+            "Land Area":27399481254
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [1.659600, 28.033900, 1.659600, 28.033900],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [1.6596000000, 28.0339000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Algeria",
+            "Population":43053054,
+            "Urban Population":31428729,
+            "Land Area":2381739858529
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [1.521800, 42.506300, 1.521800, 42.506300],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [1.5218000000, 42.5063000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Andorra",
+            "Population":77142,
+            "Urban Population":67885,
+            "Land Area":468787797
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [17.873900, -11.202700, 17.873900, -11.202700],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [17.8739000000, -11.2027000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Angola",
+            "Population":31825295,
+            "Urban Population":21322948,
+            "Land Area":1246698411934
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [-61.796400, 17.060800, -61.796400, 17.060800],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-61.7964000000, 17.0608000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Antigua and Barbuda",
+            "Population":97118,
+            "Urban Population":25251,
+            "Land Area":440297931
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [-63.616700, -38.416100, -63.616700, -38.416100],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-63.6167000000, -38.4161000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Argentina",
+            "Population":44780677,
+            "Urban Population":41646030,
+            "Land Area":2736687330679
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [45.038200, 40.069100, 45.038200, 40.069100],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [45.0382000000, 40.0691000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Armenia",
+            "Population":2957731,
+            "Urban Population":1863371,
+            "Land Area":28469146227
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [149.012400, -35.473500, 149.012400, -35.473500],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [149.0124000000, -35.4735000000]
+        },
+        "properties": {
+            "Province/State":"Australian Capital Territory",
+            "Country/Region":"Australia",
+            "Population":426709,
+            "Land Area":2356888925
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [151.209300, -33.868800, 151.209300, -33.868800],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [151.2093000000, -33.8688000000]
+        },
+        "properties": {
+            "Province/State":"New South Wales",
+            "Country/Region":"Australia",
+            "Population":8089526,
+            "Land Area":809951354149
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [130.845600, -12.463400, 130.845600, -12.463400],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [130.8456000000, -12.4634000000]
+        },
+        "properties": {
+            "Province/State":"Northern Territory",
+            "Country/Region":"Australia",
+            "Population":245869,
+            "Land Area":1419629309355
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [153.400000, -28.016700, 153.400000, -28.016700],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [153.4000000000, -28.0167000000]
+        },
+        "properties": {
+            "Province/State":"Queensland",
+            "Country/Region":"Australia",
+            "Population":5095100,
+            "Land Area":1851735108949
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [138.600700, -34.928500, 138.600700, -34.928500],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [138.6007000000, -34.9285000000]
+        },
+        "properties": {
+            "Province/State":"South Australia",
+            "Country/Region":"Australia",
+            "Population":1751693,
+            "Land Area":1044353022727
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [145.970700, -41.454500, 145.970700, -41.454500],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [145.9707000000, -41.4545000000]
+        },
+        "properties": {
+            "Province/State":"Tasmania",
+            "Country/Region":"Australia",
+            "Population":534281,
+            "Land Area":90758353539
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [144.963100, -37.813600, 144.963100, -37.813600],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [144.9631000000, -37.8136000000]
+        },
+        "properties": {
+            "Province/State":"Victoria",
+            "Country/Region":"Australia",
+            "Population":6594804,
+            "Land Area":237657283281
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [115.860500, -31.950500, 115.860500, -31.950500],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [115.8605000000, -31.9505000000]
+        },
+        "properties": {
+            "Province/State":"Western Australia",
+            "Country/Region":"Australia",
+            "Population":2621680,
+            "Land Area":2642751062073
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [14.550100, 47.516200, 14.550100, 47.516200],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [14.5501000000, 47.5162000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Austria",
+            "Population":8955102,
+            "Urban Population":5104408,
+            "Land Area":82408232775
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [47.576900, 40.143100, 47.576900, 40.143100],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [47.5769000000, 40.1431000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Azerbaijan",
+            "Population":10047718,
+            "Urban Population":5626722,
+            "Land Area":82656871607
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [-77.396300, 25.034300, -77.396300, 25.034300],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-77.3963000000, 25.0343000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Bahamas",
+            "Population":389482,
+            "Urban Population":334955,
+            "Land Area":10010302963
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [50.550000, 26.027500, 50.550000, 26.027500],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [50.5500000000, 26.0275000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Bahrain",
+            "Population":1641172,
+            "Urban Population":1460643,
+            "Land Area":758866434
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [90.356300, 23.685000, 90.356300, 23.685000],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [90.3563000000, 23.6850000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Bangladesh",
+            "Population":163046161,
+            "Urban Population":63588003,
+            "Land Area":130170198348
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [-59.543200, 13.193900, -59.543200, 13.193900],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-59.5432000000, 13.1939000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Barbados",
+            "Population":287025,
+            "Urban Population":88978,
+            "Land Area":429937980
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [27.953400, 53.709800, 27.953400, 53.709800],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [27.9534000000, 53.7098000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Belarus",
+            "Population":9452411,
+            "Urban Population":7467405,
+            "Land Area":202910006554
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [4.000000, 50.833300, 4.000000, 50.833300],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [4.0000000000, 50.8333000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Belgium",
+            "Population":11539328,
+            "Urban Population":11308541,
+            "Land Area":30279547721
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [-88.766667, 17.250000, -88.766667, 17.250000],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-88.7666670000, 17.2500000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Belize",
+            "Population":390353,
+            "Urban Population":179562,
+            "Land Area":22810022819
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [2.315800, 9.307700, 2.315800, 9.307700],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [2.3158000000, 9.3077000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Benin",
+            "Population":11801151,
+            "Urban Population":5664552,
+            "Land Area":112760300155
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [90.433600, 27.514200, 90.433600, 27.514200],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [90.4336000000, 27.5142000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Bhutan",
+            "Population":763092,
+            "Urban Population":351022,
+            "Land Area":38116850894
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [-63.588700, -16.290200, -63.588700, -16.290200],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-63.5887000000, -16.2902000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Bolivia",
+            "Population":11513100,
+            "Urban Population":7944039,
+            "Land Area":1083298669727
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [17.679100, 43.915900, 17.679100, 43.915900],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [17.6791000000, 43.9159000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Bosnia and Herzegovina",
+            "Population":3301000,
+            "Urban Population":1716520,
+            "Land Area":50999450361
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [24.684900, -22.328500, 24.684900, -22.328500],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [24.6849000000, -22.3285000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Botswana",
+            "Population":2303697,
+            "Urban Population":1681699,
+            "Land Area":566730777009
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [-51.925300, -14.235000, -51.925300, -14.235000],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-51.9253000000, -14.2350000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Brazil",
+            "Population":211049527,
+            "Urban Population":185723584,
+            "Land Area":8358136776254
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [114.727700, 4.535300, 114.727700, 4.535300],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [114.7277000000, 4.5353000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Brunei",
+            "Population":433285,
+            "Urban Population":346628,
+            "Land Area":5270625234
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [25.485800, 42.733900, 25.485800, 42.733900],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [25.4858000000, 42.7339000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Bulgaria",
+            "Population":7000119,
+            "Urban Population":5320090,
+            "Land Area":108559339894
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [-1.561600, 12.238300, -1.561600, 12.238300],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-1.5616000000, 12.2383000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Burkina Faso",
+            "Population":20321378,
+            "Urban Population":6299627,
+            "Land Area":273601134386
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [95.956000, 21.916200, 95.956000, 21.916200],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [95.9560000000, 21.9162000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Burma",
+            "Population":54045420,
+            "Urban Population":16754080,
+            "Land Area":653290760276
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [29.918900, -3.373100, 29.918900, -3.373100],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [29.9189000000, -3.3731000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Burundi",
+            "Population":11530580,
+            "Urban Population":1614281,
+            "Land Area":25679729334
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [-23.041800, 16.538800, -23.041800, 16.538800],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-23.0418000000, 16.5388000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Cabo Verde",
+            "Population":549935,
+            "Urban Population":373956,
+            "Land Area":4030021063
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [104.916700, 11.550000, 104.916700, 11.550000],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [104.9167000000, 11.5500000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Cambodia",
+            "Population":16486542,
+            "Urban Population":3956770,
+            "Land Area":176520620554
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [11.502100, 3.848000, 11.502100, 3.848000],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [11.5021000000, 3.8480000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Cameroon",
+            "Population":25876380,
+            "Urban Population":14490773,
+            "Land Area":472709038805
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [-116.576500, 53.933300, -116.576500, 53.933300],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-116.5765000000, 53.9333000000]
+        },
+        "properties": {
+            "Province/State":"Alberta",
+            "Country/Region":"Canada",
+            "Population":4413146,
+            "Land Area":642316981840
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [-123.120700, 49.282700, -123.120700, 49.282700],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-123.1207000000, 49.2827000000]
+        },
+        "properties": {
+            "Province/State":"British Columbia",
+            "Country/Region":"Canada",
+            "Population":5110917,
+            "Land Area":925185092681
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [0.000000, 0.000000, 0.000000, 0.000000],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [0.0000000000, 0.0000000000]
+        },
+        "properties": {
+            "Province/State":"Recovered",
+            "Province/State":"Diamond Princess",
+            "Country/Region":"Canada",
+            "Country/Region":"Diamond Princess",
+            "Country/Region":"Canada",
+            "Country/Region":"MS Zaandam"
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [-122.665500, 37.648900, -122.665500, 37.648900],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-122.6655000000, 37.6489000000]
+        },
+        "properties": {
+            "Province/State":"Grand Princess",
+            "Country/Region":"Canada"
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [-98.813900, 53.760900, -98.813900, 53.760900],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-98.8139000000, 53.7609000000]
+        },
+        "properties": {
+            "Province/State":"Manitoba",
+            "Country/Region":"Canada",
+            "Population":1377517,
+            "Land Area":553555508918
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [-66.461900, 46.565300, -66.461900, 46.565300],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-66.4619000000, 46.5653000000]
+        },
+        "properties": {
+            "Province/State":"New Brunswick",
+            "Country/Region":"Canada",
+            "Population":779993,
+            "Land Area":71449994266
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [-57.660400, 53.135500, -57.660400, 53.135500],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-57.6604000000, 53.1355000000]
+        },
+        "properties": {
+            "Province/State":"Newfoundland and Labrador",
+            "Country/Region":"Canada",
+            "Population":521365,
+            "Land Area":373872513224
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [-124.845700, 64.825500, -124.845700, 64.825500],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-124.8457000000, 64.8255000000]
+        },
+        "properties": {
+            "Province/State":"Northwest Territories",
+            "Country/Region":"Canada",
+            "Population":44904,
+            "Land Area":1183083130854
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [-63.744300, 44.682000, -63.744300, 44.682000],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-63.7443000000, 44.6820000000]
+        },
+        "properties": {
+            "Province/State":"Nova Scotia",
+            "Country/Region":"Canada",
+            "Population":977457,
+            "Land Area":53338209371
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [-85.323200, 51.253800, -85.323200, 51.253800],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-85.3232000000, 51.2538000000]
+        },
+        "properties": {
+            "Province/State":"Ontario",
+            "Country/Region":"Canada",
+            "Population":14711827,
+            "Land Area":917741467658
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [-63.416800, 46.510700, -63.416800, 46.510700],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-63.4168000000, 46.5107000000]
+        },
+        "properties": {
+            "Province/State":"Prince Edward Island",
+            "Country/Region":"Canada",
+            "Population":158158,
+            "Land Area":5659123409
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [-73.549100, 52.939900, -73.549100, 52.939900],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-73.5491000000, 52.9399000000]
+        },
+        "properties": {
+            "Province/State":"Quebec",
+            "Country/Region":"Canada",
+            "Population":8537674,
+            "Land Area":1356127987739
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [-106.450900, 52.939900, -106.450900, 52.939900],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-106.4509000000, 52.9399000000]
+        },
+        "properties": {
+            "Province/State":"Saskatchewan",
+            "Country/Region":"Canada",
+            "Population":1181666,
+            "Land Area":591669769824
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [-135.000000, 64.282300, -135.000000, 64.282300],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-135.0000000000, 64.2823000000]
+        },
+        "properties": {
+            "Province/State":"Yukon",
+            "Country/Region":"Canada",
+            "Population":41078,
+            "Land Area":474389940906
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [20.939400, 6.611100, 20.939400, 6.611100],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [20.9394000000, 6.6111000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Central African Republic",
+            "Population":4745185,
+            "Urban Population":2040430,
+            "Land Area":622980132701
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [18.732200, 15.454200, 18.732200, 15.454200],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [18.7322000000, 15.4542000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Chad",
+            "Population":15946876,
+            "Urban Population":3667781,
+            "Land Area":1259200283189
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [-71.543000, -35.675100, -71.543000, -35.675100],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-71.5430000000, -35.6751000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Chile",
+            "Population":18952038,
+            "Urban Population":16109232,
+            "Land Area":743531116249
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [117.226400, 31.825700, 117.226400, 31.825700],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [117.2264000000, 31.8257000000]
+        },
+        "properties": {
+            "Province/State":"Anhui",
+            "Country/Region":"China",
+            "Population":63240000,
+            "Land Area":139698763575
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [116.414200, 40.182400, 116.414200, 40.182400],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [116.4142000000, 40.1824000000]
+        },
+        "properties": {
+            "Province/State":"Beijing",
+            "Country/Region":"China",
+            "Population":21540000,
+            "Land Area":16801251053
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [107.874000, 30.057200, 107.874000, 30.057200],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [107.8740000000, 30.0572000000]
+        },
+        "properties": {
+            "Province/State":"Chongqing",
+            "Country/Region":"China",
+            "Population":31020000,
+            "Land Area":82299453286
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [117.987400, 26.078900, 117.987400, 26.078900],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [117.9874000000, 26.0789000000]
+        },
+        "properties": {
+            "Province/State":"Fujian",
+            "Country/Region":"China",
+            "Population":39410000,
+            "Land Area":121579208716
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [101.058300, 37.809900, 101.058300, 37.809900],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [101.0583000000, 37.8099000000]
+        },
+        "properties": {
+            "Province/State":"Gansu",
+            "Country/Region":"China",
+            "Population":26370000,
+            "Land Area":454299405309
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [113.424400, 23.341700, 113.424400, 23.341700],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [113.4244000000, 23.3417000000]
+        },
+        "properties": {
+            "Province/State":"Guangdong",
+            "Country/Region":"China",
+            "Population":113460000,
+            "Land Area":179998974209
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [108.788100, 23.829800, 108.788100, 23.829800],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [108.7881000000, 23.8298000000]
+        },
+        "properties": {
+            "Province/State":"Guangxi",
+            "Country/Region":"China",
+            "Population":49260000,
+            "Land Area":235999691070
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [106.874800, 26.815400, 106.874800, 26.815400],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [106.8748000000, 26.8154000000]
+        },
+        "properties": {
+            "Province/State":"Guizhou",
+            "Country/Region":"China",
+            "Population":36000000,
+            "Land Area":176000033000
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [109.745300, 19.195900, 109.745300, 19.195900],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [109.7453000000, 19.1959000000]
+        },
+        "properties": {
+            "Province/State":"Hainan",
+            "Country/Region":"China",
+            "Population":9340000,
+            "Land Area":33998770244
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [116.130600, 39.549000, 116.130600, 39.549000],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [116.1306000000, 39.5490000000]
+        },
+        "properties": {
+            "Province/State":"Hebei",
+            "Country/Region":"China",
+            "Population":75560000,
+            "Land Area":187699008028
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [127.761500, 47.862000, 127.761500, 47.862000],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [127.7615000000, 47.8620000000]
+        },
+        "properties": {
+            "Province/State":"Heilongjiang",
+            "Country/Region":"China",
+            "Population":37730000,
+            "Land Area":453998966721
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [113.614000, 33.882000, 113.614000, 33.882000],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [113.6140000000, 33.8820000000]
+        },
+        "properties": {
+            "Province/State":"Henan",
+            "Country/Region":"China",
+            "Population":96050000,
+            "Land Area":166999825291
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [114.200000, 22.300000, 114.200000, 22.300000],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [114.2000000000, 22.3000000000]
+        },
+        "properties": {
+            "Province/State":"Hong Kong",
+            "Country/Region":"China",
+            "Population":7451000,
+            "Land Area":1108514791
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [112.270700, 30.975600, 112.270700, 30.975600],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [112.2707000000, 30.9756000000]
+        },
+        "properties": {
+            "Province/State":"Hubei",
+            "Country/Region":"China",
+            "Population":59170000,
+            "Land Area":185898966486
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [111.708800, 27.610400, 111.708800, 27.610400],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [111.7088000000, 27.6104000000]
+        },
+        "properties": {
+            "Province/State":"Hunan",
+            "Country/Region":"China",
+            "Population":68990000,
+            "Land Area":209998803244
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [113.944800, 44.093500, 113.944800, 44.093500],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [113.9448000000, 44.0935000000]
+        },
+        "properties": {
+            "Province/State":"Inner Mongolia",
+            "Country/Region":"China",
+            "Population":25340000,
+            "Land Area":1183000251243
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [119.455000, 32.971100, 119.455000, 32.971100],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [119.4550000000, 32.9711000000]
+        },
+        "properties": {
+            "Province/State":"Jiangsu",
+            "Country/Region":"China",
+            "Population":80510000,
+            "Land Area":102599777898
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [115.722100, 27.614000, 115.722100, 27.614000],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [115.7221000000, 27.6140000000]
+        },
+        "properties": {
+            "Province/State":"Jiangxi",
+            "Country/Region":"China",
+            "Population":46480000,
+            "Land Area":166999825291
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [126.192300, 43.666100, 126.192300, 43.666100],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [126.1923000000, 43.6661000000]
+        },
+        "properties": {
+            "Province/State":"Jilin",
+            "Country/Region":"China",
+            "Population":27040000,
+            "Land Area":187401159427
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [122.608500, 41.295600, 122.608500, 41.295600],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [122.6085000000, 41.2956000000]
+        },
+        "properties": {
+            "Province/State":"Liaoning",
+            "Country/Region":"China",
+            "Population":43590000,
+            "Land Area":145899194440
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [113.550000, 22.166700, 113.550000, 22.166700],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [113.5500000000, 22.1667000000]
+        },
+        "properties": {
+            "Province/State":"Macau",
+            "Country/Region":"China",
+            "Population":631636,
+            "Land Area":28489866
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [106.165500, 37.269200, 106.165500, 37.269200],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [106.1655000000, 37.2692000000]
+        },
+        "properties": {
+            "Province/State":"Ningxia",
+            "Country/Region":"China",
+            "Population":6880000,
+            "Land Area":66399517998
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [95.995600, 35.745200, 95.995600, 35.745200],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [95.9956000000, 35.7452000000]
+        },
+        "properties": {
+            "Province/State":"Qinghai",
+            "Country/Region":"China",
+            "Population":6030000,
+            "Land Area":721200241178
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [108.870100, 35.191700, 108.870100, 35.191700],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [108.8701000000, 35.1917000000]
+        },
+        "properties": {
+            "Province/State":"Shaanxi",
+            "Country/Region":"China",
+            "Population":38640000,
+            "Land Area":205601003909
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [118.149800, 36.342700, 118.149800, 36.342700],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [118.1498000000, 36.3427000000]
+        },
+        "properties": {
+            "Province/State":"Shandong",
+            "Country/Region":"China",
+            "Population":100470000,
+            "Land Area":153798657321
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [121.449100, 31.202000, 121.449100, 31.202000],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [121.4491000000, 31.2020000000]
+        },
+        "properties": {
+            "Province/State":"Shanghai",
+            "Country/Region":"China",
+            "Population":24240000,
+            "Land Area":6340290208
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [112.292200, 37.577700, 112.292200, 37.577700],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [112.2922000000, 37.5777000000]
+        },
+        "properties": {
+            "Province/State":"Shanxi",
+            "Country/Region":"China",
+            "Population":37180000,
+            "Land Area":156300585565
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [102.710300, 30.617100, 102.710300, 30.617100],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [102.7103000000, 30.6171000000]
+        },
+        "properties": {
+            "Province/State":"Sichuan",
+            "Country/Region":"China",
+            "Population":83410000,
+            "Land Area":484998531058
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [117.323000, 39.305400, 117.323000, 39.305400],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [117.3230000000, 39.3054000000]
+        },
+        "properties": {
+            "Province/State":"Tianjin",
+            "Country/Region":"China",
+            "Population":15600000,
+            "Land Area":11305296878
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [88.092400, 31.692700, 88.092400, 31.692700],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [88.0924000000, 31.6927000000]
+        },
+        "properties": {
+            "Province/State":"Tibet",
+            "Country/Region":"China",
+            "Population":3440000,
+            "Land Area":1228400147915
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [85.240100, 41.112900, 85.240100, 41.112900],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [85.2401000000, 41.1129000000]
+        },
+        "properties": {
+            "Province/State":"Xinjiang",
+            "Country/Region":"China",
+            "Population":24870000,
+            "Land Area":1660399758008
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [101.487000, 24.974000, 101.487000, 24.974000],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [101.4870000000, 24.9740000000]
+        },
+        "properties": {
+            "Province/State":"Yunnan",
+            "Country/Region":"China",
+            "Population":48300000,
+            "Land Area":393999308651
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [120.093400, 29.183200, 120.093400, 29.183200],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [120.0934000000, 29.1832000000]
+        },
+        "properties": {
+            "Province/State":"Zhejiang",
+            "Country/Region":"China",
+            "Population":57370000,
+            "Land Area":101998900721
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [-74.297300, 4.570900, -74.297300, 4.570900],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-74.2973000000, 4.5709000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Colombia",
+            "Population":50339443,
+            "Urban Population":40271554,
+            "Land Area":1109498986615
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [43.333300, -11.645500, 43.333300, -11.645500],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [43.3333000000, -11.6455000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Comoros",
+            "Population":867086,
+            "Land Area":1660182199
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [15.291944, -4.267778, 15.291944, -4.267778],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [15.2919440000, -4.2677780000]
+        },
+        "properties": {
+            "Province/State":"Brazzaville",
+            "Country/Region":"Congo",
+            "Population":5380508,
+            "Urban Population":3766356,
+            "Land Area":341500255337
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [15.322222, -4.325000, 15.322222, -4.325000],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [15.3222220000, -4.3250000000]
+        },
+        "properties": {
+            "Province/State":"Kinshasa",
+            "Country/Region":"Congo",
+            "Population":86790567,
+            "Urban Population":39923661,
+            "Land Area":2267050017441
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [-83.753400, 9.748900, -83.753400, 9.748900],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-83.7534000000, 9.7489000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Costa Rica",
+            "Population":5047561,
+            "Urban Population":4038049,
+            "Land Area":51059020081
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [-5.547100, 7.540000, -5.547100, 7.540000],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-5.5471000000, 7.5400000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Cote d'Ivoire",
+            "Population":25716544,
+            "Urban Population":13115437,
+            "Land Area":317998705767
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [15.200000, 45.100000, 15.200000, 45.100000],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [15.2000000000, 45.1000000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Croatia",
+            "Population":4130304,
+            "Urban Population":2395576,
+            "Land Area":55959277055
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [-80.000000, 22.000000, -80.000000, 22.000000],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-80.0000000000, 22.0000000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Cuba",
+            "Population":11333483,
+            "Urban Population":8840117,
+            "Land Area":106440729850
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [33.429900, 35.126400, 33.429900, 35.126400],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [33.4299000000, 35.1264000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Cyprus",
+            "Population":1198575,
+            "Urban Population":803045,
+            "Land Area":9241076577
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [15.473000, 49.817500, 15.473000, 49.817500],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [15.4730000000, 49.8175000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Czechia",
+            "Population":10689209,
+            "Urban Population":7910015,
+            "Land Area":77241207054
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [9.501800, 56.263900, 9.501800, 56.263900],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [9.5018000000, 56.2639000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Denmark",
+            "Population":5771876,
+            "Urban Population":5079251,
+            "Land Area":42429180631
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [-6.911800, 61.892600, -6.911800, 61.892600],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-6.9118000000, 61.8926000000]
+        },
+        "properties": {
+            "Province/State":"Faroe Islands",
+            "Country/Region":"Denmark",
+            "Population":52337,
+            "Land Area":1399000000
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [-42.604300, 71.706900, -42.604300, 71.706900],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-42.6043000000, 71.7069000000]
+        },
+        "properties": {
+            "Province/State":"Greenland",
+            "Country/Region":"Denmark",
+            "Population":56672,
+            "Urban Population":49305,
+            "Land Area":410450911347
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [42.590300, 11.825100, 42.590300, 11.825100],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [42.5903000000, 11.8251000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Djibouti",
+            "Population":973560,
+            "Urban Population":769112,
+            "Land Area":23180391078
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [-61.371000, 15.415000, -61.371000, 15.415000],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-61.3710000000, 15.4150000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Dominica",
+            "Population":71808,
+            "Urban Population":53138,
+            "Land Area":751096471
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [-70.162700, 18.735700, -70.162700, 18.735700],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-70.1627000000, 18.7357000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Dominican Republic",
+            "Population":10738958,
+            "Urban Population":9128114,
+            "Land Area":48318812956
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [-78.183400, -1.831200, -78.183400, -1.831200],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-78.1834000000, -1.8312000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Ecuador",
+            "Population":17373662,
+            "Urban Population":10945407,
+            "Land Area":248359112994
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [30.000000, 26.000000, 30.000000, 26.000000],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [30.0000000000, 26.0000000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Egypt",
+            "Population":100388073,
+            "Urban Population":43166871,
+            "Land Area":995448872521
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [-88.896500, 13.794200, -88.896500, 13.794200],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-88.8965000000, 13.7942000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"El Salvador",
+            "Population":6453553,
+            "Urban Population":4711094,
+            "Land Area":20719902640
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [10.000000, 1.500000, 10.000000, 1.500000],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [10.0000000000, 1.5000000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Equatorial Guinea",
+            "Population":1355986,
+            "Urban Population":989870,
+            "Land Area":28049568199
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [39.782300, 15.179400, 39.782300, 15.179400],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [39.7823000000, 15.1794000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Eritrea",
+            "Population":3497117,
+            "Urban Population":2203184,
+            "Land Area":100999165419
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [25.013600, 58.595300, 25.013600, 58.595300],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [25.0136000000, 58.5953000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Estonia",
+            "Population":1325648,
+            "Urban Population":901441,
+            "Land Area":42390330814
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [31.465900, -26.522500, 31.465900, -26.522500],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [31.4659000000, -26.5225000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Eswatini",
+            "Population":1148130,
+            "Urban Population":344439,
+            "Land Area":17200109179
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [40.489700, 9.145000, 40.489700, 9.145000],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [40.4897000000, 9.1450000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Ethiopia",
+            "Population":112078730,
+            "Urban Population":23536533,
+            "Land Area":999999481139
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [178.065000, -17.713400, 178.065000, -17.713400],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [178.0650000000, -17.7134000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Fiji",
+            "Population":889953,
+            "Urban Population":525072,
+            "Land Area":18269774153
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [26.000000, 64.000000, 26.000000, 64.000000],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [26.0000000000, 64.0000000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Finland",
+            "Population":5532156,
+            "Urban Population":4757654,
+            "Land Area":303891042057
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [2.213700, 46.227600, 2.213700, 46.227600],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [2.2137000000, 46.2276000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"France",
+            "Population":65129728,
+            "Urban Population":53406377,
+            "Land Area":547557097104
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [-53.125800, 3.933900, -53.125800, 3.933900],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-53.1258000000, 3.9339000000]
+        },
+        "properties": {
+            "Province/State":"French Guiana",
+            "Country/Region":"France",
+            "Population":290832,
+            "Urban Population":253024,
+            "Land Area":82201033749
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [149.406800, -17.679700, 149.406800, -17.679700],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [149.4068000000, -17.6797000000]
+        },
+        "properties": {
+            "Province/State":"French Polynesia",
+            "Country/Region":"France",
+            "Population":279287,
+            "Urban Population":178744,
+            "Land Area":3659652804
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [-61.583300, 16.250000, -61.583300, 16.250000],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-61.5833000000, 16.2500000000]
+        },
+        "properties": {
+            "Province/State":"Guadeloupe",
+            "Country/Region":"France",
+            "Population":400056,
+            "Urban Population":0,
+            "Land Area":1691262053
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [-61.024200, 14.641500, -61.024200, 14.641500],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-61.0242000000, 14.6415000000]
+        },
+        "properties": {
+            "Province/State":"Martinique",
+            "Country/Region":"France",
+            "Population":375554,
+            "Urban Population":345510,
+            "Land Area":1059305022
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [45.166200, -12.827500, 45.166200, -12.827500],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [45.1662000000, -12.8275000000]
+        },
+        "properties": {
+            "Province/State":"Mayotte",
+            "Country/Region":"France",
+            "Population":266150,
+            "Urban Population":122429,
+            "Land Area":375548235
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [165.618000, -20.904300, 165.618000, -20.904300],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [165.6180000000, -20.9043000000]
+        },
+        "properties": {
+            "Province/State":"New Caledonia",
+            "Country/Region":"France",
+            "Population":282750,
+            "Urban Population":203580,
+            "Land Area":18280134104
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [55.247100, -21.135100, 55.247100, -21.135100],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [55.2471000000, -21.1351000000]
+        },
+        "properties": {
+            "Province/State":"Reunion",
+            "Country/Region":"France",
+            "Population":888927,
+            "Urban Population":888927,
+            "Land Area":2499338256
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [-62.833300, 17.900000, -62.833300, 17.900000],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-62.8333000000, 17.9000000000]
+        },
+        "properties": {
+            "Province/State":"Saint Barthelemy",
+            "Country/Region":"France",
+            "Population":9793,
+            "Land Area":25000000
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [-56.315900, 46.885200, -56.315900, 46.885200],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-56.3159000000, 46.8852000000]
+        },
+        "properties": {
+            "Province/State":"Saint Pierre and Miquelon",
+            "Country/Region":"France",
+            "Population":5822,
+            "Urban Population":5822,
+            "Land Area":230508917
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [-63.050100, 18.070800, -63.050100, 18.070800],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-63.0501000000, 18.0708000000]
+        },
+        "properties": {
+            "Province/State":"St Martin",
+            "Country/Region":"France",
+            "Population":77741,
+            "Land Area":87000000
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [11.609400, -0.803700, 11.609400, -0.803700],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [11.6094000000, -0.8037000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Gabon",
+            "Population":2172579,
+            "Urban Population":1890144,
+            "Land Area":257670119243
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [-15.310100, 13.443200, -15.310100, 13.443200],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-15.3101000000, 13.4432000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Gambia",
+            "Population":2347706,
+            "Urban Population":1385147,
+            "Land Area":10119082452
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [43.356900, 42.315400, 43.356900, 42.315400],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [43.3569000000, 42.3154000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Georgia",
+            "Population":3996765,
+            "Urban Population":2318124,
+            "Land Area":69489373479
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [9.000000, 51.000000, 9.000000, 51.000000],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [9.0000000000, 51.0000000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Germany",
+            "Population":83517045,
+            "Urban Population":63472954,
+            "Land Area":348560562161
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [-1.023200, 7.946500, -1.023200, 7.946500],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-1.0232000000, 7.9465000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Ghana",
+            "Population":30417856,
+            "Urban Population":17338178,
+            "Land Area":227540790817
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [21.824300, 39.074200, 21.824300, 39.074200],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [21.8243000000, 39.0742000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Greece",
+            "Population":10473455,
+            "Urban Population":8902437,
+            "Land Area":128901104311
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [-61.679000, 12.116500, -61.679000, 12.116500],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-61.6790000000, 12.1165000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Grenada",
+            "Population":112003,
+            "Urban Population":39201,
+            "Land Area":339288406
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [-90.230800, 15.783500, -90.230800, 15.783500],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-90.2308000000, 15.7835000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Guatemala",
+            "Population":17581472,
+            "Urban Population":9142365,
+            "Land Area":107160746466
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [-9.696600, 9.945600, -9.696600, 9.945600],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-9.6966000000, 9.9456000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Guinea",
+            "Population":12771246,
+            "Urban Population":4980786,
+            "Land Area":245719915396
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [-15.180400, 11.803700, -15.180400, 11.803700],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-15.1804000000, 11.8037000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Guinea-Bissau",
+            "Population":1920922,
+            "Urban Population":864415,
+            "Land Area":28119497870
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [-58.750000, 5.000000, -58.750000, 5.000000],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-58.7500000000, 5.0000000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Guyana",
+            "Population":782766,
+            "Urban Population":211347,
+            "Land Area":196849435031
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [-72.285200, 18.971200, -72.285200, 18.971200],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-72.2852000000, 18.9712000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Haiti",
+            "Population":11263077,
+            "Urban Population":6419954,
+            "Land Area":27560060499
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [12.453400, 41.902900, 12.453400, 41.902900],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [12.4534000000, 41.9029000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Holy See",
+            "Population":799
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [-86.241900, 15.200000, -86.241900, 15.200000],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-86.2419000000, 15.2000000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Honduras",
+            "Population":9746117,
+            "Urban Population":5555287,
+            "Land Area":111890064244
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [19.503300, 47.162500, 19.503300, 47.162500],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [19.5033000000, 47.1625000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Hungary",
+            "Population":9684679,
+            "Urban Population":6972969,
+            "Land Area":90530434610
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [-19.020800, 64.963100, -19.020800, 64.963100],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-19.0208000000, 64.9631000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Iceland",
+            "Population":339031,
+            "Urban Population":318689,
+            "Land Area":100250658936
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [78.000000, 21.000000, 78.000000, 21.000000],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [78.0000000000, 21.0000000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"India",
+            "Population":1366417754,
+            "Urban Population":478246214,
+            "Land Area":2973189479388
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [113.921300, -0.789300, 113.921300, -0.789300],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [113.9213000000, -0.7893000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Indonesia",
+            "Population":270625568,
+            "Urban Population":151550318,
+            "Land Area":1811569577681
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [53.000000, 32.000000, 53.000000, 32.000000],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [53.0000000000, 32.0000000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Iran",
+            "Population":82913906,
+            "Urban Population":63014569,
+            "Land Area":1628548087674
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [44.000000, 33.000000, 44.000000, 33.000000],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [44.0000000000, 33.0000000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Iraq",
+            "Population":39309783,
+            "Urban Population":28696142,
+            "Land Area":434320239188
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [-7.692100, 53.142400, -7.692100, 53.142400],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-7.6921000000, 53.1424000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Ireland",
+            "Population":4882495,
+            "Urban Population":3075972,
+            "Land Area":68891086290
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [35.000000, 31.000000, 35.000000, 31.000000],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [35.0000000000, 31.0000000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Israel",
+            "Population":8519377,
+            "Urban Population":7923021,
+            "Land Area":21639348320
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [12.000000, 43.000000, 12.000000, 43.000000],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [12.0000000000, 43.0000000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Italy",
+            "Population":60550075,
+            "Urban Population":41779552,
+            "Land Area":294139737877
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [-77.297500, 18.109600, -77.297500, 18.109600],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-77.2975000000, 18.1096000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Jamaica",
+            "Population":2948279,
+            "Urban Population":1621553,
+            "Land Area":10828739117
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [138.000000, 36.000000, 138.000000, 36.000000],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [138.0000000000, 36.0000000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Japan",
+            "Population":126860301,
+            "Urban Population":116711477,
+            "Land Area":364553737012
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [36.510000, 31.240000, 36.510000, 31.240000],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [36.5100000000, 31.2400000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Jordan",
+            "Population":10101694,
+            "Urban Population":9192542,
+            "Land Area":88779602837
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [66.923700, 48.019600, 66.923700, 48.019600],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [66.9237000000, 48.0196000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Kazakhstan",
+            "Population":18551427,
+            "Urban Population":10759828,
+            "Land Area":2699699714479
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [37.906200, -0.023600, 37.906200, -0.023600],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [37.9062000000, -0.0236000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Kenya",
+            "Population":52573973,
+            "Urban Population":14720712,
+            "Land Area":569139465691
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [128.000000, 36.000000, 128.000000, 36.000000],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [128.0000000000, 36.0000000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Korea, South",
+            "Population":51225308,
+            "Urban Population":42004753,
+            "Land Area":97230733126
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [20.902977, 42.602636, 20.902977, 42.602636],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [20.9029770000, 42.6026360000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Kosovo",
+            "Population":1810463,
+            "Land Area":10887000000
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [47.750000, 29.500000, 47.750000, 29.500000],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [47.7500000000, 29.5000000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Kuwait",
+            "Population":4207083,
+            "Land Area":17819116270
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [74.766100, 41.204400, 74.766100, 41.204400],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [74.7661000000, 41.2044000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Kyrgyzstan",
+            "Population":6415850,
+            "Urban Population":2309706,
+            "Land Area":191798958763
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [102.495496, 19.856270, 102.495496, 19.856270],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [102.4954960000, 19.8562700000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Laos",
+            "Population":7169455,
+            "Urban Population":2581004,
+            "Land Area":230798995507
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [24.603200, 56.879600, 24.603200, 56.879600],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [24.6032000000, 56.8796000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Latvia",
+            "Population":1906743,
+            "Urban Population":1315653,
+            "Land Area":62201147725
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [35.862300, 33.854700, 35.862300, 33.854700],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [35.8623000000, 33.8547000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Lebanon",
+            "Population":6855713,
+            "Urban Population":5347456,
+            "Land Area":10230451928
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [-9.429500, 6.428100, -9.429500, 6.428100],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-9.4295000000, 6.4281000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Liberia",
+            "Population":4937374,
+            "Urban Population":2616808,
+            "Land Area":96319057410
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [17.228331, 26.335100, 17.228331, 26.335100],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [17.2283310000, 26.3351000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Libya",
+            "Population":6777452,
+            "Urban Population":5286413,
+            "Land Area":1759539312164
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [9.550000, 47.140000, 9.550000, 47.140000],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [9.5500000000, 47.1400000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Liechtenstein",
+            "Population":38019,
+            "Urban Population":5703,
+            "Land Area":160579245
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [23.881300, 55.169400, 23.881300, 55.169400],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [23.8813000000, 55.1694000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Lithuania",
+            "Population":2759627,
+            "Urban Population":1959335,
+            "Land Area":62675115498
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [6.129600, 49.815300, 6.129600, 49.815300],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [6.1296000000, 49.8153000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Luxembourg",
+            "Population":615729,
+            "Urban Population":541842,
+            "Land Area":2589987830
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [46.869100, -18.766900, 46.869100, -18.766900],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [46.8691000000, -18.7669000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Madagascar",
+            "Population":26969307,
+            "Urban Population":10518030,
+            "Land Area":581794146229
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [34.301525, -13.254308, 34.301525, -13.254308],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [34.3015250000, -13.2543080000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Malawi",
+            "Population":18628747,
+            "Urban Population":3353174,
+            "Land Area":94280736988
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [112.500000, 2.500000, 112.500000, 2.500000],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [112.5000000000, 2.5000000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Malaysia",
+            "Population":31949777,
+            "Urban Population":24920826,
+            "Land Area":328550316187
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [73.220700, 3.202800, 73.220700, 3.202800],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [73.2207000000, 3.2028000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Maldives",
+            "Population":530953,
+            "Urban Population":185834,
+            "Land Area":300438588
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [-3.996166, 17.570692, -3.996166, 17.570692],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-3.9961660000, 17.5706920000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Mali",
+            "Population":19658031,
+            "Urban Population":8649534,
+            "Land Area":1220189886494
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [14.375400, 35.937500, 14.375400, 35.937500],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [14.3754000000, 35.9375000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Malta",
+            "Population":440372,
+            "Urban Population":409546,
+            "Land Area":321158491
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [10.940800, 21.007900, 10.940800, 21.007900],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [10.9408000000, 21.0079000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Mauritania",
+            "Population":4525696,
+            "Urban Population":2579647,
+            "Land Area":1030698606888
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [57.500000, -20.200000, 57.500000, -20.200000],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [57.5000000000, -20.2000000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Mauritius",
+            "Population":1269668,
+            "Urban Population":520564,
+            "Land Area":2030550459
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [-102.552800, 23.634500, -102.552800, 23.634500],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-102.5528000000, 23.6345000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Mexico",
+            "Population":127575529,
+            "Urban Population":107163444,
+            "Land Area":1943949035648
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [28.369900, 47.411600, 28.369900, 47.411600],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [28.3699000000, 47.4116000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Moldova",
+            "Population":4043263,
+            "Urban Population":1738603,
+            "Land Area":32848815648
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [7.416700, 43.733300, 7.416700, 43.733300],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [7.4167000000, 43.7333000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Monaco",
+            "Population":38964,
+            "Land Area":2020000
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [103.846700, 46.862500, 103.846700, 46.862500],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [103.8467000000, 46.8625000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Mongolia",
+            "Population":3225167,
+            "Urban Population":2160862,
+            "Land Area":1553560170032
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [19.300000, 42.500000, 19.300000, 42.500000],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [19.3000000000, 42.5000000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Montenegro",
+            "Population":627987,
+            "Urban Population":427031,
+            "Land Area":13449806801
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [-7.092600, 31.791700, -7.092600, 31.791700],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-7.0926000000, 31.7917000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Morocco",
+            "Population":36471769,
+            "Urban Population":23341932,
+            "Land Area":446298932902
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [35.529562, -18.665695, 35.529562, -18.665695],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [35.5295620000, -18.6656950000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Mozambique",
+            "Population":30366036,
+            "Urban Population":11539094,
+            "Land Area":786379874908
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [18.490400, -22.957600, 18.490400, -22.957600],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [18.4904000000, -22.9576000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Namibia",
+            "Population":2494530,
+            "Urban Population":1371992,
+            "Land Area":823289791473
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [84.250000, 28.166700, 84.250000, 28.166700],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [84.2500000000, 28.1667000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Nepal",
+            "Population":28608710,
+            "Urban Population":6007829,
+            "Land Area":143350646415
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [5.291300, 52.132600, 5.291300, 52.132600],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [5.2913000000, 52.1326000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Netherlands",
+            "Population":17097130,
+            "Urban Population":15729360,
+            "Land Area":33719051559
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [-70.035800, 12.518600, -70.035800, 12.518600],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-70.0358000000, 12.5186000000]
+        },
+        "properties": {
+            "Province/State":"Aruba",
+            "Country/Region":"Netherlands",
+            "Population":106314,
+            "Urban Population":46778,
+            "Land Area":178709160
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [-68.990000, 12.169600, -68.990000, 12.169600],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-68.9900000000, 12.1696000000]
+        },
+        "properties": {
+            "Province/State":"Curacao",
+            "Country/Region":"Netherlands",
+            "Population":158665,
+            "Land Area":444000000
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [-63.054800, 18.042500, -63.054800, 18.042500],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-63.0548000000, 18.0425000000]
+        },
+        "properties": {
+            "Province/State":"Sint Maarten",
+            "Country/Region":"Netherlands",
+            "Population":41486,
+            "Land Area":34000000
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [174.886000, -40.900600, 174.886000, -40.900600],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [174.8860000000, -40.9006000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"New Zealand",
+            "Population":4783063,
+            "Urban Population":4161265,
+            "Land Area":263311112737
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [-85.207200, 12.865400, -85.207200, 12.865400],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-85.2072000000, 12.8654000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Nicaragua",
+            "Population":6545502,
+            "Urban Population":3730936,
+            "Land Area":120341194533
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [8.081700, 17.607800, 8.081700, 17.607800],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [8.0817000000, 17.6078000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Niger",
+            "Population":23310715,
+            "Urban Population":3962822,
+            "Land Area":1266698297957
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [8.675300, 9.082000, 8.675300, 9.082000],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [8.6753000000, 9.0820000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Nigeria",
+            "Population":200963599,
+            "Urban Population":104501071,
+            "Land Area":910769220420
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [21.745300, 41.608600, 21.745300, 41.608600],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [21.7453000000, 41.6086000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"North Macedonia",
+            "Population":2083459,
+            "Urban Population":1229241,
+            "Land Area":25218711501
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [8.468900, 60.472000, 8.468900, 60.472000],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [8.4689000000, 60.4720000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Norway",
+            "Population":5378857,
+            "Urban Population":4464451,
+            "Land Area":365268573653
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [57.000000, 21.000000, 57.000000, 21.000000],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [57.0000000000, 21.0000000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Oman",
+            "Population":4974986,
+            "Urban Population":4328238,
+            "Land Area":309500955697
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [69.345100, 30.375300, 69.345100, 30.375300],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [69.3451000000, 30.3753000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Pakistan",
+            "Population":216565318,
+            "Urban Population":75797861,
+            "Land Area":770878797746
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [-80.782100, 8.538000, -80.782100, 8.538000],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-80.7821000000, 8.5380000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Panama",
+            "Population":4246439,
+            "Urban Population":2887579,
+            "Land Area":74340420684
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [143.955500, -6.315000, 143.955500, -6.315000],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [143.9555000000, -6.3150000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Papua New Guinea",
+            "Population":8776109,
+            "Urban Population":1140894,
+            "Land Area":452859372076
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [-58.443800, -23.442500, -58.443800, -23.442500],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-58.4438000000, -23.4425000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Paraguay",
+            "Population":7044636,
+            "Urban Population":4367674,
+            "Land Area":397298953146
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [-75.015200, -9.190000, -75.015200, -9.190000],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-75.0152000000, -9.1900000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Peru",
+            "Population":32510453,
+            "Urban Population":25683258,
+            "Land Area":1280000475452
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [122.000000, 13.000000, 122.000000, 13.000000],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [122.0000000000, 13.0000000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Philippines",
+            "Population":108116615,
+            "Urban Population":50814809,
+            "Land Area":298169758941
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [19.145100, 51.919400, 19.145100, 51.919400],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [19.1451000000, 51.9194000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Poland",
+            "Population":37887768,
+            "Urban Population":22732661,
+            "Land Area":306229801068
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [-8.224500, 39.399900, -8.224500, 39.399900],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-8.2245000000, 39.3999000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Portugal",
+            "Population":10226187,
+            "Urban Population":6749283,
+            "Land Area":91589739632
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [51.183900, 25.354800, 51.183900, 25.354800],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [51.1839000000, 25.3548000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Qatar",
+            "Population":2832067,
+            "Urban Population":2718784,
+            "Land Area":11610915442
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [24.966800, 45.943200, 24.966800, 45.943200],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [24.9668000000, 45.9432000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Romania",
+            "Population":19364557,
+            "Urban Population":10650506,
+            "Land Area":230169628464
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [90.000000, 60.000000, 90.000000, 60.000000],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [90.0000000000, 60.0000000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Russia",
+            "Population":145872256,
+            "Urban Population":107945469,
+            "Land Area":16376860827362
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [29.873900, -1.940300, 29.873900, -1.940300],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [29.8739000000, -1.9403000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Rwanda",
+            "Population":12626950,
+            "Urban Population":2272851,
+            "Land Area":24669634081
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [-62.782998, 17.357822, -62.782998, 17.357822],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-62.7829980000, 17.3578220000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Saint Kitts and Nevis",
+            "Population":52823,
+            "Urban Population":17432,
+            "Land Area":258998783
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [-60.978900, 13.909400, -60.978900, 13.909400],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-60.9789000000, 13.9094000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Saint Lucia",
+            "Population":182790,
+            "Urban Population":34730,
+            "Land Area":611237128
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [-61.287200, 12.984300, -61.287200, 12.984300],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-61.2872000000, 12.9843000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Saint Vincent and the Grenadines",
+            "Population":110211,
+            "Land Area":389000000
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [12.457800, 43.942400, 12.457800, 43.942400],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [12.4578000000, 43.9424000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"San Marino",
+            "Population":33860,
+            "Urban Population":32844,
+            "Land Area":59569720
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [6.613081, 0.186360, 6.613081, 0.186360],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [6.6130810000, 0.1863600000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Sao Tome and Principe",
+            "Population":215056,
+            "Urban Population":159141,
+            "Land Area":960885485
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [45.000000, 24.000000, 45.000000, 24.000000],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [45.0000000000, 24.0000000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Saudi Arabia",
+            "Population":34268528,
+            "Urban Population":28785564,
+            "Land Area":2149689898900
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [-14.452400, 14.497400, -14.452400, 14.497400],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-14.4524000000, 14.4974000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Senegal",
+            "Population":16296364,
+            "Urban Population":7985218,
+            "Land Area":192529335331
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [21.005900, 44.016500, 21.005900, 44.016500],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [21.0059000000, 44.0165000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Serbia",
+            "Population":8772235,
+            "Urban Population":4912452,
+            "Land Area":87458709043
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [55.492000, -4.679600, 55.492000, -4.679600],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [55.4920000000, -4.6796000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Seychelles",
+            "Population":97739,
+            "Urban Population":54734,
+            "Land Area":461017834
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [-11.779889, 8.460555, -11.779889, 8.460555],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-11.7798890000, 8.4605550000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Sierra Leone",
+            "Population":7813215,
+            "Urban Population":3359682,
+            "Land Area":72180370834
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [103.833300, 1.283300, 103.833300, 1.283300],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [103.8333000000, 1.2833000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Singapore",
+            "Population":5804337,
+            "Land Area":699296714
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [19.699000, 48.669000, 19.699000, 48.669000],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [19.6990000000, 48.6690000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Slovakia",
+            "Population":5457013,
+            "Urban Population":2946787,
+            "Land Area":48088304040
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [14.995500, 46.151200, 14.995500, 46.151200],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [14.9955000000, 46.1512000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Slovenia",
+            "Population":2078654,
+            "Urban Population":1143260,
+            "Land Area":20139745366
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [46.199600, 5.152100, 46.199600, 5.152100],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [46.1996000000, 5.1521000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Somalia",
+            "Population":15442905,
+            "Urban Population":7258165,
+            "Land Area":627339082219
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [22.937500, -30.559500, 22.937500, -30.559500],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [22.9375000000, -30.5595000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"South Africa",
+            "Population":58558270,
+            "Urban Population":39234041,
+            "Land Area":1213088139864
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [31.307000, 6.877000, 31.307000, 6.877000],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [31.3070000000, 6.8770000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"South Sudan",
+            "Population":11062113,
+            "Urban Population":2765528,
+            "Land Area":610952229219
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [-4.000000, 40.000000, -4.000000, 40.000000],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-4.0000000000, 40.0000000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Spain",
+            "Population":46736776,
+            "Urban Population":37389421,
+            "Land Area":498800576204
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [81.000000, 7.000000, 81.000000, 7.000000],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [81.0000000000, 7.0000000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Sri Lanka",
+            "Population":21323733,
+            "Urban Population":3838272,
+            "Land Area":62708785340
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [30.217600, 12.862800, 30.217600, 12.862800],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [30.2176000000, 12.8628000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Sudan",
+            "Population":41592539,
+            "Urban Population":14984633,
+            "Land Area":1886067987623
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [-56.027800, 3.919300, -56.027800, 3.919300],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-56.0278000000, 3.9193000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Suriname",
+            "Population":581372,
+            "Urban Population":377892,
+            "Land Area":156000146977
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [16.000000, 63.000000, 16.000000, 63.000000],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [16.0000000000, 63.0000000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Sweden",
+            "Population":10036379,
+            "Urban Population":8832014,
+            "Land Area":410339541870
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [8.227500, 46.818200, 8.227500, 46.818200],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [8.2275000000, 46.8182000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Switzerland",
+            "Population":8591365,
+            "Urban Population":6357610,
+            "Land Area":39515444322
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [38.996815, 34.802075, 38.996815, 34.802075],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [38.9968150000, 34.8020750000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Syria",
+            "Population":17070135,
+            "Urban Population":10242081,
+            "Land Area":183630137147
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [121.000000, 23.700000, 121.000000, 23.700000],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [121.0000000000, 23.7000000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Taiwan*",
+            "Population":23773876,
+            "Urban Population":18781362,
+            "Land Area":35410313612
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [71.276093, 38.861034, 71.276093, 38.861034],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [71.2760930000, 38.8610340000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Tajikistan",
+            "Population":9508522,
+            "Land Area":143226326999
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [34.888800, -6.369000, 34.888800, -6.369000],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [34.8888000000, -6.3690000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Tanzania",
+            "Population":58005463,
+            "Urban Population":21462021,
+            "Land Area":885799147750
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [101.000000, 15.000000, 101.000000, 15.000000],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [101.0000000000, 15.0000000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Thailand",
+            "Population":69625582,
+            "Urban Population":35509047,
+            "Land Area":510890639394
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [125.727539, -8.874217, 125.727539, -8.874217],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [125.7275390000, -8.8742170000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Timor-Leste",
+            "Population":1293119,
+            "Urban Population":426729,
+            "Land Area":14869120132
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [0.824800, 8.619500, 0.824800, 8.619500],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [0.8248000000, 8.6195000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Togo",
+            "Population":8082366,
+            "Urban Population":3475417,
+            "Land Area":54389744430
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [-61.222500, 10.691800, -61.222500, 10.691800],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-61.2225000000, 10.6918000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Trinidad and Tobago",
+            "Population":1394973,
+            "Urban Population":725386,
+            "Land Area":5130765891
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [9.000000, 34.000000, 9.000000, 34.000000],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [9.0000000000, 34.0000000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Tunisia",
+            "Population":11694719,
+            "Urban Population":8186303,
+            "Land Area":155360419983
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [35.243300, 38.963700, 35.243300, 38.963700],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [35.2433000000, 38.9637000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Turkey",
+            "Population":83429615,
+            "Urban Population":63406507,
+            "Land Area":769630423611
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [32.000000, 1.000000, 32.000000, 1.000000],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [32.0000000000, 1.0000000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Uganda",
+            "Population":44269594,
+            "Urban Population":11510094,
+            "Land Area":199809791121
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [31.165600, 48.379400, 31.165600, 48.379400],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [31.1656000000, 48.3794000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Ukraine",
+            "Population":43993638,
+            "Urban Population":30355610,
+            "Land Area":579320707851
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [54.000000, 24.000000, 54.000000, 24.000000],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [54.0000000000, 24.0000000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"United Arab Emirates",
+            "Population":9770529,
+            "Urban Population":8402655,
+            "Land Area":83599627177
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [-3.436000, 55.378100, -3.436000, 55.378100],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-3.4360000000, 55.3781000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"United Kingdom",
+            "Population":67530172,
+            "Urban Population":56050043,
+            "Land Area":241930763200
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [-63.068600, 18.220600, -63.068600, 18.220600],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-63.0686000000, 18.2206000000]
+        },
+        "properties": {
+            "Province/State":"Anguilla",
+            "Country/Region":"United Kingdom",
+            "Population":14869,
+            "Land Area":90649574
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [-64.750500, 32.307800, -64.750500, 32.307800],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-64.7505000000, 32.3078000000]
+        },
+        "properties": {
+            "Province/State":"Bermuda",
+            "Country/Region":"United Kingdom",
+            "Population":62506,
+            "Urban Population":60631,
+            "Land Area":49209769
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [-64.640000, 18.420700, -64.640000, 18.420700],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-64.6400000000, 18.4207000000]
+        },
+        "properties": {
+            "Province/State":"British Virgin Islands",
+            "Country/Region":"United Kingdom",
+            "Population":30030,
+            "Urban Population":15616,
+            "Land Area":150219294
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [-81.254600, 19.313300, -81.254600, 19.313300],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-81.2546000000, 19.3133000000]
+        },
+        "properties": {
+            "Province/State":"Cayman Islands",
+            "Country/Region":"United Kingdom",
+            "Population":64948,
+            "Urban Population":63000,
+            "Land Area":240868868
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [-2.364400, 49.372300, -2.364400, 49.372300],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-2.3644000000, 49.3723000000]
+        },
+        "properties": {
+            "Province/State":"Channel Islands",
+            "Country/Region":"United Kingdom",
+            "Population":170499,
+            "Land Area":198000000
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [-59.523600, -51.796300, -59.523600, -51.796300],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-59.5236000000, -51.7963000000]
+        },
+        "properties": {
+            "Province/State":"Falkland Islands (Malvinas)",
+            "Country/Region":"United Kingdom",
+            "Population":3377,
+            "Urban Population":2229,
+            "Land Area":12170352813
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [-5.353600, 36.140800, -5.353600, 36.140800],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-5.3536000000, 36.1408000000]
+        },
+        "properties": {
+            "Province/State":"Gibraltar",
+            "Country/Region":"United Kingdom",
+            "Population":33701,
+            "Land Area":10359951
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [-4.548100, 54.236100, -4.548100, 54.236100],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-4.5481000000, 54.2361000000]
+        },
+        "properties": {
+            "Province/State":"Isle of Man",
+            "Country/Region":"United Kingdom",
+            "Population":84584,
+            "Urban Population":44830,
+            "Land Area":569797323
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [-62.187400, 16.742500, -62.187400, 16.742500],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-62.1874000000, 16.7425000000]
+        },
+        "properties": {
+            "Province/State":"Montserrat",
+            "Country/Region":"United Kingdom",
+            "Population":4989,
+            "Urban Population":499,
+            "Land Area":101009525
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [-71.797900, 21.694000, -71.797900, 21.694000],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-71.7979000000, 21.6940000000]
+        },
+        "properties": {
+            "Province/State":"Turks and Caicos Islands",
+            "Country/Region":"United Kingdom",
+            "Population":38191,
+            "Urban Population":33990,
+            "Land Area":950525534
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [-55.765800, -32.522800, -55.765800, -32.522800],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-55.7658000000, -32.5228000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Uruguay",
+            "Population":3461734,
+            "Urban Population":3323265,
+            "Land Area":175021017600
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [-95.712900, 37.090200, -95.712900, 37.090200],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-95.7129000000, 37.0902000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"US",
+            "Population":328239523,
+            "Land Area":9833515573650
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [64.585300, 41.377500, 64.585300, 41.377500],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [64.5853000000, 41.3775000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Uzbekistan",
+            "Population":32981716,
+            "Urban Population":16490858,
+            "Land Area":425400321102
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [-66.589700, 6.423800, -66.589700, 6.423800],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-66.5897000000, 6.4238000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Venezuela",
+            "Population":28515829,
+            "Land Area":882048845373
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [108.000000, 16.000000, 108.000000, 16.000000],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [108.0000000000, 16.0000000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Vietnam",
+            "Population":96462106,
+            "Urban Population":36655600,
+            "Land Area":310070753020
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [35.233200, 31.952200, 35.233200, 31.952200],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [35.2332000000, 31.9522000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"West Bank and Gaza",
+            "Population":4981420,
+            "Urban Population":3985136,
+            "Land Area":6019131717
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [-12.885800, 24.215500, -12.885800, 24.215500],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-12.8858000000, 24.2155000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Western Sahara",
+            "Population":582463,
+            "Urban Population":506743,
+            "Land Area":265999520104
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [48.516388, 15.552727, 48.516388, 15.552727],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [48.5163880000, 15.5527270000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Yemen",
+            "Population":29161922,
+            "Urban Population":11081530,
+            "Land Area":527969019146
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [28.283300, -15.416700, 28.283300, -15.416700],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [28.2833000000, -15.4167000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Zambia",
+            "Population":17861030,
+            "Urban Population":8037464,
+            "Land Area":743388666918
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [30.000000, -20.000000, 30.000000, -20.000000],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [30.0000000000, -20.0000000000]
+        },
+        "properties": {
+            "Province/State":"",
+            "Country/Region":"Zimbabwe",
+            "Population":14645468,
+            "Urban Population":5565278,
+            "Land Area":386850942240
+        }
+    }    
+    ]
+}

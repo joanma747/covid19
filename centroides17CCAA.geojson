@@ -1,205 +1,285 @@
 {
     "type": "FeatureCollection",
-    "bbox": [-20, 28.239711, 2.965425, 43.309426],
+    "bbox": [-20.000000, 28.239735, 2.965189, 43.309271],
     "features": [
     {
         "type": "Feature",
+        "bbox": [-20.000000, 38.000000, -20.000000, 38.000000],
         "geometry": {
             "type": "Point",
-            "coordinates": [-20, 38]
+            "coordinates": [-20.0000000000, 38.0000000000]
         },
         "properties": {
-            "cod_ine":"00"
+            "cod_ine":"00",
+            "CCAA":"España",
+            "Population":47026208,
+            "Land Area":505989000000
         }
     },
     {
         "type": "Feature",
+        "bbox": [-16.633718, 28.239735, -16.633718, 28.239735],
         "geometry": {
             "type": "Point",
             "coordinates": [-16.6337175051, 28.2397346948]
         },
         "properties": {
-            "cod_ine":"05"
+            "cod_ine":"05",
+            "CCAA":"Canarias",
+            "Population":2153389,
+            "Land Area":7447000000
         }
     },
     {
         "type": "Feature",
+        "bbox": [-7.910919, 42.771041, -7.910919, 42.771041],
         "geometry": {
             "type": "Point",
             "coordinates": [-7.9109188247, 42.7710410904]
         },
         "properties": {
-            "cod_ine":"12"
+            "cod_ine":"12",
+            "CCAA":"Galicia",
+            "Population":2699499,
+            "Land Area":29575000000
         }
     },
     {
         "type": "Feature",
+        "bbox": [-6.139255, 39.205531, -6.139255, 39.205531],
         "geometry": {
             "type": "Point",
             "coordinates": [-6.1392546385, 39.2055307802]
         },
         "properties": {
-            "cod_ine":"11"
+            "cod_ine":"11",
+            "CCAA":"Extremadura",
+            "Population":1067710,
+            "Land Area":41634000000
         }
     },
     {
         "type": "Feature",
+        "bbox": [-6.094533, 43.309271, -6.094533, 43.309271],
         "geometry": {
             "type": "Point",
             "coordinates": [-6.0945334617, 43.3092706783]
         },
         "properties": {
-            "cod_ine":"03"
+            "cod_ine":"03",
+            "CCAA":"Principado de Asturias",
+            "Population":1022800,
+            "Land Area":10604000000
         }
     },
     {
         "type": "Feature",
+        "bbox": [-5.352059, 35.888929, -5.352059, 35.888929],
         "geometry": {
             "type": "Point",
             "coordinates": [-5.3520592359, 35.8889289181]
         },
         "properties": {
-            "cod_ine":"18"
+            "cod_ine":"18",
+            "CCAA":"Ceuta",
+            "Population":84777,
+            "Land Area":20000000
         }
     },
     {
         "type": "Feature",
+        "bbox": [-4.883423, 37.478848, -4.883423, 37.478848],
         "geometry": {
             "type": "Point",
             "coordinates": [-4.8834232095, 37.4788475300]
         },
         "properties": {
-            "cod_ine":"01"
+            "cod_ine":"01",
+            "CCAA":"Andalucía",
+            "Population":8414240,
+            "Land Area":87599000000
         }
     },
     {
         "type": "Feature",
+        "bbox": [-4.883545, 41.739554, -4.883545, 41.739554],
         "geometry": {
             "type": "Point",
             "coordinates": [-4.8835454813, 41.7395536978]
         },
         "properties": {
-            "cod_ine":"07"
+            "cod_ine":"07",
+            "CCAA":"Castilla y León",
+            "Population":2399548,
+            "Land Area":94224000000
         }
     },
     {
         "type": "Feature",
+        "bbox": [-4.121153, 43.264457, -4.121153, 43.264457],
         "geometry": {
             "type": "Point",
             "coordinates": [-4.1211529157, 43.2644565052]
         },
         "properties": {
-            "cod_ine":"06"
+            "cod_ine":"06",
+            "CCAA":"Cantabria",
+            "Population":581078,
+            "Land Area":5321000000
         }
     },
     {
         "type": "Feature",
+        "bbox": [-3.762271, 40.528633, -3.762271, 40.528633],
         "geometry": {
             "type": "Point",
             "coordinates": [-3.7622710900, 40.5286334309]
         },
         "properties": {
-            "cod_ine":"13"
+            "cod_ine":"13",
+            "CCAA":"Madrid",
+            "Population":6663394,
+            "Land Area":8028000000
         }
     },
     {
         "type": "Feature",
+        "bbox": [-2.999796, 39.362557, -2.999796, 39.362557],
         "geometry": {
             "type": "Point",
             "coordinates": [-2.9997962388, 39.3625574787]
         },
         "properties": {
-            "cod_ine":"08"
+            "cod_ine":"08",
+            "CCAA":"Castilla - La Mancha",
+            "Population":2032863,
+            "Land Area":79461000000
         }
     },
     {
         "type": "Feature",
+        "bbox": [-2.953722, 35.289107, -2.953722, 35.289107],
         "geometry": {
             "type": "Point",
             "coordinates": [-2.9537217381, 35.2891073909]
         },
         "properties": {
-            "cod_ine":"19"
+            "cod_ine":"19",
+            "CCAA":"Melilla",
+            "Population":86487,
+            "Land Area":12000000
         }
     },
     {
         "type": "Feature",
+        "bbox": [-2.685960, 43.040233, -2.685960, 43.040233],
         "geometry": {
             "type": "Point",
             "coordinates": [-2.6859596340, 43.0402331329]
         },
         "properties": {
-            "cod_ine":"16"
+            "cod_ine":"16",
+            "CCAA":"Euskadi",
+            "Population":2207776,
+            "Land Area":7234000000
         }
     },
     {
         "type": "Feature",
+        "bbox": [-2.528963, 42.322640, -2.528963, 42.322640],
         "geometry": {
             "type": "Point",
             "coordinates": [-2.5289633031, 42.3226404518]
         },
         "properties": {
-            "cod_ine":"17"
+            "cod_ine":"17",
+            "CCAA":"La Rioja",
+            "Population":316798,
+            "Land Area":5045000000
         }
     },
     {
         "type": "Feature",
+        "bbox": [-1.699257, 42.659028, -1.699257, 42.659028],
         "geometry": {
             "type": "Point",
             "coordinates": [-1.6992566936, 42.6590275089]
         },
         "properties": {
-            "cod_ine":"15"
+            "cod_ine":"15",
+            "CCAA":"Comunidad Foral de Navarra",
+            "Population":654214,
+            "Land Area":10391000000
         }
     },
     {
         "type": "Feature",
+        "bbox": [-1.452451, 37.972248, -1.452451, 37.972248],
         "geometry": {
             "type": "Point",
             "coordinates": [-1.4524511620, 37.9722477207]
         },
         "properties": {
-            "cod_ine":"14"
+            "cod_ine":"14",
+            "CCAA":"Murcia",
+            "Population":1493898,
+            "Land Area":11314000000
         }
     },
     {
         "type": "Feature",
+        "bbox": [-0.734893, 39.295320, -0.734893, 39.295320],
         "geometry": {
             "type": "Point",
             "coordinates": [-0.7348933476, 39.2953203804]
         },
         "properties": {
-            "cod_ine":"10"
+            "cod_ine":"10",
+            "CCAA":"Comunitat Valenciana",
+            "Population":5003769,
+            "Land Area":23255000000
         }
     },
     {
         "type": "Feature",
+        "bbox": [-0.734956, 41.515377, -0.734956, 41.515377],
         "geometry": {
             "type": "Point",
             "coordinates": [-0.7349557574, 41.5153765220]
         },
         "properties": {
-            "cod_ine":"02"
+            "cod_ine":"02",
+            "CCAA":"Aragón",
+            "Population":1319291,
+            "Land Area":47720000000
         }
     },
     {
         "type": "Feature",
+        "bbox": [1.619641, 41.784513, 1.619641, 41.784513],
         "geometry": {
             "type": "Point",
             "coordinates": [1.6196411262, 41.7845132761]
         },
         "properties": {
-            "cod_ine":"09"
+            "cod_ine":"09",
+            "CCAA":"Catalunya",
+            "Population":7675217,
+            "Land Area":32113000000
         }
     },
     {
         "type": "Feature",
+        "bbox": [2.965189, 39.609326, 2.965189, 39.609326],
         "geometry": {
             "type": "Point",
             "coordinates": [2.9651893433, 39.6093259444]
         },
         "properties": {
-            "cod_ine":"04"
+            "cod_ine":"04",
+            "CCAA":"Illes Balears",
+            "Population":1149460,
+            "Land Area":4992000000
         }
     }    
     ]

@@ -10,7 +10,10 @@
             "coordinates": [1.8960606154, 41.8779961806]
         },
         "properties": {
-            "RegioSanitariaCodi":"67"
+            "RegioSanitariaCodi":"6700",
+            "Nom":"Catalunya Central",
+            "Population":526959,
+            "Land Area":6067786925.44
         }
     },
     {
@@ -21,7 +24,10 @@
             "coordinates": [0.8613563215, 41.7004909113]
         },
         "properties": {
-            "RegioSanitariaCodi":"61"
+            "RegioSanitariaCodi":"6100",
+            "Nom":"Lleida",
+            "Population":362850,
+            "Land Area":5424542586.13
         }
     },
     {
@@ -32,7 +38,10 @@
             "coordinates": [1.3472474293, 42.4065489924]
         },
         "properties": {
-            "RegioSanitariaCodi":"71"
+            "RegioSanitariaCodi":"7100",
+            "Nom":"Alt Pirineu i Aran",
+            "Population":67277,
+            "Land Area":5782986862.58
         }
     },
     {
@@ -43,18 +52,10 @@
             "coordinates": [2.8505466711, 42.0325913531]
         },
         "properties": {
-            "RegioSanitariaCodi":"64"
-        }
-    },
-    {
-        "type": "Feature",
-        "bbox": [2.090085, 41.500789, 2.090085, 41.500789],
-        "geometry": {
-            "type": "Point",
-            "coordinates": [2.0900850352, 41.5007889078]
-        },
-        "properties": {
-            "RegioSanitariaCodi":"78"
+            "RegioSanitariaCodi":"6400",
+            "Nom":"Girona",
+            "Population":861753,
+            "Land Area":5765330440.47
         }
     },
     {
@@ -65,7 +66,10 @@
             "coordinates": [1.1615966825, 41.2442172341]
         },
         "properties": {
-            "RegioSanitariaCodi":"62"
+            "RegioSanitariaCodi":"6200",
+            "Nom":"Camp de Tarragona",
+            "Population":607999,
+            "Land Area":2755251254.41
         }
     },
     {
@@ -76,7 +80,52 @@
             "coordinates": [0.5540867133, 40.9304493359]
         },
         "properties": {
-            "RegioSanitariaCodi":"63"
+            "RegioSanitariaCodi":"6300",
+            "Nom":"Terres de l'Ebre",
+            "Population":176817,
+            "Land Area":3355166280.70
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [2.275594, 41.576097, 2.275594, 41.576097],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [2.2755940189, 41.5760966313]
+        },
+        "properties": {
+            "RegioSanitariaCodi":"7802",
+            "Nom":"Àmbit Metropolità Nord",
+            "Population":1986032,
+            "Land Area":1469602007.88
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [1.831487, 41.365091, 1.831487, 41.365091],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [1.8314874603, 41.3650907159]
+        },
+        "properties": {
+            "RegioSanitariaCodi":"7801",
+            "Nom":"Àmbit Metropolità Sud",
+            "Population":1251729,
+            "Land Area":1365512244.00
+        }
+    },
+    {
+        "type": "Feature",
+        "bbox": [2.160514, 41.395718, 2.160514, 41.395718],
+        "geometry": {
+            "type": "Point",
+            "coordinates": [2.1605137540, 41.3957177656]
+        },
+        "properties": {
+            "RegioSanitariaCodi":"7803",
+            "Nom":"Barcelona Ciutat",
+            "Population":1370709,
+            "Land Area":103595934.70
         }
     }    
     ]

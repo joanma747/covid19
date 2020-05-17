@@ -73,6 +73,7 @@ def AccumulateDatesCsv(csvreader, geoid, date, fdate, accumulate, cond_field, co
     d=final_date.split('-')
     final_dt=datetime.datetime(int(d[0]), int(d[1]), int(d[2]))
     
+    #csvreader2.sort(key=lambda row: (row[idx] for in geoid, row[date]))
     csvreader2.sort(key=lambda row: (row[geoid], row[date]))
     
     #Removing all repetions in geoid and accumulate by date.
@@ -143,20 +144,52 @@ def csv2geojson(csvreader, long, lat):
         #l+=1
     return data
 
-def csv_geoid2geojson(csvreader, geojson, geoid):
+# def csv_geoid2geojson(csvreader, geojson, geoid, add_longlat, add_field):
+#     data={"type": "FeatureCollection", "features": []}
+#     for row in csvreader:
+#         for obj in geojson["features"]:
+#             if obj["properties"][geoid]==row[geoid]:
+#                 data["features"].append({"type": "Feature", "geometry": { "type": "Point", "coordinates": [obj["geometry"]["coordinates"][0], obj["geometry"]["coordinates"][1]]}, "properties": {}})
+#                 for varname, da in row.items():
+#                     if isint(da):
+#                         data["features"][-1]["properties"][varname]=int(da)
+#                     elif isfloat(da):
+#                         data["features"][-1]["properties"][varname]=float(da)
+#                     else:
+#                         data["features"][-1]["properties"][varname]=da
+#                 break
+#     return data    
+
+def csv_multigeoid2geojson(csvreader, long, lat, geojson, geoid, add_longlat, add_field):
     data={"type": "FeatureCollection", "features": []}
     for row in csvreader:
         for obj in geojson["features"]:
-            if obj["properties"][geoid]==row[geoid]:
-                data["features"].append({"type": "Feature", "geometry": { "type": "Point", "coordinates": [obj["geometry"]["coordinates"][0], obj["geometry"]["coordinates"][1]]}, "properties": {}})
+            different=False
+            for nom in geoid:
+                if obj["properties"][nom]!=row[nom]:
+                    different=True
+                    break
+            if different==False:
+                data["features"].append({"type": "Feature", "geometry": { "type": "Point", "coordinates": []}, "properties": {}})
+                if add_longlat:
+                    data["features"][-1]["geometry"]["coordinates"].append(obj["geometry"]["coordinates"][0])
+                    data["features"][-1]["geometry"]["coordinates"].append(obj["geometry"]["coordinates"][1])
+                else:
+                    data["features"][-1]["geometry"]["coordinates"].append(float(row[long]))
+                    data["features"][-1]["geometry"]["coordinates"].append(float(row[lat]))
                 for varname, da in row.items():
+                    if add_longlat==False and (varname == long or varname == lat):
+                        continue
                     if isint(da):
                         data["features"][-1]["properties"][varname]=int(da)
                     elif isfloat(da):
                         data["features"][-1]["properties"][varname]=float(da)
                     else:
                         data["features"][-1]["properties"][varname]=da
-                break;
+                for nom in add_field:
+                    if nom in obj["properties"]:
+                        data["features"][-1]["properties"][nom]=obj["properties"][nom]
+                break
     return data    
 
 def updateConfigJSON(mmnfile, layer, add_var, prefix_var, objectes, atrib, estil, dies):
@@ -241,10 +274,12 @@ def rgb_string_to_hex(rgb):
 @click.option('-prefix-var', default="cfr", help="Prefix to add to temporal field")
 @click.option('-desc-var', default="Confirmed cases", help="Description of the variable")
 @click.option('-color', default="255,0,0", help="Color of the cercles and lines in diagrams")
-@click.option('-long', default="Long", help="Name of the longitude field in the CSV")
-@click.option('-lat', default="Lat", help="Name of the latitude field in the CSV")
-@click.option('-longlat', help="Name of the GeoJSON file that has the long lat values (that are no in the CSV)")
-@click.option('-geoid', default="cod_ine", help="Name of the id field in the CSV that connects with the the geojson that has the long lat values (this id name is the same in both the CSV and the GeoJSON)")
+@click.option('-long', default="Long", help="Name of the longitude field in the CSV. If -add-longlat is used it is ignored and the long lat in the input geojson is used instead")
+@click.option('-lat', default="Lat", help="Name of the latitude field in the CSV. If -add-longlat is used it is ignored and the long lat in the input geojson is used instead")
+@click.option('-geojson', help="Name of the GeoJSON file that has the long lat values and other files that are no in the CSV. use -add-longlat and -add-field to control what to add")
+@click.option('-geoid', multiple=True, default="[cod_ine]", help="Name of the id field in the CSV that connects with a property name in the input geojson (this id name is the same in both the CSV and the GeoJSON)")
+@click.option('-add-longlat/-no-add-longlat', default=False, help="Add the lat and long from the input geojson into the config.json")
+@click.option('-add-field', multiple=True, help="Name of the field in the input geojson that needs to be added to the config.json")
 @click.option('-fdate', default="yyyy-mm-dd", help="Format of the date fields in the CSV")
 @click.option('-date', help="Name of the field containing dates in the CSV. If not specified, we assume that all fields with the fdate format contain dates")
 #@click.option('-initial-date', default="2020-02-02", help="Initial date to accumulate. Dates with nodata are added as a repetion of the previous date")
@@ -252,13 +287,16 @@ def rgb_string_to_hex(rgb):
 @click.option('-cond-field', multiple=True, help="Name of the field that should be equal to -cond-value to be considered")
 @click.option('-cond-value', multiple=True, help="Value towards the field values should be equal to, to be considered")
 @click.option('-remove-field', multiple=True, help="Fields that shuold be removed. Used only if -date is provided")
-@click.option('-a-circle', default="0.05", help="Area of the circle that is used as the bases for the circle radious")
+@click.option('-population', help="Name of the field containing the population.")
+@click.option('-area', help="Name of the field containing the area in square meters.")
+@click.option('-a-circle', default=0.05, type=float, help="Area of the circle that is used as the bases for the circle radious")
               
-def main(href, layer, href_enc, href_type, mmn, add_var, prefix_var, desc_var, color, long, lat, longlat, geoid, fdate, date, accumulate, cond_field, cond_value, remove_field, a_circle):
+def main(href, layer, href_enc, href_type, mmn, add_var, prefix_var, desc_var, color, long, lat, geojson, geoid, add_longlat, add_field, fdate, date, accumulate, cond_field, cond_value, remove_field, population, area, a_circle):
     """
     Import a COVID-19 csv file and edit a config.json to include this data in a vector capa
     The csv need to have a fields with a name that is a date in fdate format. These fields contains
     the values of a single variable in time.
+    Additional field can be added from a input geojson file in the vector capa if -add-longlat and -add-field are indicated) 
     The format used in https://github.com/CSSEGISandData/COVID-19/tree/master/csse_covid_19_data/csse_covid_19_time_series is directly supported
     
     Params: 
@@ -267,19 +305,20 @@ def main(href, layer, href_enc, href_type, mmn, add_var, prefix_var, desc_var, c
     <layer> name of the layer. It should be the same as the name of the folder in the server, the name of the REL5 and the name of the layer in the config.json.       
     
     Example:
-    python covid19_2_geojson.py https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_global.csv world-covid-19 -mmn C:\inetpub\wwwroot\covid19 -fdate m/d/yy 
-    python covid19_2_geojson.py https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_deaths_global.csv world-covid-19 -mmn C:\inetpub\wwwroot\covid19 -add-var -prefix-var dead -desc-var Deaths -color 50,50,50 -fdate m/d/yy 
-    python covid19_2_geojson.py https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_recovered_global.csv world-covid-19 -mmn C:\inetpub\wwwroot\covid19 -add-var -prefix-var rcv -desc-var Recovered -color 0,128,0 -fdate m/d/yy 
-    python covid19_2_geojson.py "p['cfr{time?f=ISO}']-p['dead{time?f=ISO}']-p['rcv{time?f=ISO}']" -href-type formula world-covid-19 -mmn C:\inetpub\wwwroot\covid19 -add-var -prefix-var act -desc-var Active -color 215,54,0
-    python covid19_2_geojson.py https://raw.githubusercontent.com/datadista/datasets/master/COVID%2019/ccaa_covid19_casos.csv spain-covid-19 -href-enc utf8 -mmn C:\inetpub\wwwroot\covid19 -longlat D:\datacube\covid-19\centroides17CCAA.geojson
-    python covid19_2_geojson.py https://raw.githubusercontent.com/datadista/datasets/master/COVID%2019/ccaa_covid19_fallecidos.csv spain-covid-19 -href-enc utf8 -mmn C:\inetpub\wwwroot\covid19 -longlat D:\datacube\covid-19\centroides17CCAA.geojson -add-var -prefix-var dead -desc-var Deaths -color 50,50,50
-    python covid19_2_geojson.py https://raw.githubusercontent.com/datadista/datasets/master/COVID%2019/ccaa_covid19_altas.csv spain-covid-19 -href-enc utf8 -mmn C:\inetpub\wwwroot\covid19 -longlat D:\datacube\covid-19\centroides17CCAA.geojson -add-var -prefix-var rcv -desc-var Recovered -color 0,128,0
-    python covid19_2_geojson.py https://raw.githubusercontent.com/datadista/datasets/master/COVID%2019/ccaa_covid19_hospitalizados.csv spain-covid-19 -href-enc utf8 -mmn C:\inetpub\wwwroot\covid19 -longlat D:\datacube\covid-19\centroides17CCAA.geojson -add-var -prefix-var hsp -desc-var Hospitalized -color 255,230,0
-    python covid19_2_geojson.py https://raw.githubusercontent.com/datadista/datasets/master/COVID%2019/ccaa_covid19_uci.csv spain-covid-19 -href-enc utf8 -mmn C:\inetpub\wwwroot\covid19 -longlat D:\datacube\covid-19\centroides17CCAA.geojson -add-var -prefix-var uci -desc-var "Intensive care" -color 200,127,50
-    python covid19_2_geojson.py "p['cfr{time?f=ISO}']-p['dead{time?f=ISO}']-p['rcv{time?f=ISO}']" -href-type formula spain-covid-19 -mmn C:\inetpub\wwwroot\covid19 -add-var -prefix-var act -desc-var Active -color 215,54,0
-    python covid19_2_geojson.py "https://analisi.transparenciacatalunya.cat/api/views/xuwf-dxjd/rows.csv?accessType=DOWNLOAD&sorting=true" rs-cat-covid-19 -href-enc utf8 -mmn C:\inetpub\wwwroot\covid19 -longlat "D:\datacube\covid-19\centroidesRS_CAT.geojson" -geoid RegioSanitariaCodi -accumulate "NumCasos / NumberCases" -fdate dd/mm/yyyy -date TipusCasData -cond-field "TipusCasDescripcio / TipoCasoDescripcion / CaseTypeDescription" -cond-value Positiu -remove-field "SexeCodi / SexoCodigo / GenderCode" -remove-field "SexeDescripcio / SexoDescripcion / GenderDescription" -remove-field ABSCodi -remove-field ABSDescripcio -remove-field SectorSanitariCodi -remove-field SectorSanitariDescripcio -a-circle 0.3
-    python covid19_2_geojson.py "https://analisi.transparenciacatalunya.cat/api/views/xuwf-dxjd/rows.csv?accessType=DOWNLOAD&sorting=true" ss-cat-covid-19 -href-enc utf8 -mmn C:\inetpub\wwwroot\covid19 -longlat "D:\datacube\covid-19\centroidesSS_CAT.geojson" -geoid SectorSanitariCodi -accumulate "NumCasos / NumberCases" -fdate dd/mm/yyyy -date TipusCasData -cond-field "TipusCasDescripcio / TipoCasoDescripcion / CaseTypeDescription" -cond-value Positiu -remove-field "SexeCodi / SexoCodigo / GenderCode" -remove-field "SexeDescripcio / SexoDescripcion / GenderDescription" -remove-field ABSCodi -remove-field ABSDescripcio -a-circle 1
-    python covid19_2_geojson.py "https://analisi.transparenciacatalunya.cat/api/views/xuwf-dxjd/rows.csv?accessType=DOWNLOAD&sorting=true" abs-cat-covid-19 -href-enc utf8 -mmn C:\inetpub\wwwroot\covid19 -longlat "D:\datacube\covid-19\centroidesABS.geojson" -geoid ABSCodi -accumulate "NumCasos / NumberCases" -fdate dd/mm/yyyy -date TipusCasData -cond-field "TipusCasDescripcio / TipoCasoDescripcion / CaseTypeDescription" -cond-value Positiu -remove-field "SexeCodi / SexoCodigo / GenderCode" -remove-field "SexeDescripcio / SexoDescripcion / GenderDescription"  -a-circle 1.5
+    copy C:\inetpub\wwwroot\covid19\config.json C:\inetpub\wwwroot\covid19\config_yesterday.json /y
+    python covid19_2_geojson.py https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_global.csv world-covid-19 -mmn C:\inetpub\wwwroot\covid19 -fdate m/d/yy -geojson D:\datacube\covid-19\centroidesWorld.geojson -geoid "Province/State" -geoid "Country/Region" -add-field Population -add-field "Urban Population" -add-field "Land Area" -population Population -area "Land Area"
+    python covid19_2_geojson.py https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_deaths_global.csv world-covid-19 -mmn C:\inetpub\wwwroot\covid19 -add-var -prefix-var dead -desc-var Deaths -color 50,50,50 -fdate m/d/yy -population Population -area "Land Area"
+    python covid19_2_geojson.py https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_recovered_global.csv world-covid-19 -mmn C:\inetpub\wwwroot\covid19 -add-var -prefix-var rcv -desc-var Recovered -color 0,128,0 -fdate m/d/yy -population Population -area "Land Area"
+    python covid19_2_geojson.py "p['cfr{time?f=ISO}']-p['dead{time?f=ISO}']-p['rcv{time?f=ISO}']" -href-type formula world-covid-19 -mmn C:\inetpub\wwwroot\covid19 -add-var -prefix-var act -desc-var Active -color 215,54,0 -population Population -area "Land Area"
+    python covid19_2_geojson.py https://raw.githubusercontent.com/datadista/datasets/master/COVID%2019/ccaa_covid19_casos.csv spain-covid-19 -href-enc utf8 -mmn C:\inetpub\wwwroot\covid19 -geojson D:\datacube\covid-19\centroides17CCAA.geojson -add-longlat -geoid cod_ine -add-field Population -add-field "Land Area" -population Population -area "Land Area"
+    python covid19_2_geojson.py https://raw.githubusercontent.com/datadista/datasets/master/COVID%2019/ccaa_covid19_fallecidos.csv spain-covid-19 -href-enc utf8 -mmn C:\inetpub\wwwroot\covid19 -geojson D:\datacube\covid-19\centroides17CCAA.geojson -add-longlat -geoid cod_ine -add-var -prefix-var dead -desc-var Deaths -color 50,50,50 -population Population -area "Land Area"
+    python covid19_2_geojson.py https://raw.githubusercontent.com/datadista/datasets/master/COVID%2019/ccaa_covid19_altas.csv spain-covid-19 -href-enc utf8 -mmn C:\inetpub\wwwroot\covid19 -geojson D:\datacube\covid-19\centroides17CCAA.geojson -add-longlat -geoid cod_ine -add-var -prefix-var rcv -desc-var Recovered -color 0,128,0 -population Population -area "Land Area"
+    python covid19_2_geojson.py https://raw.githubusercontent.com/datadista/datasets/master/COVID%2019/ccaa_covid19_hospitalizados.csv spain-covid-19 -href-enc utf8 -mmn C:\inetpub\wwwroot\covid19 -geojson D:\datacube\covid-19\centroides17CCAA.geojson -add-longlat -geoid cod_ine -add-var -prefix-var hsp -desc-var Hospitalized -color 255,230,0 -population Population -area "Land Area"
+    python covid19_2_geojson.py https://raw.githubusercontent.com/datadista/datasets/master/COVID%2019/ccaa_covid19_uci.csv spain-covid-19 -href-enc utf8 -mmn C:\inetpub\wwwroot\covid19 -geojson D:\datacube\covid-19\centroides17CCAA.geojson -add-longlat -geoid cod_ine -add-var -prefix-var uci -desc-var "Intensive care" -color 200,127,50 -population Population -area "Land Area"
+    python covid19_2_geojson.py "p['cfr{time?f=ISO}']-p['dead{time?f=ISO}']-p['rcv{time?f=ISO}']" -href-type formula spain-covid-19 -mmn C:\inetpub\wwwroot\covid19 -add-var -prefix-var act -desc-var Active -color 215,54,0 -population Population -area "Land Area"
+    python covid19_2_geojson.py "https://analisi.transparenciacatalunya.cat/api/views/xuwf-dxjd/rows.csv?accessType=DOWNLOAD&sorting=true" rs-cat-covid-19 -href-enc utf8 -mmn C:\inetpub\wwwroot\covid19 -geojson "D:\datacube\covid-19\centroidesRS_CAT.geojson" -geoid RegioSanitariaCodi -add-longlat -add-field Population -add-field "Land Area" -accumulate "NumCasos" -fdate dd/mm/yyyy -date TipusCasData -cond-field "TipusCasDescripcio" -cond-value Positiu -remove-field "SexeCodi" -remove-field "SexeDescripcio" -remove-field ABSCodi -remove-field ABSDescripcio -remove-field SectorSanitariCodi -remove-field SectorSanitariDescripcio -a-circle 0.3  -population Population -area "Land Area"
+    python covid19_2_geojson.py "https://analisi.transparenciacatalunya.cat/api/views/xuwf-dxjd/rows.csv?accessType=DOWNLOAD&sorting=true" ss-cat-covid-19 -href-enc utf8 -mmn C:\inetpub\wwwroot\covid19 -geojson "D:\datacube\covid-19\centroidesSS_CAT.geojson" -geoid SectorSanitariCodi -add-longlat -add-field Population -add-field "Land Area" -accumulate "NumCasos" -fdate dd/mm/yyyy -date TipusCasData -cond-field "TipusCasDescripcio" -cond-value Positiu -remove-field "SexeCodi" -remove-field "SexeDescripcio" -remove-field ABSCodi -remove-field ABSDescripcio -a-circle 1 -population Population -area "Land Area"
+    python covid19_2_geojson.py "https://analisi.transparenciacatalunya.cat/api/views/xuwf-dxjd/rows.csv?accessType=DOWNLOAD&sorting=true" abs-cat-covid-19 -href-enc utf8 -mmn C:\inetpub\wwwroot\covid19 -geojson "D:\datacube\covid-19\centroidesABS.geojson" -geoid ABSCodi -add-longlat -add-field Population -add-field "Land Area"  -accumulate "NumCasos" -fdate dd/mm/yyyy -date TipusCasData -cond-field "TipusCasDescripcio" -cond-value Positiu -remove-field "SexeCodi" -remove-field "SexeDescripcio"  -a-circle 1.5 -population Population -area "Land Area"
     fart c:\inetpub\wwwroot\covid19\config.json "Catalu\u00f1a" "Catalunya"
     fart c:\inetpub\wwwroot\covid19\config.json "Baleares" "Illes Balears"
     fart c:\inetpub\wwwroot\covid19\config.json "Pa\u00eds Vasco" "Euskadi"
@@ -289,21 +328,35 @@ def main(href, layer, href_enc, href_type, mmn, add_var, prefix_var, desc_var, c
     fart c:\inetpub\wwwroot\covid19\config.json "\"descripcio\": \"RegioSanitariaDescripcio\"" "\"descripcio\": \"Regi\xC3\xB3 Sanit\xC3\xA0ria\"" --c-style
     fart c:\inetpub\wwwroot\covid19\config.json "\"descripcio\": \"ABSCodi\"" "\"descripcio\": \"Codi d\'ABS\"" --c-style
     fart c:\inetpub\wwwroot\covid19\config.json "\"descripcio\": \"ABSDescripcio\"" "\"descripcio\": \"ABS\""
-    python sort_config_json.py world-covid-19 -mmn C:\inetpub\wwwroot\covid19 -section atributs -i-item 0 -i-item 1 -i-item 14 -i-item 2 -i-item 6 -i-item 10 -i-item 15 -i-item 3 -i-item 7 -i-item 11 -i-item 16 -i-item 17 -i-item 4 -i-item 5 -i-item 8 -i-item 9 -i-item 12 -i-item 13 -i-item 18
-    python sort_config_json.py spain-covid-19 -mmn C:\inetpub\wwwroot\covid19 -section atributs -i-item 0 -i-item 1 -i-item 22 -i-item 2 -i-item 6 -i-item 10 -i-item 23 -i-item 3 -i-item 7 -i-item 11 -i-item 24 -i-item 25 -i-item 4 -i-item 5 -i-item 8 -i-item 9 -i-item 12 -i-item 13 -i-item 14 -i-item 15 -i-item 16 -i-item 17 -i-item 18 -i-item 19 -i-item 20 -i-item 21 -i-item 26
+    python sort_config_json.py world-covid-19 -mmn C:\inetpub\wwwroot\covid19 -section atributs -i-item 0 -i-item 1 -i-item 2 -i-item 3 -i-item 4 -i-item 5 -i-item 25 -i-item 26 -i-item 24 -i-item 7 -i-item 8 -i-item 6 -i-item 13 -i-item 14 -i-item 12 -i-item 19 -i-item 20 -i-item 18 -i-item 27 -i-item 9 -i-item 15 -i-item 21 -i-item 28 -i-item 10 -i-item 16 -i-item 22 -i-item 29 -i-item 11 -i-item 17 -i-item 23 -i-item 30
+    python sort_config_json.py spain-covid-19 -mmn C:\inetpub\wwwroot\covid19 -section atributs -i-item 0 -i-item 1 -i-item 2 -i-item 3 -i-item 4 -i-item 36 -i-item 37 -i-item 35 -i-item 6 -i-item 7 -i-item 5 -i-item 12 -i-item 13 -i-item 11 -i-item 18 -i-item 19 -i-item 17 -i-item 24 -i-item 25 -i-item 23 -i-item 30 -i-item 31 -i-item 29 -i-item 38 -i-item 8 -i-item 14 -i-item 20 -i-item 26 -i-item 32 -i-item 39 -i-item 9 -i-item 15 -i-item 21 -i-item 27 -i-item 33 -i-item 40 -i-item 10 -i-item 16 -i-item 22 -i-item 28 -i-item 34 -i-item 41
+    python sort_config_json.py rs-cat-covid-19 -mmn C:\inetpub\wwwroot\covid19 -section atributs -i-item 0 -i-item 1 -i-item 2 -i-item 3 -i-item 4 -i-item 6 -i-item 7 -i-item 5 -i-item 8 -i-item 9 -i-item 10
+    python sort_config_json.py ss-cat-covid-19 -mmn C:\inetpub\wwwroot\covid19 -section atributs -i-item 0 -i-item 1 -i-item 2 -i-item 3 -i-item 4 -i-item 6 -i-item 7 -i-item 5 -i-item 8 -i-item 9 -i-item 10
+    python sort_config_json.py abs-cat-covid-19 -mmn C:\inetpub\wwwroot\covid19 -section atributs -i-item 0 -i-item 1 -i-item 2 -i-item 3 -i-item 4 -i-item 6 -i-item 7 -i-item 5 -i-item 8 -i-item 9 -i-item 10
+
+    //python sort_config_json.py spain-covid-19 -mmn C:\inetpub\wwwroot\covid19 -section atributs -i-item 0 -i-item 1 -i-item 22 -i-item 2 -i-item 6 -i-item 10 -i-item 23 -i-item 3 -i-item 7 -i-item 11 -i-item 24 -i-item 25 -i-item 4 -i-item 5 -i-item 8 -i-item 9 -i-item 12 -i-item 13 -i-item 14 -i-item 15 -i-item 16 -i-item 17 -i-item 18 -i-item 19 -i-item 20 -i-item 21 -i-item 26
+    
+    
     
     Velles que no serveixen
     fart c:\inetpub\wwwroot\covid19\config.json "ABSDescripci\u00f3" "ABSDescripcio"
 
-    python covid19_2_geojson.py "https://analisi.transparenciacatalunya.cat/api/views/xuwf-dxjd/rows.csv?accessType=DOWNLOAD&sorting=true" rs-cat-covid-19 -href-enc utf8 -mmn C:\inetpub\wwwroot\covid19 -longlat "D:\datacube\covid-19\centroidesRS_CAT.geojson" -geoid RegioSanitariaCodi -fdate dd/mm/yyyy -date TipusCasData -cond-field TipusCasDescripcio -cond-value Positiu -remove-field SexeCodi -remove-field SexeDescripcio -remove-field ABSCodi -remove-field ABSDescripcio -remove-field SectorSanitariCodi -remove-field SectorSanitariDescripcio -a-circle 0.3
-    python covid19_2_geojson.py "https://analisi.transparenciacatalunya.cat/api/views/xuwf-dxjd/rows.csv?accessType=DOWNLOAD&sorting=true" ss-cat-covid-19 -href-enc utf8 -mmn C:\inetpub\wwwroot\covid19 -longlat "D:\datacube\covid-19\centroidesSS_CAT.geojson" -geoid SectorSanitariCodi -fdate dd/mm/yyyy -date TipusCasData -cond-field TipusCasDescripcio -cond-value Positiu -remove-field SexeCodi -remove-field SexeDescripcio -remove-field ABSCodi -remove-field ABSDescripcio -a-circle 1
-    python covid19_2_geojson.py "https://analisi.transparenciacatalunya.cat/api/views/xuwf-dxjd/rows.csv?accessType=DOWNLOAD&sorting=true" abs-cat-covid-19 -href-enc utf8 -mmn C:\inetpub\wwwroot\covid19 -longlat "D:\datacube\covid-19\centroidesABS.geojson" -geoid ABSCodi -fdate dd/mm/yyyy -date TipusCasData -cond-field TipusCasDescripcio -cond-value Positiu -remove-field SexeCodi -remove-field SexeDescripcio -a-circle 1.5
+    python covid19_2_geojson.py "https://analisi.transparenciacatalunya.cat/api/views/xuwf-dxjd/rows.csv?accessType=DOWNLOAD&sorting=true" rs-cat-covid-19 -href-enc utf8 -mmn C:\inetpub\wwwroot\covid19 -geojson "D:\datacube\covid-19\centroidesRS_CAT.geojson" -add-longlat -geoid RegioSanitariaCodi -accumulate "NumCasos / NumberCases" -fdate dd/mm/yyyy -date TipusCasData -cond-field "TipusCasDescripcio / TipoCasoDescripcion / CaseTypeDescription" -cond-value Positiu -remove-field "SexeCodi / SexoCodigo / GenderCode" -remove-field "SexeDescripcio / SexoDescripcion / GenderDescription" -remove-field ABSCodi -remove-field ABSDescripcio -remove-field SectorSanitariCodi -remove-field SectorSanitariDescripcio -a-circle 0.3
+    python covid19_2_geojson.py "https://analisi.transparenciacatalunya.cat/api/views/xuwf-dxjd/rows.csv?accessType=DOWNLOAD&sorting=true" ss-cat-covid-19 -href-enc utf8 -mmn C:\inetpub\wwwroot\covid19 -geojson "D:\datacube\covid-19\centroidesSS_CAT.geojson" -add-longlat -geoid SectorSanitariCodi -accumulate "NumCasos / NumberCases" -fdate dd/mm/yyyy -date TipusCasData -cond-field "TipusCasDescripcio / TipoCasoDescripcion / CaseTypeDescription" -cond-value Positiu -remove-field "SexeCodi / SexoCodigo / GenderCode" -remove-field "SexeDescripcio / SexoDescripcion / GenderDescription" -remove-field ABSCodi -remove-field ABSDescripcio -a-circle 1
+    python covid19_2_geojson.py "https://analisi.transparenciacatalunya.cat/api/views/xuwf-dxjd/rows.csv?accessType=DOWNLOAD&sorting=true" abs-cat-covid-19 -href-enc utf8 -mmn C:\inetpub\wwwroot\covid19 -geojson "D:\datacube\covid-19\centroidesABS.geojson" -add-longlat -geoid ABSCodi -accumulate "NumCasos / NumberCases" -fdate dd/mm/yyyy -date TipusCasData -cond-field "TipusCasDescripcio / TipoCasoDescripcion / CaseTypeDescription" -cond-value Positiu -remove-field "SexeCodi / SexoCodigo / GenderCode" -remove-field "SexeDescripcio / SexoDescripcion / GenderDescription"  -a-circle 1.5
 
-    python covid19_2_geojson.py "https://analisi.transparenciacatalunya.cat/api/views/xuwf-dxjd/rows.csv?accessType=DOWNLOAD&sorting=true" rs-cat-covid-19 -href-enc utf8 -mmn C:\inetpub\wwwroot\covid19 -longlat "D:\datacube\covid-19\centroidesRS_CAT.geojson" -geoid RegioSanitariaCodi -fdate dd/mm/yyyy -date Data -cond-field ResultatCovidCodi -cond-value 1 -remove-field SexeCodi -remove-field SexeDescripcio -remove-field ResultatCovidDescripcio -remove-field ABSCodi -remove-field ABSDescripcio -remove-field SectorSanitariCodi -remove-field SectorSanitariDescripcio
-    python covid19_2_geojson.py "https://analisi.transparenciacatalunya.cat/api/views/xuwf-dxjd/rows.csv?accessType=DOWNLOAD&sorting=true" ss-cat-covid-19 -href-enc utf8 -mmn C:\inetpub\wwwroot\covid19 -longlat "D:\datacube\covid-19\centroidesSS_CAT.geojson" -geoid SectorSanitariCodi -fdate dd/mm/yyyy -date Data -cond-field ResultatCovidCodi -cond-value 1 -remove-field SexeCodi -remove-field SexeDescripcio -remove-field ResultatCovidDescripcio -remove-field ABSCodi -remove-field ABSDescripcio -a-circle 2
-    python covid19_2_geojson.py "https://analisi.transparenciacatalunya.cat/api/views/xuwf-dxjd/rows.csv?accessType=DOWNLOAD&sorting=true" abs-cat-covid-19 -href-enc utf8 -mmn C:\inetpub\wwwroot\covid19 -longlat "D:\datacube\covid-19\centroidesABS.geojson" -geoid ABSCodi -fdate dd/mm/yyyy -date Data -cond-field ResultatCovidCodi -cond-value 1 -remove-field SexeCodi -remove-field SexeDescripcio -remove-field ResultatCovidDescripcio -a-circle 10
+    python covid19_2_geojson.py "https://analisi.transparenciacatalunya.cat/api/views/xuwf-dxjd/rows.csv?accessType=DOWNLOAD&sorting=true" rs-cat-covid-19 -href-enc utf8 -mmn C:\inetpub\wwwroot\covid19 -geojson "D:\datacube\covid-19\centroidesRS_CAT.geojson" -add-longlat -geoid RegioSanitariaCodi -fdate dd/mm/yyyy -date TipusCasData -cond-field TipusCasDescripcio -cond-value Positiu -remove-field SexeCodi -remove-field SexeDescripcio -remove-field ABSCodi -remove-field ABSDescripcio -remove-field SectorSanitariCodi -remove-field SectorSanitariDescripcio -a-circle 0.3
+    python covid19_2_geojson.py "https://analisi.transparenciacatalunya.cat/api/views/xuwf-dxjd/rows.csv?accessType=DOWNLOAD&sorting=true" ss-cat-covid-19 -href-enc utf8 -mmn C:\inetpub\wwwroot\covid19 -geojson "D:\datacube\covid-19\centroidesSS_CAT.geojson" -add-longlat -geoid SectorSanitariCodi -fdate dd/mm/yyyy -date TipusCasData -cond-field TipusCasDescripcio -cond-value Positiu -remove-field SexeCodi -remove-field SexeDescripcio -remove-field ABSCodi -remove-field ABSDescripcio -a-circle 1
+    python covid19_2_geojson.py "https://analisi.transparenciacatalunya.cat/api/views/xuwf-dxjd/rows.csv?accessType=DOWNLOAD&sorting=true" abs-cat-covid-19 -href-enc utf8 -mmn C:\inetpub\wwwroot\covid19 -geojson "D:\datacube\covid-19\centroidesABS.geojson" -add-longlat -geoid ABSCodi -fdate dd/mm/yyyy -date TipusCasData -cond-field TipusCasDescripcio -cond-value Positiu -remove-field SexeCodi -remove-field SexeDescripcio -a-circle 1.5
+
+    python covid19_2_geojson.py "https://analisi.transparenciacatalunya.cat/api/views/xuwf-dxjd/rows.csv?accessType=DOWNLOAD&sorting=true" rs-cat-covid-19 -href-enc utf8 -mmn C:\inetpub\wwwroot\covid19 -geojson "D:\datacube\covid-19\centroidesRS_CAT.geojson" -add-longlat -geoid RegioSanitariaCodi -fdate dd/mm/yyyy -date Data -cond-field ResultatCovidCodi -cond-value 1 -remove-field SexeCodi -remove-field SexeDescripcio -remove-field ResultatCovidDescripcio -remove-field ABSCodi -remove-field ABSDescripcio -remove-field SectorSanitariCodi -remove-field SectorSanitariDescripcio
+    python covid19_2_geojson.py "https://analisi.transparenciacatalunya.cat/api/views/xuwf-dxjd/rows.csv?accessType=DOWNLOAD&sorting=true" ss-cat-covid-19 -href-enc utf8 -mmn C:\inetpub\wwwroot\covid19 -geojson "D:\datacube\covid-19\centroidesSS_CAT.geojson" -add-longlat -geoid SectorSanitariCodi -fdate dd/mm/yyyy -date Data -cond-field ResultatCovidCodi -cond-value 1 -remove-field SexeCodi -remove-field SexeDescripcio -remove-field ResultatCovidDescripcio -remove-field ABSCodi -remove-field ABSDescripcio -a-circle 2
+    python covid19_2_geojson.py "https://analisi.transparenciacatalunya.cat/api/views/xuwf-dxjd/rows.csv?accessType=DOWNLOAD&sorting=true" abs-cat-covid-19 -href-enc utf8 -mmn C:\inetpub\wwwroot\covid19 -geojson "D:\datacube\covid-19\centroidesABS.geojson" -add-longlat -geoid ABSCodi -fdate dd/mm/yyyy -date Data -cond-field ResultatCovidCodi -cond-value 1 -remove-field SexeCodi -remove-field SexeDescripcio -remove-field ResultatCovidDescripcio -a-circle 10
     
-    debug python covid19_2_geojson.py "D:\docs\Recerca\covid-19\AreesBasiquesSalut\Registre_de_test_de_COVID-19_realitzats_a_Catalunya._Segregaci__per_sexe_i__rea_b_sica_de_salut__ABS_.csv" -href-type local abs-cat-covid-19 -href-enc utf8 -mmn C:\inetpub\wwwroot\covid19 -longlat "D:\datacube\covid-19\centroidesABS.geojson" -geoid ABSCodi -fdate dd/mm/yyyy -date Data -cond-field ResultatCovidCodi -cond-value 1 -remove-field SexeCodi -remove-field SexeDescripcio -remove-field ResultatCovidDescripcio -a-circle 10
+    python sort_config_json.py world-covid-19 -mmn C:\inetpub\wwwroot\covid19 -section atributs -i-item 0 -i-item 1 -i-item 2 -i-item 3 -i-item 4 -i-item 17 -i-item 5 -i-item 9 -i-item 13 -i-item 18 -i-item 6 -i-item 10 -i-item 14 -i-item 19 -i-item 20 -i-item 7 -i-item 8 -i-item 11 -i-item 12 -i-item 15 -i-item 16 -i-item 21
+    python sort_config_json.py spain-covid-19 -mmn C:\inetpub\wwwroot\covid19 -section atributs -i-item 0 -i-item 1 -i-item 2 -i-item 3 -i-item 24 -i-item 4 -i-item 8 -i-item 12 -i-item 25 -i-item 5 -i-item 9 -i-item 13 -i-item 26 -i-item 27 -i-item 6 -i-item 7 -i-item 10 -i-item 11 -i-item 14 -i-item 15 -i-item 16 -i-item 17 -i-item 18 -i-item 19 -i-item 20 -i-item 21 -i-item 22 -i-item 23 -i-item 28
+    
+    debug python covid19_2_geojson.py "D:\docs\Recerca\covid-19\AreesBasiquesSalut\Registre_de_test_de_COVID-19_realitzats_a_Catalunya._Segregaci__per_sexe_i__rea_b_sica_de_salut__ABS_.csv" -href-type local abs-cat-covid-19 -href-enc utf8 -mmn C:\inetpub\wwwroot\covid19 -geojson "D:\datacube\covid-19\centroidesABS.geojson" -add-longlat -geoid ABSCodi -fdate dd/mm/yyyy -date Data -cond-field ResultatCovidCodi -cond-value 1 -remove-field SexeCodi -remove-field SexeDescripcio -remove-field ResultatCovidDescripcio -a-circle 10
     """
     #logging.basicConfig(level=logging.WARNING) no puc posar això per culpa d'un error en le tractament del NetCDF i el v4 i el v5
     logging.basicConfig(level=logging.ERROR)
@@ -342,19 +395,25 @@ def main(href, layer, href_enc, href_type, mmn, add_var, prefix_var, desc_var, c
             if (date is None):
                 csvreader = tranformDatesCsv(csvreader, prefix_var, fdate)
             else:
-                csvreader = AccumulateDatesCsv(csvreader, geoid, date, fdate, accumulate, cond_field, cond_value, remove_field)
+                if len(geoid)!=1:
+                    raise ValueError("Geoid is required. More than one geoid not suported")
+                csvreader = AccumulateDatesCsv(csvreader, geoid[0], date, fdate, accumulate, cond_field, cond_value, remove_field)
                 csvreader = tranformDatesCsv(csvreader, prefix_var, "yyyy-mm-dd")
                 
-            if longlat is None:
+            if geojson is None:
                 objectes=csv2geojson(csvreader, long, lat)
             else:
-                pathlonglat = Path(longlat)
-                if pathlonglat.exists()==False:
-                    raise RuntimeError("GeoJSON file does not exist {}".format(str(pathlonglat)))
-                geojsonfile=open(pathlonglat, "r", encoding='utf-8-sig')
-                geojson = json.load(geojsonfile)
+                pathgeojson = Path(geojson)
+                if pathgeojson.exists()==False:
+                    raise RuntimeError("GeoJSON file does not exist {}".format(str(pathgeojson)))
+                geojsonfile=open(pathgeojson, "r", encoding='utf-8-sig')
+                geojsondata = json.load(geojsonfile)
                 geojsonfile.close()
-                objectes=csv_geoid2geojson(csvreader, geojson, geoid)
+                # if len(geoid)==1:
+                #     objectes=csv_geoid2geojson(csvreader, geojson, geoid, add_longlat, add_field)
+                # else:
+                #     objectes=csv_multigeoid2geojson(csvreader, geojson, geoid, add_longlat, add_field)
+                objectes=csv_multigeoid2geojson(csvreader, long, lat, geojsondata, geoid, add_longlat, add_field)
             
             csvfile.close()
             
@@ -374,6 +433,10 @@ def main(href, layer, href_enc, href_type, mmn, add_var, prefix_var, desc_var, c
                     dies.append({"year": int(d[0]), "month": int(d[1]), "day": int(d[2])})
                 elif add_var==False:                    
                     atrib.append({"nom": varname, "descripcio": varname, "mostrar": "si"})
+            
+            if add_var==False:
+                if area is not None:
+                    atrib.append({"nom": "LandAreaKm",  "descripcio": area, "FormulaConsulta": "(p['"+area+"']/1000000)",					"unitats": "Km<sup>2</sup>", 					"NDecimals": 3, "mostrar": "si"})
         
             nameAtrib=prefix_var+"{time?f=ISO}"
             atrib.append({"nom": nameAtrib, 
@@ -393,17 +456,6 @@ def main(href, layer, href_enc, href_type, mmn, add_var, prefix_var, desc_var, c
             t0="p['"+prefix_var+"{time?f=ISO&day=-4}']"
             tc="p['"+prefix_var+"{time?f=ISO&day=-5}']"
             tr="p['"+prefix_var+"{time?f=ISO&day=-10}']"
-            # tt10="p['"+prefix_var+"{time?f=ISO&day=+4}']"
-            # tt9="p['"+prefix_var+"{time?f=ISO&day=+3}']"
-            # tt8="p['"+prefix_var+"{time?f=ISO&day=+2}']"
-            # tt7="p['"+prefix_var+"{time?f=ISO&day=+1}']"
-            # tt6="p['"+prefix_var+"{time?f=ISO}']"
-            # tt5="p['"+prefix_var+"{time?f=ISO&day=-1}']"
-            # tt4="p['"+prefix_var+"{time?f=ISO&day=-2}']"
-            # tt3="p['"+prefix_var+"{time?f=ISO&day=-3}']"
-            # tt2="p['"+prefix_var+"{time?f=ISO&day=-4}']"
-            # tt1="p['"+prefix_var+"{time?f=ISO&day=-5}']"
-            # tt0="p['"+prefix_var+"{time?f=ISO&day=-6}']"
         else:
             nameAtrib=prefix_var
             #lastDay="("+tname+")"
@@ -418,24 +470,31 @@ def main(href, layer, href_enc, href_type, mmn, add_var, prefix_var, desc_var, c
             t0="("+tname.replace("{time?f=ISO}", "{time?f=ISO&day=-4}")+")"
             tc="("+tname.replace("{time?f=ISO}", "{time?f=ISO&day=-5}")+")"
             tr="("+tname.replace("{time?f=ISO}", "{time?f=ISO&day=-10}")+")"
-            # tt10="("+tname.replace("{time?f=ISO}", "{time?f=ISO&day=+4}")+")"
-            # tt9="("+tname.replace("{time?f=ISO}", "{time?f=ISO&day=+3}")+")"
-            # tt8="("+tname.replace("{time?f=ISO}", "{time?f=ISO&day=+2}")+")"
-            # tt7="("+tname.replace("{time?f=ISO}", "{time?f=ISO&day=+1}")+")"
-            # tt6="("+tname+")"
-            # tt5="("+tname.replace("{time?f=ISO}", "{time?f=ISO&day=-1}")+")"
-            # tt4="("+tname.replace("{time?f=ISO}", "{time?f=ISO&day=-2}")+")"
-            # tt3="("+tname.replace("{time?f=ISO}", "{time?f=ISO&day=-3}")+")"
-            # tt2="("+tname.replace("{time?f=ISO}", "{time?f=ISO&day=-4}")+")"
-            # tt1="("+tname.replace("{time?f=ISO}", "{time?f=ISO&day=-5}")+")"
-            # tt0="("+tname.replace("{time?f=ISO}", "{time?f=ISO&day=-6}")+")"
             atrib.append({"nom": nameAtrib, 
                           "descripcio": desc_var, 
                           "FormulaConsulta": t4,
                           "mostrar": "si",
                           "serieTemporal": {"color": rgb_string_to_hex(color)}
                     })
-        estil.append({"nom": None, "desc": "Count of "+desc_var, 
+        if population is not None:
+            atrib.append({
+					"nom": nameAtrib+"Pop",
+					"descripcio": desc_var+" per 100000 hab.",
+					"FormulaConsulta": "("+t4+"/p['"+population+"']*100000)",
+					"NDecimals": 2,
+					"mostrar": "si"
+				})
+        if area is not None:
+            atrib.append({
+					"nom": nameAtrib+"Area",
+					"descripcio": desc_var+" per area",
+					"FormulaConsulta": "("+t4+"/p['"+area+"']*1000000)",
+					"unitats": "hab./km<sup>2</sup>",
+					"NDecimals": 3,
+					"mostrar": "si"
+				})
+
+        estil.extend([{"nom": None, "desc": "Count of "+desc_var, 
                         "DescItems": desc_var,
               		    "TipusObj": "P",
                 		"ItemLleg":	[
@@ -448,7 +507,7 @@ def main(href, layer, href_enc, href_type, mmn, add_var, prefix_var, desc_var, c
           					[{
           							"icona":{
           								"type": "circle",
-          								"a": float(a_circle)
+          								"a": a_circle
           							}
       						}]
               			}],
@@ -466,8 +525,40 @@ def main(href, layer, href_enc, href_type, mmn, add_var, prefix_var, desc_var, c
                                 }
               				}]
               			}
-              		})
-            
+              		},
+                     {"nom": None, "desc": "Count of "+desc_var+"/100000 hab", 
+                        "DescItems": desc_var,
+              		    "TipusObj": "P",
+                		"ItemLleg":	[
+              				{"color": rgb_string_to_hex(color), "DescColor": desc_var}
+              			],
+              			"ncol": 1,
+              			"simbols": [{							
+          					"NomCampFEscala": nameAtrib+"Pop",
+          					"simbol":
+          					[{
+          							"icona":{
+          								"type": "circle",
+          								"a": a_circle*(200 if a_circle<0.1 else 20 if a_circle<1 else 0.5)
+          							}
+      						}]
+              			}],
+              			"vora":{
+              				"paleta": {"colors": [rgb_string_to_hex(color)]}
+              			},
+              			"interior":{
+              				"paleta": {"colors": ["rgba("+color+",0.4)"]}
+              			},			
+              			"fonts": {
+              				"NomCampText": nameAtrib+"Pop",
+              				"aspecte": [{
+              					"font": {
+                                      "font": "12px Verdana", "color": "#B50000", "align": "center", "i": 0, "j": -5
+                                }
+              				}]
+              			}
+              		}
+                ])            
         atrib.extend([
 #             {"nom": prefix_var+"NewCases",
 # 				"descripcio": "New "+desc_var+" in a day",
@@ -497,11 +588,10 @@ def main(href, layer, href_enc, href_type, mmn, add_var, prefix_var, desc_var, c
 # 				"mostrar": "si",
 #                 "serieTemporal": {"color": rgb_string_to_hex(color)}
 # 			},
-      
             {"nom": prefix_var+"NewCases5",
 				"descripcio": "New "+desc_var+" in a day (av. 5)",
 				"FormulaConsulta": "(isNaN("+t6+") ? "+t4+"-"+t3+" : ("+t6+"-"+t1+")/5)",
-                "NDecimals": 2,
+                "NDecimals": 0,
 				"mostrar": "si",
                 "serieTemporal": {"color": rgb_string_to_hex(color)}
             },{"nom": prefix_var+"PercentCumulCases5",
@@ -528,161 +618,8 @@ def main(href, layer, href_enc, href_type, mmn, add_var, prefix_var, desc_var, c
 #                 "serieTemporal": {"color": rgb_string_to_hex(color)}
 # 			}
       
-#             ,{"nom": prefix_var+"NewCases9",
-# 				"descripcio": "New "+desc_var+" in a day (av. 9)",
-# 				"FormulaConsulta": "(("+tt10+"-"+tt1+")/9)",
-# 				"mostrar": "si",
-#                 "serieTemporal": {"color": rgb_string_to_hex(color)}
-#             },{"nom": prefix_var+"PercentCumulCases9",
-# 				"descripcio": "Increase in cumulated "+desc_var+ " (av. 9)",
-# 				"FormulaConsulta": "(("+tt10+"-"+tt1+")/("+tt9+"+"+tt8+"+"+tt7+"+"+tt6+"+"+tt5+"+"+tt4+"+"+tt3+"+"+tt2+"+"+tt1+")*100)",
-# 				"NDecimals": 2,
-#                 "unitats": "%",
-# 				"mostrar": "si",
-#                 "serieTemporal": {"color": rgb_string_to_hex(color)}
-# 			},{"nom": prefix_var+"Acceleration9",
-# 				"descripcio": "Last day Acceleration in "+desc_var+ " (av. 9)",
-#                 "unitats": "cases/day²",
-# 				"FormulaConsulta": "(("+tt10+"-"+tt9+"+"+tt0+"-"+tt1+")/9)",
-# 				"NDecimals": 2,
-# 				"mostrar": "si",
-#                 "serieTemporal": {"color": rgb_string_to_hex(color)}
-# 			},{"nom": prefix_var+"PercentAccel9",
-# 				"descripcio": "Last day Percentual Acceleration in "+desc_var+" (av. 9)",
-# 				"FormulaConsulta": "(("+tt10+"-"+tt9+"+"+tt0+"-"+tt1+")/("+tt9+"-"+tt0+")*100)",
-# 				"NDecimals": 2,
-#                 "unitats": "%",
-# 				"mostrar": "si",
-#                 "serieTemporal": {"color": rgb_string_to_hex(color)}
-#			}
-      ])
-        estil.extend([
-            # {"nom": None, "desc": "New "+desc_var+" in a day", 
-      		    #             "TipusObj": "P",
-            #         		"ItemLleg":	[
-            #       				{"color": rgb_string_to_hex(color), "DescColor": desc_var}
-            #       			],
-            #       			"ncol": 1,
-            #       			"simbols": [{							
-            #   					"NomCampFEscala": prefix_var+"NewCases",
-            #   					"simbol":
-            #   					[{
-            #   							"icona":{
-            #   								"type": "circle",
-            #   								"a": float(a_circle)
-            #   							}
-          		# 				}]
-            #       			}],
-            #       			"vora":{
-            #       				"paleta": {"colors": [rgb_string_to_hex(color)]}
-            #       			},
-            #       			"interior":{
-            #       				"paleta": {"colors": ["rgba("+color+",0.4)"]}
-            #       			},			
-            #       			"fonts": {
-            #       				"NomCampText": prefix_var+"NewCases",
-            #       				"aspecte": [{
-            #       					"font": {
-            #                               "font": "12px Verdana", "color": "#B50000", "align": "center", "i": 0, "j": -5
-            #                         }
-            #       				}]
-            #       			}
-            #       		},{"nom": None, "desc": "Increase in cumulated "+desc_var+" (%)", 
-            # 				"DescItems": "%",
-      		    #             "TipusObj": "P",
-            #         		"ItemLleg":	[
-            #       				{"color": rgb_string_to_hex(color), "DescColor": desc_var}
-            #       			],
-            #       			"ncol": 1,
-            #       			"simbols": [{							
-            #   					"NomCampFEscala": prefix_var+"PercentCumulCases",
-            #   					"simbol":
-            #   					[{
-            #   							"icona":{
-            #   								"type": "circle",
-            #   								"a": 20
-            #   							}
-          		# 				}]
-            #       			}],
-            #       			"vora":{
-            #       				"paleta": {"colors": [rgb_string_to_hex(color)]}
-            #       			},
-            #       			"interior":{
-            #       				"paleta": {"colors": ["rgba("+color+",0.4)"]}
-            #       			},			
-            #       			"fonts": {
-            #       				"NomCampText": prefix_var+"PercentCumulCases",
-            #       				"aspecte": [{
-            #       					"font": {
-            #                               "font": "12px Verdana", "color": "#B50000", "align": "center", "i": 0, "j": -5
-            #                         }
-            #       				}]
-            #       			}
-            #       		},{"nom": None, "desc": "Last day Acceleration in "+desc_var+" (cases/day<sup>2</sup>)", 
-            # 				"DescItems": "cases/day<sup>2</sup>",
-      		    #             "TipusObj": "P",
-            #         		"ItemLleg":	[\
-            #       				{"color": rgb_string_to_hex(color), "DescColor": desc_var}
-            #       			],
-            #       			"ncol": 1,
-            #       			"simbols": [{							
-            #   					"NomCampFEscala": prefix_var+"Acceleration",
-            #   					"simbol":
-            #   					[{
-            #   							"icona":{
-            #   								"type": "circle",
-            #   								"a": float(a_circle)*5
-            #   							}
-          		# 				}]
-            #       			}],
-            #       			"vora":{
-            #       				"paleta": {"colors": [rgb_string_to_hex(color)]}
-            #       			},
-            #       			"interior":{
-            #       				"paleta": {"colors": ["rgba("+color+",0.4)"]}
-            #       			},			
-                              
-            #       			"fonts": {
-            #       				"NomCampText": prefix_var+"Acceleration",
-            #       				"aspecte": [{
-            #       					"font": {
-            #                               "font": "12px Verdana", "color": "#B50000", "align": "center", "i": 0, "j": -5
-            #                         }
-            #       				}]
-            #       			}
-            #       		},{"nom": None, "desc": "Percentual Accel. "+desc_var+" (%)", 
-            # 				"DescItems": "%",
-      		    #             "TipusObj": "P",
-            #         		"ItemLleg":	[\
-            #       				{"color": rgb_string_to_hex(color), "DescColor": desc_var}
-            #       			],
-            #       			"ncol": 1,
-            #       			"simbols": [{							
-            #   					"NomCampFEscala": prefix_var+"PercentAccel",
-            #   					"simbol":
-            #   					[{
-            #   							"icona":{
-            #   								"type": "circle",
-            #   								"a": 5
-            #   							}
-          		# 				}]
-            #       			}],
-            #       			"vora":{
-            #       				"paleta": {"colors": [rgb_string_to_hex(color)]}
-            #       			},
-            #       			"interior":{
-            #       				"paleta": {"colors": ["rgba("+color+",0.4)"]}
-            #       			},			
-            #       			"fonts": {
-            #       				"NomCampText": prefix_var+"PercentAccel",
-            #       				"aspecte": [{
-            #       					"font": {
-            #                               "font": "12px Verdana", "color": "#B50000", "align": "center", "i": 0, "j": -5
-            #                         }
-            #       				}]
-            #       			}
-            #       		},
-                       
+        ])
+        estil.extend([                      
                         {"nom": None, "desc": "New "+desc_var+" in a day (av.5)", 
       		                "TipusObj": "P",
                     		"ItemLleg":	[
@@ -695,7 +632,7 @@ def main(href, layer, href_enc, href_type, mmn, add_var, prefix_var, desc_var, c
               					[{
               							"icona":{
               								"type": "circle",
-              								"a": float(a_circle)*10
+              								"a": a_circle*40
               							}
           						}]
                   			}],
@@ -714,107 +651,7 @@ def main(href, layer, href_enc, href_type, mmn, add_var, prefix_var, desc_var, c
                   				}]
                   			}
                   		}
-                # Removed on 2020/05/08 as it has to many small or negative values
-                #         {"nom": None, "desc": "Increase in cumulated "+desc_var+" (av.5) (%)", 
-            				# "DescItems": "%",
-      		        #         "TipusObj": "P",
-                #     		"ItemLleg":	[
-                #   				{"color": rgb_string_to_hex(color), "DescColor": desc_var}
-                #   			],
-                #   			"ncol": 1,
-                #   			"simbols": [{							
-              		# 			"NomCampFEscala": prefix_var+"PercentCumulCases5",
-              		# 			"simbol":
-              		# 			[{
-              		# 					"icona":{
-              		# 						"type": "circle",
-              		# 						"a": 20
-              		# 					}
-          						# }]
-                #   			}],
-                #   			"vora":{
-                #   				"paleta": {"colors": [rgb_string_to_hex(color)]}
-                #   			},
-                #   			"interior":{
-                #   				"paleta": {"colors": ["rgba("+color+",0.4)"]}
-                #   			},			
-                #   			"fonts": {
-                #   				"NomCampText": prefix_var+"PercentCumulCases5",
-                #   				"aspecte": [{
-                #   					"font": {
-                #                           "font": "12px Verdana", "color": "#B50000", "align": "center", "i": 0, "j": -5
-                #                     }
-                #   				}]
-                #   			}
-                #   		},
-                # Removed on 2020/05/08 as it has to many small or negative values
-                #{"nom": None, "desc": "Last day Acceleration in "+desc_var+" (av.5) (cases/day<sup>2</sup>)", 
-            				# "DescItems": "cases/day<sup>2</sup>",
-      		        #         "TipusObj": "P",
-                #     		"ItemLleg":	[\
-                #   				{"color": rgb_string_to_hex(color), "DescColor": desc_var}
-                #   			],
-                #   			"ncol": 1,
-                #   			"simbols": [{							
-              		# 			"NomCampFEscala": prefix_var+"Acceleration5",
-              		# 			"simbol":
-              		# 			[{
-              		# 					"icona":{
-              		# 						"type": "circle",
-              		# 						"a": float(a_circle)*5
-              		# 					}
-          						# }]
-                #   			}],
-                #   			"vora":{
-                #   				"paleta": {"colors": [rgb_string_to_hex(color)]}
-                #   			},
-                #   			"interior":{
-                #   				"paleta": {"colors": ["rgba("+color+",0.4)"]}
-                #   			},			
-                              
-                #   			"fonts": {
-                #   				"NomCampText": prefix_var+"Acceleration5",
-                #   				"aspecte": [{
-                #   					"font": {
-                #                           "font": "12px Verdana", "color": "#B50000", "align": "center", "i": 0, "j": -5
-                #                     }
-                #   				}]
-                #   			}
-                #   		}
-                # Removed on 2020/04/28 as it is difficult to understand
-                #        ,{"nom": None, "desc": "Percentual Accel. "+desc_var+" (av.5) (%)", 
-            				# "DescItems": "%",
-      		        #         "TipusObj": "P",
-                #     		"ItemLleg":	[\
-                #   				{"color": rgb_string_to_hex(color), "DescColor": desc_var}
-                #   			],
-                #   			"ncol": 1,
-                #   			"simbols": [{							
-              		# 			"NomCampFEscala": prefix_var+"PercentAccel5",
-              		# 			"simbol":
-              		# 			[{
-              		# 					"icona":{
-              		# 						"type": "circle",
-              		# 						"a": 5
-              		# 					}
-          						# }]
-                #   			}],
-                #   			"vora":{
-                #   				"paleta": {"colors": [rgb_string_to_hex(color)]}
-                #   			},
-                #   			"interior":{
-                #   				"paleta": {"colors": ["rgba("+color+",0.4)"]}
-                #   			},			
-                #   			"fonts": {
-                #   				"NomCampText": prefix_var+"PercentAccel5",
-                #   				"aspecte": [{
-                #   					"font": {
-                #                           "font": "12px Verdana", "color": "#B50000", "align": "center", "i": 0, "j": -5
-                #                     }
-                #   				}]
-                #   			}
-                #   		}                        
-                ])
+                    ])
         if prefix_var=="act":
             atrib.append({
     				"nom": prefix_var+"AccelTerna",
@@ -825,7 +662,7 @@ def main(href, layer, href_enc, href_type, mmn, add_var, prefix_var, desc_var, c
     				"mostrar": "no"
     			})
             estil.append({"nom": None,
-                			"desc":	"Last days Tendency",
+                			"desc":	"Last days Trend",
                 			"DescItems": None,
                 			"TipusObj": "S",
                 			"ItemLleg":	[

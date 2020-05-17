@@ -10,7 +10,9 @@
             "coordinates": [1.4855051513, 41.2265879269]
         },
         "properties": {
-            "SectorSanitariCodi":"6258"
+            "SectorSanitariCodi":"6258",
+            "Population":346091,
+            "Land Area":584237352.895
         }
     },
     {
@@ -21,7 +23,9 @@
             "coordinates": [2.2034650841, 41.4062444237]
         },
         "properties": {
-            "SectorSanitariCodi":"7847"
+            "SectorSanitariCodi":"7847",
+            "Population":237947,
+            "Land Area":10685586.441
         }
     },
     {
@@ -32,7 +36,9 @@
             "coordinates": [2.1749079477, 41.3749123353]
         },
         "properties": {
-            "SectorSanitariCodi":"7846"
+            "SectorSanitariCodi":"7846",
+            "Population":103096,
+            "Land Area":3983198.375
         }
     },
     {
@@ -43,7 +49,9 @@
             "coordinates": [0.8613563215, 41.7004909113]
         },
         "properties": {
-            "SectorSanitariCodi":"6156"
+            "SectorSanitariCodi":"6156",
+            "Population":362850,
+            "Land Area":5424542586.126
         }
     },
     {
@@ -54,7 +62,9 @@
             "coordinates": [1.5205507851, 41.6791645657]
         },
         "properties": {
-            "SectorSanitariCodi":"6735"
+            "SectorSanitariCodi":"6735",
+            "Population":113475,
+            "Land Area":1229967496.090
         }
     },
     {
@@ -65,7 +75,9 @@
             "coordinates": [1.3665343125, 42.3668606142]
         },
         "properties": {
-            "SectorSanitariCodi":"7164"
+            "SectorSanitariCodi":"7164",
+            "Population":57893,
+            "Land Area":5149997625.866
         }
     },
     {
@@ -76,7 +88,9 @@
             "coordinates": [2.1524722181, 41.3512289570]
         },
         "properties": {
-            "SectorSanitariCodi":"7849"
+            "SectorSanitariCodi":"7849",
+            "Population":185590,
+            "Land Area":22740729.744
         }
     },
     {
@@ -87,7 +101,9 @@
             "coordinates": [1.8893439701, 41.5275372686]
         },
         "properties": {
-            "SectorSanitariCodi":"7831"
+            "SectorSanitariCodi":"7831",
+            "Population":160361,
+            "Land Area":269868503.710
         }
     },
     {
@@ -98,7 +114,9 @@
             "coordinates": [2.6962892775, 41.8974757924]
         },
         "properties": {
-            "SectorSanitariCodi":"6462"
+            "SectorSanitariCodi":"6462",
+            "Population":513922,
+            "Land Area":2054172587.988
         }
     },
     {
@@ -109,7 +127,9 @@
             "coordinates": [0.8520319869, 42.7258932772]
         },
         "properties": {
-            "SectorSanitariCodi":"7107"
+            "SectorSanitariCodi":"7107",
+            "Population":9134,
+            "Land Area":632989236.712
         }
     },
     {
@@ -120,7 +140,9 @@
             "coordinates": [0.5540867133, 40.9304493359]
         },
         "properties": {
-            "SectorSanitariCodi":"6360"
+            "SectorSanitariCodi":"6360",
+            "Population":176817,
+            "Land Area":3355166280.696
         }
     },
     {
@@ -131,7 +153,9 @@
             "coordinates": [0.9243194648, 41.1501209016]
         },
         "properties": {
-            "SectorSanitariCodi":"6259"
+            "SectorSanitariCodi":"6259",
+            "Population":200735,
+            "Land Area":1146260064.929
         }
     },
     {
@@ -142,7 +166,9 @@
             "coordinates": [2.0151548586, 41.3584180184]
         },
         "properties": {
-            "SectorSanitariCodi":"7866"
+            "SectorSanitariCodi":"7866",
+            "Population":954998,
+            "Land Area":362795078.451
         }
     },
     {
@@ -153,7 +179,9 @@
             "coordinates": [1.2202713472, 41.3726529774]
         },
         "properties": {
-            "SectorSanitariCodi":"6257"
+            "SectorSanitariCodi":"6257",
+            "Population":61173,
+            "Land Area":1024753836.585
         }
     },
     {
@@ -164,7 +192,9 @@
             "coordinates": [1.7328944792, 41.3530085904]
         },
         "properties": {
-            "SectorSanitariCodi":"7865"
+            "SectorSanitariCodi":"7865",
+            "Population":255350,
+            "Land Area":732848661.838
         }
     },
     {
@@ -175,7 +205,9 @@
             "coordinates": [2.3818137921, 41.5252138230]
         },
         "properties": {
-            "SectorSanitariCodi":"7867"
+            "SectorSanitariCodi":"7867",
+            "Population":711159,
+            "Land Area":242793529.472
         }
     },
     {
@@ -186,7 +218,9 @@
             "coordinates": [2.9898974416, 42.1175911952]
         },
         "properties": {
-            "SectorSanitariCodi":"6461"
+            "SectorSanitariCodi":"6461",
+            "Population":347831,
+            "Land Area":3711157852.480
         }
     },
     {
@@ -197,7 +231,9 @@
             "coordinates": [1.6069897730, 41.9434641680]
         },
         "properties": {
-            "SectorSanitariCodi":"6763"
+            "SectorSanitariCodi":"6763",
+            "Population":250533,
+            "Land Area":3524846151.921
         }
     },
     {
@@ -208,7 +244,9 @@
             "coordinates": [2.1660324270, 41.3934526399]
         },
         "properties": {
-            "SectorSanitariCodi":"7851"
+            "SectorSanitariCodi":"7851",
+            "Population":268861,
+            "Land Area":7488554.800
         }
     },
     {
@@ -219,7 +257,9 @@
             "coordinates": [2.1439878364, 41.4285897002]
         },
         "properties": {
-            "SectorSanitariCodi":"7853"
+            "SectorSanitariCodi":"7853",
+            "Population":173422,
+            "Land Area":11908204.776
         }
     },
     {
@@ -230,7 +270,9 @@
             "coordinates": [2.1968687025, 41.4373534116]
         },
         "properties": {
-            "SectorSanitariCodi":"7855"
+            "SectorSanitariCodi":"7855",
+            "Population":151103,
+            "Land Area":6571902.804
         }
     },
     {
@@ -241,7 +283,9 @@
             "coordinates": [2.3278010031, 41.6487722291]
         },
         "properties": {
-            "SectorSanitariCodi":"7842"
+            "SectorSanitariCodi":"7842",
+            "Population":450734,
+            "Land Area":782319804.462
         }
     },
     {
@@ -252,7 +296,9 @@
             "coordinates": [2.1055982621, 41.5802881757]
         },
         "properties": {
-            "SectorSanitariCodi":"7844"
+            "SectorSanitariCodi":"7844",
+            "Population":399729,
+            "Land Area":229016334.196
         }
     },
     {
@@ -263,7 +309,9 @@
             "coordinates": [2.2336396673, 41.9509481145]
         },
         "properties": {
-            "SectorSanitariCodi":"6745"
+            "SectorSanitariCodi":"6745",
+            "Population":162951,
+            "Land Area":1312973277.425
         }
     },
     {
@@ -274,7 +322,9 @@
             "coordinates": [2.1079404752, 41.4134457955]
         },
         "properties": {
-            "SectorSanitariCodi":"7850"
+            "SectorSanitariCodi":"7850",
+            "Population":143891,
+            "Land Area":19951264.474
         }
     },
     {
@@ -285,7 +335,9 @@
             "coordinates": [2.1726133294, 41.4468044780]
         },
         "properties": {
-            "SectorSanitariCodi":"7854"
+            "SectorSanitariCodi":"7854",
+            "Population":174044,
+            "Land Area":8042443.508
         }
     },
     {
@@ -296,7 +348,9 @@
             "coordinates": [2.0135570041, 41.5364188674]
         },
         "properties": {
-            "SectorSanitariCodi":"7843"
+            "SectorSanitariCodi":"7843",
+            "Population":440957,
+            "Land Area":232939319.315
         }
     },
     {
@@ -307,7 +361,9 @@
             "coordinates": [2.1550159803, 41.4102920707]
         },
         "properties": {
-            "SectorSanitariCodi":"7852"
+            "SectorSanitariCodi":"7852",
+            "Population":123108,
+            "Land Area":4226959.064
         }
     },
     {
@@ -318,7 +374,9 @@
             "coordinates": [2.1219191409, 41.3884810244]
         },
         "properties": {
-            "SectorSanitariCodi":"7848"
+            "SectorSanitariCodi":"7848",
+            "Population":80813,
+            "Land Area":6050617.129
         }
     }    
     ]

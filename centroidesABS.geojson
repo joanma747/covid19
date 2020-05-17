@@ -10,7 +10,11 @@
             "coordinates": [2.4318292473, 41.5298009827]
         },
         "properties": {
-            "ABSCodi":"158"
+            "ABSCodi":"158",
+            "ABSCodiN":158,
+            "ABS":"MATARÓ 7",
+            "Population":14034,
+            "Land Area":2151714.307
         }
     },
     {
@@ -21,7 +25,11 @@
             "coordinates": [2.4406490593, 41.5353735468]
         },
         "properties": {
-            "ABSCodi":"152"
+            "ABSCodi":"152",
+            "ABSCodiN":152,
+            "ABS":"MATARÓ 1",
+            "Population":19271,
+            "Land Area":1123024.558
         }
     },
     {
@@ -32,7 +40,11 @@
             "coordinates": [2.1729364726, 41.3460465053]
         },
         "properties": {
-            "ABSCodi":"032"
+            "ABSCodi":"032",
+            "ABSCodiN":32,
+            "ABS":"BARCELONA 3-A",
+            "Population":24697,
+            "Land Area":2629785.935
         }
     },
     {
@@ -43,7 +55,11 @@
             "coordinates": [2.1281799997, 41.3069734509]
         },
         "properties": {
-            "ABSCodi":"183"
+            "ABSCodi":"183",
+            "ABSCodiN":183,
+            "ABS":"EL PRAT DE LLOBREGAT 2",
+            "Population":30140,
+            "Land Area":12827275.588
         }
     },
     {
@@ -54,7 +70,11 @@
             "coordinates": [2.2556885299, 41.4565829867]
         },
         "properties": {
-            "ABSCodi":"272"
+            "ABSCodi":"272",
+            "ABSCodiN":272,
+            "ABS":"BADALONA 1",
+            "Population":12134,
+            "Land Area":1075302.166
         }
     },
     {
@@ -65,7 +85,11 @@
             "coordinates": [2.2458664978, 41.4494594442]
         },
         "properties": {
-            "ABSCodi":"273"
+            "ABSCodi":"273",
+            "ABSCodiN":273,
+            "ABS":"BADALONA 2",
+            "Population":16487,
+            "Land Area":1009952.969
         }
     },
     {
@@ -76,7 +100,11 @@
             "coordinates": [2.2411819184, 41.4430488455]
         },
         "properties": {
-            "ABSCodi":"274"
+            "ABSCodi":"274",
+            "ABSCodiN":274,
+            "ABS":"BADALONA 3",
+            "Population":20573,
+            "Land Area":837256.270
         }
     },
     {
@@ -87,7 +115,11 @@
             "coordinates": [2.2355855326, 41.4357174421]
         },
         "properties": {
-            "ABSCodi":"275"
+            "ABSCodi":"275",
+            "ABSCodiN":275,
+            "ABS":"BADALONA 4",
+            "Population":12653,
+            "Land Area":1414104.200
         }
     },
     {
@@ -98,7 +130,11 @@
             "coordinates": [2.2275071448, 41.4270271796]
         },
         "properties": {
-            "ABSCodi":"311"
+            "ABSCodi":"311",
+            "ABSCodiN":311,
+            "ABS":"SANT ADRIÀ DEL BESÒS 1",
+            "Population":20977,
+            "Land Area":1862381.279
         }
     },
     {
@@ -109,7 +145,11 @@
             "coordinates": [2.2232375142, 41.4197502272]
         },
         "properties": {
-            "ABSCodi":"312"
+            "ABSCodi":"312",
+            "ABSCodiN":312,
+            "ABS":"SANT ADRIÀ DEL BESÒS 2",
+            "Population":16547,
+            "Land Area":1946473.586
         }
     },
     {
@@ -120,7 +160,11 @@
             "coordinates": [2.1967623703, 41.3952258321]
         },
         "properties": {
-            "ABSCodi":"071"
+            "ABSCodi":"071",
+            "ABSCodiN":71,
+            "ABS":"BARCELONA 10-A",
+            "Population":36261,
+            "Land Area":3052062.300
         }
     },
     {
@@ -131,7 +175,11 @@
             "coordinates": [2.1776743307, 41.3813170728]
         },
         "properties": {
-            "ABSCodi":"018"
+            "ABSCodi":"018",
+            "ABSCodiN":18,
+            "ABS":"BARCELONA 1-C",
+            "Population":14907,
+            "Land Area":807048.928
         }
     },
     {
@@ -142,7 +190,11 @@
             "coordinates": [2.1728786363, 41.3757959857]
         },
         "properties": {
-            "ABSCodi":"019"
+            "ABSCodi":"019",
+            "ABSCodiN":19,
+            "ABS":"BARCELONA 1-D",
+            "Population":29702,
+            "Land Area":662307.713
         }
     },
     {
@@ -153,7 +205,11 @@
             "coordinates": [2.1836863249, 41.3867855002]
         },
         "properties": {
-            "ABSCodi":"017"
+            "ABSCodi":"017",
+            "ABSCodiN":17,
+            "ABS":"BARCELONA 1-B",
+            "Population":22209,
+            "Land Area":1073366.876
         }
     },
     {
@@ -164,7 +220,11 @@
             "coordinates": [2.1584982945, 41.3785112057]
         },
         "properties": {
-            "ABSCodi":"021"
+            "ABSCodi":"021",
+            "ABSCodiN":21,
+            "ABS":"BARCELONA 2-A",
+            "Population":33840,
+            "Land Area":627503.340
         }
     },
     {
@@ -175,7 +235,11 @@
             "coordinates": [2.1679124788, 41.3823120250]
         },
         "properties": {
-            "ABSCodi":"020"
+            "ABSCodi":"020",
+            "ABSCodiN":20,
+            "ABS":"BARCELONA 1-E",
+            "Population":21713,
+            "Land Area":441642.019
         }
     },
     {
@@ -186,7 +250,11 @@
             "coordinates": [2.0834089919, 41.3042265039]
         },
         "properties": {
-            "ABSCodi":"184"
+            "ABSCodi":"184",
+            "ABSCodiN":184,
+            "ABS":"EL PRAT DE LLOBREGAT 3",
+            "Population":12958,
+            "Land Area":15922299.480
         }
     },
     {
@@ -197,7 +265,11 @@
             "coordinates": [1.2558244254, 41.1186267768]
         },
         "properties": {
-            "ABSCodi":"364"
+            "ABSCodi":"364",
+            "ABSCodiN":364,
+            "ABS":"TARRAGONA-8",
+            "Population":15637,
+            "Land Area":1118919.046
         }
     },
     {
@@ -208,7 +280,11 @@
             "coordinates": [1.2361150137, 41.1312213619]
         },
         "properties": {
-            "ABSCodi":"244"
+            "ABSCodi":"244",
+            "ABSCodiN":244,
+            "ABS":"TARRAGONA 6",
+            "Population":19992,
+            "Land Area":2124486.850
         }
     },
     {
@@ -219,7 +295,11 @@
             "coordinates": [1.3010525928, 41.1616885060]
         },
         "properties": {
-            "ABSCodi":"242"
+            "ABSCodi":"242",
+            "ABSCodiN":242,
+            "ABS":"TARRAGONA 4",
+            "Population":16379,
+            "Land Area":53928032.175
         }
     },
     {
@@ -230,7 +310,11 @@
             "coordinates": [1.2549116004, 41.1629682068]
         },
         "properties": {
-            "ABSCodi":"352"
+            "ABSCodi":"352",
+            "ABSCodiN":352,
+            "ABS":"TARRAGONA-7 (SANT SALVADOR)",
+            "Population":11819,
+            "Land Area":10523917.604
         }
     },
     {
@@ -241,7 +325,11 @@
             "coordinates": [1.2380395309, 41.0989507537]
         },
         "properties": {
-            "ABSCodi":"241"
+            "ABSCodi":"241",
+            "ABSCodiN":241,
+            "ABS":"TARRAGONA 3",
+            "Population":30846,
+            "Land Area":3004523.836
         }
     },
     {
@@ -252,7 +340,11 @@
             "coordinates": [1.2167757340, 41.1181687868]
         },
         "properties": {
-            "ABSCodi":"240"
+            "ABSCodi":"240",
+            "ABSCodiN":240,
+            "ABS":"TARRAGONA 2",
+            "Population":28271,
+            "Land Area":17965006.664
         }
     },
     {
@@ -263,7 +355,11 @@
             "coordinates": [1.2464961753, 41.1346477979]
         },
         "properties": {
-            "ABSCodi":"243"
+            "ABSCodi":"243",
+            "ABSCodiN":243,
+            "ABS":"TARRAGONA 5",
+            "Population":16617,
+            "Land Area":3392018.620
         }
     },
     {
@@ -274,7 +370,11 @@
             "coordinates": [2.1484787050, 41.3690490856]
         },
         "properties": {
-            "ABSCodi":"033"
+            "ABSCodi":"033",
+            "ABSCodiN":33,
+            "ABS":"BARCELONA 3-B",
+            "Population":24899,
+            "Land Area":1405276.735
         }
     },
     {
@@ -285,7 +385,11 @@
             "coordinates": [2.1365899158, 41.3703249644]
         },
         "properties": {
-            "ABSCodi":"035"
+            "ABSCodi":"035",
+            "ABSCodiN":35,
+            "ABS":"BARCELONA 3-D",
+            "Population":31489,
+            "Land Area":860740.241
         }
     },
     {
@@ -296,7 +400,11 @@
             "coordinates": [2.1376742895, 41.3442084697]
         },
         "properties": {
-            "ABSCodi":"034"
+            "ABSCodi":"034",
+            "ABSCodiN":34,
+            "ABS":"BARCELONA 3-C",
+            "Population":15289,
+            "Land Area":15542023.415
         }
     },
     {
@@ -307,7 +415,11 @@
             "coordinates": [2.1495450474, 41.3802885277]
         },
         "properties": {
-            "ABSCodi":"022"
+            "ABSCodi":"022",
+            "ABSCodiN":22,
+            "ABS":"BARCELONA 2-B",
+            "Population":30104,
+            "Land Area":685476.172
         }
     },
     {
@@ -318,7 +430,11 @@
             "coordinates": [2.1270952666, 41.3747227197]
         },
         "properties": {
-            "ABSCodi":"400"
+            "ABSCodi":"400",
+            "ABSCodiN":400,
+            "ABS":"BARCELONA 3-I",
+            "Population":25930,
+            "Land Area":411670.110
         }
     },
     {
@@ -329,7 +445,11 @@
             "coordinates": [2.1368306371, 41.3803252931]
         },
         "properties": {
-            "ABSCodi":"038"
+            "ABSCodi":"038",
+            "ABSCodiN":38,
+            "ABS":"BARCELONA 3-G",
+            "Population":22906,
+            "Land Area":724735.007
         }
     },
     {
@@ -340,7 +460,11 @@
             "coordinates": [2.1357566992, 41.3750294234]
         },
         "properties": {
-            "ABSCodi":"036"
+            "ABSCodi":"036",
+            "ABSCodiN":36,
+            "ABS":"BARCELONA 3-E",
+            "Population":21444,
+            "Land Area":494991.209
         }
     },
     {
@@ -351,7 +475,11 @@
             "coordinates": [2.1876438511, 41.3715098460]
         },
         "properties": {
-            "ABSCodi":"016"
+            "ABSCodi":"016",
+            "ABSCodiN":16,
+            "ABS":"BARCELONA 1-A",
+            "Population":14565,
+            "Land Area":998832.840
         }
     },
     {
@@ -362,7 +490,11 @@
             "coordinates": [2.1802052832, 41.3940693280]
         },
         "properties": {
-            "ABSCodi":"028"
+            "ABSCodi":"028",
+            "ABSCodiN":28,
+            "ABS":"BARCELONA 2-H",
+            "Population":26061,
+            "Land Area":1100440.959
         }
     },
     {
@@ -373,7 +505,11 @@
             "coordinates": [2.1595137679, 41.3848433846]
         },
         "properties": {
-            "ABSCodi":"024"
+            "ABSCodi":"024",
+            "ABSCodiN":24,
+            "ABS":"BARCELONA 2-D",
+            "Population":19318,
+            "Land Area":650713.317
         }
     },
     {
@@ -384,7 +520,11 @@
             "coordinates": [2.1663048139, 41.3945336402]
         },
         "properties": {
-            "ABSCodi":"027"
+            "ABSCodi":"027",
+            "ABSCodiN":27,
+            "ABS":"BARCELONA 2-G",
+            "Population":21585,
+            "Land Area":1087700.433
         }
     },
     {
@@ -395,7 +535,11 @@
             "coordinates": [2.1756277950, 41.3992138156]
         },
         "properties": {
-            "ABSCodi":"030"
+            "ABSCodi":"030",
+            "ABSCodiN":30,
+            "ABS":"BARCELONA 2-J",
+            "Population":27365,
+            "Land Area":682235.385
         }
     },
     {
@@ -406,7 +550,11 @@
             "coordinates": [2.1551466514, 41.3906292637]
         },
         "properties": {
-            "ABSCodi":"025"
+            "ABSCodi":"025",
+            "ABSCodiN":25,
+            "ABS":"BARCELONA 2-E",
+            "Population":33123,
+            "Land Area":1023343.105
         }
     },
     {
@@ -417,7 +565,11 @@
             "coordinates": [2.1478119853, 41.3863789882]
         },
         "properties": {
-            "ABSCodi":"023"
+            "ABSCodi":"023",
+            "ABSCodiN":23,
+            "ABS":"BARCELONA 2-C",
+            "Population":31068,
+            "Land Area":706314.522
         }
     },
     {
@@ -428,7 +580,11 @@
             "coordinates": [2.1303759152, 41.3859599632]
         },
         "properties": {
-            "ABSCodi":"040"
+            "ABSCodi":"040",
+            "ABSCodiN":40,
+            "ABS":"BARCELONA 4-B",
+            "Population":21664,
+            "Land Area":988643.688
         }
     },
     {
@@ -439,7 +595,11 @@
             "coordinates": [2.1387888352, 41.3866840341]
         },
         "properties": {
-            "ABSCodi":"039"
+            "ABSCodi":"039",
+            "ABSCodiN":39,
+            "ABS":"BARCELONA 4-A",
+            "Population":28323,
+            "Land Area":609659.077
         }
     },
     {
@@ -450,7 +610,11 @@
             "coordinates": [2.1458895387, 41.3962904330]
         },
         "properties": {
-            "ABSCodi":"042"
+            "ABSCodi":"042",
+            "ABSCodiN":42,
+            "ABS":"BARCELONA 5-A",
+            "Population":28337,
+            "Land Area":1002641.603
         }
     },
     {
@@ -461,7 +625,11 @@
             "coordinates": [2.1579769897, 41.4005436461]
         },
         "properties": {
-            "ABSCodi":"048"
+            "ABSCodi":"048",
+            "ABSCodiN":48,
+            "ABS":"BARCELONA 6-B",
+            "Population":26338,
+            "Land Area":722934.755
         }
     },
     {
@@ -472,7 +640,11 @@
             "coordinates": [2.1645374665, 41.4055935501]
         },
         "properties": {
-            "ABSCodi":"047"
+            "ABSCodi":"047",
+            "ABSCodiN":47,
+            "ABS":"BARCELONA 6-A",
+            "Population":30428,
+            "Land Area":567960.927
         }
     },
     {
@@ -483,7 +655,11 @@
             "coordinates": [2.1266702938, 41.3956715609]
         },
         "properties": {
-            "ABSCodi":"044"
+            "ABSCodi":"044",
+            "ABSCodiN":44,
+            "ABS":"BARCELONA 5-C",
+            "Population":27068,
+            "Land Area":1259843.880
         }
     },
     {
@@ -494,7 +670,11 @@
             "coordinates": [2.1412201198, 41.4021475784]
         },
         "properties": {
-            "ABSCodi":"043"
+            "ABSCodi":"043",
+            "ABSCodiN":43,
+            "ABS":"BARCELONA 5-B",
+            "Population":35168,
+            "Land Area":1043073.149
         }
     },
     {
@@ -505,7 +685,11 @@
             "coordinates": [2.1547723010, 41.4064405985]
         },
         "properties": {
-            "ABSCodi":"049"
+            "ABSCodi":"049",
+            "ABSCodiN":49,
+            "ABS":"BARCELONA 6-C",
+            "Population":21275,
+            "Land Area":607790.969
         }
     },
     {
@@ -516,7 +700,11 @@
             "coordinates": [2.1743090953, 41.4077591952]
         },
         "properties": {
-            "ABSCodi":"031"
+            "ABSCodi":"031",
+            "ABSCodiN":31,
+            "ABS":"BARCELONA 2-K",
+            "Population":25670,
+            "Land Area":432005.948
         }
     },
     {
@@ -527,7 +715,11 @@
             "coordinates": [2.1687196436, 41.4104208553]
         },
         "properties": {
-            "ABSCodi":"052"
+            "ABSCodi":"052",
+            "ABSCodiN":52,
+            "ABS":"BARCELONA 7-B",
+            "Population":19314,
+            "Land Area":361500.121
         }
     },
     {
@@ -538,7 +730,11 @@
             "coordinates": [2.1578644797, 41.4118074427]
         },
         "properties": {
-            "ABSCodi":"358"
+            "ABSCodi":"358",
+            "ABSCodiN":358,
+            "ABS":"BARCELONA 6-E",
+            "Population":23409,
+            "Land Area":881477.972
         }
     },
     {
@@ -549,7 +745,11 @@
             "coordinates": [2.1799113278, 41.4047610075]
         },
         "properties": {
-            "ABSCodi":"029"
+            "ABSCodi":"029",
+            "ABSCodiN":29,
+            "ABS":"BARCELONA 2-I",
+            "Population":20727,
+            "Land Area":492821.618
         }
     },
     {
@@ -560,7 +760,11 @@
             "coordinates": [2.1840284302, 41.4094361678]
         },
         "properties": {
-            "ABSCodi":"075"
+            "ABSCodi":"075",
+            "ABSCodiN":75,
+            "ABS":"BARCELONA 10-E",
+            "Population":17281,
+            "Land Area":347238.847
         }
     },
     {
@@ -571,7 +775,11 @@
             "coordinates": [2.1763857220, 41.4188655962]
         },
         "properties": {
-            "ABSCodi":"326"
+            "ABSCodi":"326",
+            "ABSCodiN":326,
+            "ABS":"BARCELONA 7-G",
+            "Population":32584,
+            "Land Area":981347.492
         }
     },
     {
@@ -582,7 +790,11 @@
             "coordinates": [2.1808607550, 41.4132538910]
         },
         "properties": {
-            "ABSCodi":"076"
+            "ABSCodi":"076",
+            "ABSCodiN":76,
+            "ABS":"BARCELONA 10-F",
+            "Population":24358,
+            "Land Area":472763.397
         }
     },
     {
@@ -593,7 +805,11 @@
             "coordinates": [2.1912467859, 41.4098803806]
         },
         "properties": {
-            "ABSCodi":"077"
+            "ABSCodi":"077",
+            "ABSCodiN":77,
+            "ABS":"BARCELONA 10-G",
+            "Population":24210,
+            "Land Area":617197.963
         }
     },
     {
@@ -604,7 +820,11 @@
             "coordinates": [2.1832216408, 41.4217401833]
         },
         "properties": {
-            "ABSCodi":"067"
+            "ABSCodi":"067",
+            "ABSCodiN":67,
+            "ABS":"BARCELONA 9-C",
+            "Population":34931,
+            "Land Area":790846.826
         }
     },
     {
@@ -615,7 +835,11 @@
             "coordinates": [2.1647024956, 41.4176343077]
         },
         "properties": {
-            "ABSCodi":"051"
+            "ABSCodi":"051",
+            "ABSCodiN":51,
+            "ABS":"BARCELONA 7-A",
+            "Population":21769,
+            "Land Area":1009894.214
         }
     },
     {
@@ -626,7 +850,11 @@
             "coordinates": [2.1779058972, 41.4292282997]
         },
         "properties": {
-            "ABSCodi":"385"
+            "ABSCodi":"385",
+            "ABSCodiN":385,
+            "ABS":"BARCELONA 8J",
+            "Population":25175,
+            "Land Area":538675.711
         }
     },
     {
@@ -637,7 +865,11 @@
             "coordinates": [2.1628112645, 41.4263743663]
         },
         "properties": {
-            "ABSCodi":"054"
+            "ABSCodi":"054",
+            "ABSCodiN":54,
+            "ABS":"BARCELONA 7-D",
+            "Population":28160,
+            "Land Area":894966.310
         }
     },
     {
@@ -648,7 +880,11 @@
             "coordinates": [2.1116496205, 41.3884021959]
         },
         "properties": {
-            "ABSCodi":"041"
+            "ABSCodi":"041",
+            "ABSCodiN":41,
+            "ABS":"BARCELONA 4-C",
+            "Population":30826,
+            "Land Area":4452314.364
         }
     },
     {
@@ -659,7 +895,11 @@
             "coordinates": [2.0965709427, 41.4162111333]
         },
         "properties": {
-            "ABSCodi":"045"
+            "ABSCodi":"045",
+            "ABSCodiN":45,
+            "ABS":"BARCELONA 5-D",
+            "Population":19296,
+            "Land Area":13641991.878
         }
     },
     {
@@ -670,7 +910,11 @@
             "coordinates": [2.1330671353, 41.4110158308]
         },
         "properties": {
-            "ABSCodi":"046"
+            "ABSCodi":"046",
+            "ABSCodiN":46,
+            "ABS":"BARCELONA 5-E",
+            "Population":34022,
+            "Land Area":3003713.964
         }
     },
     {
@@ -681,7 +925,11 @@
             "coordinates": [2.1434549235, 41.4173003370]
         },
         "properties": {
-            "ABSCodi":"050"
+            "ABSCodi":"050",
+            "ABSCodiN":50,
+            "ABS":"BARCELONA 6-D",
+            "Population":21658,
+            "Land Area":1446794.440
         }
     },
     {
@@ -692,7 +940,11 @@
             "coordinates": [2.1396632615, 41.4339192501]
         },
         "properties": {
-            "ABSCodi":"055"
+            "ABSCodi":"055",
+            "ABSCodiN":55,
+            "ABS":"BARCELONA 7-E",
+            "Population":31316,
+            "Land Area":6742317.698
         }
     },
     {
@@ -703,7 +955,11 @@
             "coordinates": [2.1574557950, 41.4208843133]
         },
         "properties": {
-            "ABSCodi":"053"
+            "ABSCodi":"053",
+            "ABSCodiN":53,
+            "ABS":"BARCELONA 7-C",
+            "Population":19730,
+            "Land Area":751140.698
         }
     },
     {
@@ -714,7 +970,11 @@
             "coordinates": [2.1679788855, 41.4311051882]
         },
         "properties": {
-            "ABSCodi":"059"
+            "ABSCodi":"059",
+            "ABSCodiN":59,
+            "ABS":"BARCELONA 8-C",
+            "Population":24581,
+            "Land Area":526847.141
         }
     },
     {
@@ -725,7 +985,11 @@
             "coordinates": [2.1567625473, 41.4329618183]
         },
         "properties": {
-            "ABSCodi":"056"
+            "ABSCodi":"056",
+            "ABSCodiN":56,
+            "ABS":"BARCELONA 7-F",
+            "Population":20549,
+            "Land Area":1167038.242
         }
     },
     {
@@ -736,7 +1000,11 @@
             "coordinates": [2.1682880014, 41.4392997828]
         },
         "properties": {
-            "ABSCodi":"062"
+            "ABSCodi":"062",
+            "ABSCodiN":62,
+            "ABS":"BARCELONA 8-F",
+            "Population":25652,
+            "Land Area":960805.045
         }
     },
     {
@@ -747,7 +1015,11 @@
             "coordinates": [2.1794036054, 41.4422594045]
         },
         "properties": {
-            "ABSCodi":"403"
+            "ABSCodi":"403",
+            "ABSCodiN":403,
+            "ABS":"BARCELONA 8-L",
+            "Population":29414,
+            "Land Area":627755.973
         }
     },
     {
@@ -758,7 +1030,11 @@
             "coordinates": [2.1753941325, 41.4487710853]
         },
         "properties": {
-            "ABSCodi":"063"
+            "ABSCodi":"063",
+            "ABSCodiN":63,
+            "ABS":"BARCELONA 8-G",
+            "Population":17207,
+            "Land Area":944296.086
         }
     },
     {
@@ -769,7 +1045,11 @@
             "coordinates": [2.1765331126, 41.4552451698]
         },
         "properties": {
-            "ABSCodi":"064"
+            "ABSCodi":"064",
+            "ABSCodiN":64,
+            "ABS":"BARCELONA 8-H",
+            "Population":15847,
+            "Land Area":3173056.453
         }
     },
     {
@@ -780,7 +1060,11 @@
             "coordinates": [2.1908806942, 41.4212012163]
         },
         "properties": {
-            "ABSCodi":"065"
+            "ABSCodi":"065",
+            "ABSCodiN":65,
+            "ABS":"BARCELONA 9-A",
+            "Population":34455,
+            "Land Area":1054891.635
         }
     },
     {
@@ -791,7 +1075,11 @@
             "coordinates": [2.1889963657, 41.4326999885]
         },
         "properties": {
-            "ABSCodi":"395"
+            "ABSCodi":"395",
+            "ABSCodiN":395,
+            "ABS":"BARCELONA 9-H",
+            "Population":31024,
+            "Land Area":868958.881
         }
     },
     {
@@ -802,7 +1090,11 @@
             "coordinates": [2.1781270485, 41.4348991605]
         },
         "properties": {
-            "ABSCodi":"402"
+            "ABSCodi":"402",
+            "ABSCodiN":402,
+            "ABS":"BARCELONA 8-K",
+            "Population":17800,
+            "Land Area":707431.403
         }
     },
     {
@@ -813,7 +1105,11 @@
             "coordinates": [2.1907418673, 41.4417916533]
         },
         "properties": {
-            "ABSCodi":"396"
+            "ABSCodi":"396",
+            "ABSCodiN":396,
+            "ABS":"BARCELONA 9-I",
+            "Population":24833,
+            "Land Area":898616.058
         }
     },
     {
@@ -824,7 +1120,11 @@
             "coordinates": [2.2016770276, 41.4378596672]
         },
         "properties": {
-            "ABSCodi":"069"
+            "ABSCodi":"069",
+            "ABSCodiN":69,
+            "ABS":"BARCELONA 9-E",
+            "Population":15122,
+            "Land Area":2146350.997
         }
     },
     {
@@ -835,7 +1135,11 @@
             "coordinates": [2.1841624240, 41.4484478447]
         },
         "properties": {
-            "ABSCodi":"327"
+            "ABSCodi":"327",
+            "ABSCodiN":327,
+            "ABS":"BARCELONA 8-I",
+            "Population":18368,
+            "Land Area":563575.696
         }
     },
     {
@@ -846,7 +1150,11 @@
             "coordinates": [2.1991221797, 41.4211079795]
         },
         "properties": {
-            "ABSCodi":"078"
+            "ABSCodi":"078",
+            "ABSCodiN":78,
+            "ABS":"BARCELONA 10-H",
+            "Population":20091,
+            "Land Area":705014.392
         }
     },
     {
@@ -857,7 +1165,11 @@
             "coordinates": [2.2010296239, 41.4166214987]
         },
         "properties": {
-            "ABSCodi":"331"
+            "ABSCodi":"331",
+            "ABSCodiN":331,
+            "ABS":"BARCELONA 10-J",
+            "Population":22643,
+            "Land Area":559607.968
         }
     },
     {
@@ -868,7 +1180,11 @@
             "coordinates": [2.2040910023, 41.4097111329]
         },
         "properties": {
-            "ABSCodi":"073"
+            "ABSCodi":"073",
+            "ABSCodiN":73,
+            "ABS":"BARCELONA 10-C",
+            "Population":23408,
+            "Land Area":1215920.853
         }
     },
     {
@@ -879,7 +1195,11 @@
             "coordinates": [2.2146872012, 41.4142553501]
         },
         "properties": {
-            "ABSCodi":"074"
+            "ABSCodi":"074",
+            "ABSCodiN":74,
+            "ABS":"BARCELONA 10-D",
+            "Population":27921,
+            "Land Area":1229771.356
         }
     },
     {
@@ -890,7 +1210,11 @@
             "coordinates": [2.2078947169, 41.4015428396]
         },
         "properties": {
-            "ABSCodi":"072"
+            "ABSCodi":"072",
+            "ABSCodiN":72,
+            "ABS":"BARCELONA 10-B",
+            "Population":29047,
+            "Land Area":1880252.095
         }
     },
     {
@@ -901,7 +1225,11 @@
             "coordinates": [1.7258192608, 41.2169417852]
         },
         "properties": {
-            "ABSCodi":"380"
+            "ABSCodi":"380",
+            "ABSCodiN":380,
+            "ABS":"VILANOVA I LA GELTRÚ 3",
+            "Population":18955,
+            "Land Area":4759427.260
         }
     },
     {
@@ -912,7 +1240,11 @@
             "coordinates": [0.8520319869, 42.7258932772]
         },
         "properties": {
-            "ABSCodi":"007"
+            "ABSCodi":"007",
+            "ABSCodiN":7,
+            "ABS":"Aran",
+            "Population":9134,
+            "Land Area":632989236.712
         }
     },
     {
@@ -923,7 +1255,11 @@
             "coordinates": [0.7954939057, 42.4638136899]
         },
         "properties": {
-            "ABSCodi":"180"
+            "ABSCodi":"180",
+            "ABSCodiN":180,
+            "ABS":"Alta Ribagorça",
+            "Population":3471,
+            "Land Area":435613855.014
         }
     },
     {
@@ -934,7 +1270,11 @@
             "coordinates": [0.8740722364, 42.1764851144]
         },
         "properties": {
-            "ABSCodi":"259"
+            "ABSCodi":"259",
+            "ABSCodiN":259,
+            "ABS":"Tremp",
+            "Population":8076,
+            "Land Area":827922508.019
         }
     },
     {
@@ -945,7 +1285,11 @@
             "coordinates": [0.7940920022, 41.8822307605]
         },
         "properties": {
-            "ABSCodi":"014"
+            "ABSCodi":"014",
+            "ABSCodiN":14,
+            "ABS":"BALAGUER",
+            "Population":28076,
+            "Land Area":912589073.119
         }
     },
     {
@@ -956,7 +1300,11 @@
             "coordinates": [0.9312436051, 42.3655891485]
         },
         "properties": {
-            "ABSCodi":"179"
+            "ABSCodi":"179",
+            "ABSCodiN":179,
+            "ABS":"La Pobla de Segur",
+            "Population":4249,
+            "Land Area":507234172.650
         }
     },
     {
@@ -967,7 +1315,11 @@
             "coordinates": [1.2174025364, 42.5253403926]
         },
         "properties": {
-            "ABSCodi":"174"
+            "ABSCodi":"174",
+            "ABSCodiN":174,
+            "ABS":"Pallars Sobirà",
+            "Population":5878,
+            "Land Area":1378216034.322
         }
     },
     {
@@ -978,7 +1330,11 @@
             "coordinates": [1.4532578579, 42.3632131854]
         },
         "properties": {
-            "ABSCodi":"233"
+            "ABSCodi":"233",
+            "ABSCodiN":233,
+            "ABS":"La Seu d'Urgell",
+            "Population":16296,
+            "Land Area":1099806880.316
         }
     },
     {
@@ -989,7 +1345,11 @@
             "coordinates": [1.2450074162, 42.1099181634]
         },
         "properties": {
-            "ABSCodi":"169"
+            "ABSCodi":"169",
+            "ABSCodiN":169,
+            "ABS":"Pallars Sobirà",
+            "Population":3821,
+            "Land Area":512546915.677
         }
     },
     {
@@ -1000,7 +1360,11 @@
             "coordinates": [1.8334433304, 42.3906549359]
         },
         "properties": {
-            "ABSCodi":"103"
+            "ABSCodi":"103",
+            "ABSCodiN":103,
+            "ABS":"Cerdanya",
+            "Population":16102,
+            "Land Area":388657259.869
         }
     },
     {
@@ -1011,7 +1375,11 @@
             "coordinates": [1.8298796610, 42.2423966738]
         },
         "properties": {
-            "ABSCodi":"130"
+            "ABSCodi":"130",
+            "ABSCodiN":130,
+            "ABS":"ALT BERGUEDÀ",
+            "Population":4712,
+            "Land Area":402646068.759
         }
     },
     {
@@ -1022,7 +1390,11 @@
             "coordinates": [1.5146141160, 42.0411438416]
         },
         "properties": {
-            "ABSCodi":"236"
+            "ABSCodi":"236",
+            "ABSCodiN":236,
+            "ABS":"EL SOLSONÈS",
+            "Population":12966,
+            "Land Area":875564563.770
         }
     },
     {
@@ -1033,7 +1405,11 @@
             "coordinates": [2.1082945570, 42.3164740289]
         },
         "properties": {
-            "ABSCodi":"343"
+            "ABSCodi":"343",
+            "ABSCodiN":343,
+            "ABS":"RIBES DE FRESER-CAMPDEVÀNOL",
+            "Population":5719,
+            "Land Area":337521421.059
         }
     },
     {
@@ -1044,7 +1420,11 @@
             "coordinates": [2.3500776347, 42.3419512856]
         },
         "properties": {
-            "ABSCodi":"092"
+            "ABSCodi":"092",
+            "ABSCodiN":92,
+            "ABS":"CAMPRODON",
+            "Population":4004,
+            "Land Area":293234162.652
         }
     },
     {
@@ -1055,7 +1435,11 @@
             "coordinates": [2.1968497356, 42.2038708284]
         },
         "properties": {
-            "ABSCodi":"187"
+            "ABSCodi":"187",
+            "ABSCodiN":187,
+            "ABS":"RIPOLL-SANT JOAN DE LES ABADESSES",
+            "Population":14495,
+            "Land Area":322844342.101
         }
     },
     {
@@ -1066,7 +1450,11 @@
             "coordinates": [0.3102334487, 40.6642903168]
         },
         "properties": {
-            "ABSCodi":"260"
+            "ABSCodi":"260",
+            "ABSCodiN":260,
+            "ABS":"ULLDECONA",
+            "Population":11891,
+            "Land Area":235610593.327
         }
     },
     {
@@ -1077,7 +1465,11 @@
             "coordinates": [2.6477842324, 42.2388341040]
         },
         "properties": {
-            "ABSCodi":"083"
+            "ABSCodi":"083",
+            "ABSCodiN":83,
+            "ABS":"BESALÚ",
+            "Population":6201,
+            "Land Area":260079438.735
         }
     },
     {
@@ -1088,7 +1480,11 @@
             "coordinates": [2.4603791471, 42.2297522238]
         },
         "properties": {
-            "ABSCodi":"346"
+            "ABSCodi":"346",
+            "ABSCodiN":346,
+            "ABS":"SANT JOAN LES FONTS",
+            "Population":5191,
+            "Land Area":126311023.215
         }
     },
     {
@@ -1099,7 +1495,11 @@
             "coordinates": [2.5426816533, 42.1611168918]
         },
         "properties": {
-            "ABSCodi":"171"
+            "ABSCodi":"171",
+            "ABSCodiN":171,
+            "ABS":"OLOT",
+            "Population":39591,
+            "Land Area":86990980.769
         }
     },
     {
@@ -1110,7 +1510,11 @@
             "coordinates": [2.7185956179, 42.1218414698]
         },
         "properties": {
-            "ABSCodi":"015"
+            "ABSCodi":"015",
+            "ABSCodiN":15,
+            "ABS":"BANYOLES",
+            "Population":32397,
+            "Land Area":230653907.470
         }
     },
     {
@@ -1121,7 +1525,11 @@
             "coordinates": [2.7976798397, 42.2797331892]
         },
         "properties": {
-            "ABSCodi":"267"
+            "ABSCodi":"267",
+            "ABSCodiN":267,
+            "ABS":"VILAFANT",
+            "Population":14374,
+            "Land Area":359011323.285
         }
     },
     {
@@ -1132,7 +1540,11 @@
             "coordinates": [3.0189653964, 42.3672845424]
         },
         "properties": {
-            "ABSCodi":"177"
+            "ABSCodi":"177",
+            "ABSCodiN":177,
+            "ABS":"PERALADA",
+            "Population":7335,
+            "Land Area":240810693.353
         }
     },
     {
@@ -1143,7 +1555,11 @@
             "coordinates": [3.0620708206, 42.1398508581]
         },
         "properties": {
-            "ABSCodi":"114"
+            "ABSCodi":"114",
+            "ABSCodiN":114,
+            "ABS":"L'ESCALA",
+            "Population":15668,
+            "Land Area":123587032.287
         }
     },
     {
@@ -1154,7 +1570,11 @@
             "coordinates": [3.0089658805, 42.2504298234]
         },
         "properties": {
-            "ABSCodi":"119"
+            "ABSCodi":"119",
+            "ABSCodiN":119,
+            "ABS":"FIGUERES",
+            "Population":49512,
+            "Land Area":51440275.442
         }
     },
     {
@@ -1165,7 +1585,11 @@
             "coordinates": [2.9189755072, 42.1401677259]
         },
         "properties": {
-            "ABSCodi":"080"
+            "ABSCodi":"080",
+            "ABSCodiN":80,
+            "ABS":"BÀSCARA",
+            "Population":4596,
+            "Land Area":174816794.522
         }
     },
     {
@@ -1176,7 +1600,11 @@
             "coordinates": [2.8093711163, 42.3918623628]
         },
         "properties": {
-            "ABSCodi":"133"
+            "ABSCodi":"133",
+            "ABSCodiN":133,
+            "ABS":"LA JONQUERA",
+            "Population":7086,
+            "Land Area":267419867.819
         }
     },
     {
@@ -1187,7 +1615,11 @@
             "coordinates": [3.1773418015, 42.2683695957]
         },
         "properties": {
-            "ABSCodi":"189"
+            "ABSCodi":"189",
+            "ABSCodiN":189,
+            "ABS":"ROSES",
+            "Population":33008,
+            "Land Area":141652275.907
         }
     },
     {
@@ -1198,7 +1630,11 @@
             "coordinates": [3.1266176740, 42.3636993031]
         },
         "properties": {
-            "ABSCodi":"134"
+            "ABSCodi":"134",
+            "ABSCodiN":134,
+            "ABS":"LLANÇÀ",
+            "Population":6726,
+            "Land Area":109988087.296
         }
     },
     {
@@ -1209,7 +1645,11 @@
             "coordinates": [0.4256356799, 41.6988529696]
         },
         "properties": {
-            "ABSCodi":"334"
+            "ABSCodi":"334",
+            "ABSCodiN":334,
+            "ABS":"ALMACELLES",
+            "Population":8930,
+            "Land Area":162216612.570
         }
     },
     {
@@ -1220,7 +1660,11 @@
             "coordinates": [0.5860120280, 41.8092576913]
         },
         "properties": {
-            "ABSCodi":"003"
+            "ABSCodi":"003",
+            "ABSCodiN":3,
+            "ABS":"ALFARRÀS/ALMENAR",
+            "Population":9668,
+            "Land Area":209863577.709
         }
     },
     {
@@ -1231,7 +1675,11 @@
             "coordinates": [0.4929715442, 41.5634919548]
         },
         "properties": {
-            "ABSCodi":"002"
+            "ABSCodi":"002",
+            "ABSCodiN":2,
+            "ABS":"ALCARRÀS",
+            "Population":14052,
+            "Land Area":195864725.107
         }
     },
     {
@@ -1242,7 +1690,11 @@
             "coordinates": [0.7290058089, 40.8850767748]
         },
         "properties": {
-            "ABSCodi":"178"
+            "ABSCodi":"178",
+            "ABSCodiN":178,
+            "ABS":"L'AMETLLA DE MAR - EL PERELLÓ",
+            "Population":9177,
+            "Land Area":167742830.308
         }
     },
     {
@@ -1253,7 +1705,11 @@
             "coordinates": [0.4144060840, 41.0291109282]
         },
         "properties": {
-            "ABSCodi":"246"
+            "ABSCodi":"246",
+            "ABSCodiN":246,
+            "ABS":"TERRA ALTA",
+            "Population":10967,
+            "Land Area":742603321.180
         }
     },
     {
@@ -1264,7 +1720,11 @@
             "coordinates": [0.6133508630, 41.4862313111]
         },
         "properties": {
-            "ABSCodi":"329"
+            "ABSCodi":"329",
+            "ABSCodiN":329,
+            "ABS":"LLEIDA RURAL 2-SUD",
+            "Population":7478,
+            "Land Area":208235617.498
         }
     },
     {
@@ -1275,7 +1735,11 @@
             "coordinates": [0.8598099887, 41.4630952106]
         },
         "properties": {
-            "ABSCodi":"086"
+            "ABSCodi":"086",
+            "ABSCodiN":86,
+            "ABS":"LES BORGES BLANQUES",
+            "Population":15876,
+            "Land Area":526949996.327
         }
     },
     {
@@ -1286,7 +1750,11 @@
             "coordinates": [0.6800344910, 41.5825505338]
         },
         "properties": {
-            "ABSCodi":"140"
+            "ABSCodi":"140",
+            "ABSCodiN":140,
+            "ABS":"LLEIDA 6 BORDETA-MAGRANERS",
+            "Population":16759,
+            "Land Area":69541737.480
         }
     },
     {
@@ -1297,7 +1765,11 @@
             "coordinates": [0.6852605469, 41.3751052335]
         },
         "properties": {
-            "ABSCodi":"129"
+            "ABSCodi":"129",
+            "ABSCodiN":129,
+            "ABS":"LA GRANADELLA",
+            "Population":2400,
+            "Land Area":325829359.380
         }
     },
     {
@@ -1308,7 +1780,11 @@
             "coordinates": [0.5971630233, 41.7099391503]
         },
         "properties": {
-            "ABSCodi":"141"
+            "ABSCodi":"141",
+            "ABSCodiN":141,
+            "ABS":"LLEIDA RURAL 1-NORD",
+            "Population":23797,
+            "Land Area":179281341.974
         }
     },
     {
@@ -1319,7 +1795,11 @@
             "coordinates": [0.8577995759, 41.6374607299]
         },
         "properties": {
-            "ABSCodi":"161"
+            "ABSCodi":"161",
+            "ABSCodiN":161,
+            "ABS":"PLA D'URGELL",
+            "Population":37936,
+            "Land Area":333055452.758
         }
     },
     {
@@ -1330,7 +1810,11 @@
             "coordinates": [0.3997400214, 41.4024128763]
         },
         "properties": {
-            "ABSCodi":"232"
+            "ABSCodi":"232",
+            "ABSCodiN":232,
+            "ABS":"SERÒS",
+            "Population":6800,
+            "Land Area":318552988.370
         }
     },
     {
@@ -1341,7 +1825,11 @@
             "coordinates": [0.9353829901, 41.2863986559]
         },
         "properties": {
-            "ABSCodi":"112"
+            "ABSCodi":"112",
+            "ABSCodiN":112,
+            "ABS":"CORNUDELLA DE MONTSANT",
+            "Population":2175,
+            "Land Area":230079241.496
         }
     },
     {
@@ -1352,7 +1840,11 @@
             "coordinates": [0.5620287904, 41.2278668274]
         },
         "properties": {
-            "ABSCodi":"120"
+            "ABSCodi":"120",
+            "ABSCodiN":120,
+            "ABS":"FLIX",
+            "Population":7349,
+            "Land Area":430946865.731
         }
     },
     {
@@ -1363,7 +1855,11 @@
             "coordinates": [0.6727871247, 41.0583157708]
         },
         "properties": {
-            "ABSCodi":"165"
+            "ABSCodi":"165",
+            "ABSCodiN":165,
+            "ABS":"MÓRA LA NOVA - MÓRA D'EBRE",
+            "Population":14035,
+            "Land Area":445059292.953
         }
     },
     {
@@ -1374,7 +1870,11 @@
             "coordinates": [0.7894300745, 41.1705245926]
         },
         "properties": {
-            "ABSCodi":"118"
+            "ABSCodi":"118",
+            "ABSCodiN":118,
+            "ABS":"FALSET",
+            "Population":6620,
+            "Land Area":281095702.319
         }
     },
     {
@@ -1385,7 +1885,11 @@
             "coordinates": [0.8491298181, 40.9990026944]
         },
         "properties": {
-            "ABSCodi":"324"
+            "ABSCodi":"324",
+            "ABSCodiN":324,
+            "ABS":"VANDELLÒS I L'HOSPITALET DE L'INFANT",
+            "Population":5894,
+            "Land Area":102755359.234
         }
     },
     {
@@ -1396,7 +1900,11 @@
             "coordinates": [0.4132308973, 40.8363863822]
         },
         "properties": {
-            "ABSCodi":"256"
+            "ABSCodi":"256",
+            "ABSCodiN":256,
+            "ABS":"TORTOSA 2 - OEST",
+            "Population":23562,
+            "Land Area":509084787.833
         }
     },
     {
@@ -1407,7 +1915,11 @@
             "coordinates": [0.9327402128, 41.0600509867]
         },
         "properties": {
-            "ABSCodi":"163"
+            "ABSCodi":"163",
+            "ABSCodiN":163,
+            "ABS":"MONT-ROIG DEL CAMP",
+            "Population":13029,
+            "Land Area":131185045.676
         }
     },
     {
@@ -1418,7 +1930,11 @@
             "coordinates": [1.0248133027, 41.0835402247]
         },
         "properties": {
-            "ABSCodi":"091"
+            "ABSCodi":"091",
+            "ABSCodiN":91,
+            "ABS":"CAMBRILS",
+            "Population":34032,
+            "Land Area":36600292.330
         }
     },
     {
@@ -1429,7 +1945,11 @@
             "coordinates": [0.9885168724, 41.1336213932]
         },
         "properties": {
-            "ABSCodi":"188"
+            "ABSCodi":"188",
+            "ABSCodiN":188,
+            "ABS":"RIUDOMS",
+            "Population":12623,
+            "Land Area":105037569.028
         }
     },
     {
@@ -1440,7 +1960,11 @@
             "coordinates": [1.0013287259, 41.2106706593]
         },
         "properties": {
-            "ABSCodi":"087"
+            "ABSCodi":"087",
+            "ABSCodiN":87,
+            "ABS":"LES BORGES DEL CAMP",
+            "Population":6698,
+            "Land Area":139794816.861
         }
     },
     {
@@ -1451,7 +1975,11 @@
             "coordinates": [1.0703933636, 41.7830632241]
         },
         "properties": {
-            "ABSCodi":"001"
+            "ABSCodi":"001",
+            "ABSCodiN":1,
+            "ABS":"AGRAMUNT",
+            "Population":6452,
+            "Land Area":180433243.920
         }
     },
     {
@@ -1462,7 +1990,11 @@
             "coordinates": [1.1119888056, 41.6451366954]
         },
         "properties": {
-            "ABSCodi":"245"
+            "ABSCodi":"245",
+            "ABSCodiN":245,
+            "ABS":"TÀRREGA",
+            "Population":23779,
+            "Land Area":284588355.172
         }
     },
     {
@@ -1473,7 +2005,11 @@
             "coordinates": [1.0193908050, 41.9363748149]
         },
         "properties": {
-            "ABSCodi":"012"
+            "ABSCodi":"012",
+            "ABSCodiN":12,
+            "ABS":"ARTESA DE SEGRE",
+            "Population":4041,
+            "Land Area":378764059.994
         }
     },
     {
@@ -1484,7 +2020,11 @@
             "coordinates": [1.2095415865, 41.9528654006]
         },
         "properties": {
-            "ABSCodi":"181"
+            "ABSCodi":"181",
+            "ABSCodiN":181,
+            "ABS":"PONTS",
+            "Population":3622,
+            "Land Area":383705551.071
         }
     },
     {
@@ -1495,7 +2035,11 @@
             "coordinates": [1.1421660977, 41.0780067711]
         },
         "properties": {
-            "ABSCodi":"339"
+            "ABSCodi":"339",
+            "ABSCodiN":339,
+            "ABS":"SALOU",
+            "Population":26647,
+            "Land Area":15127345.951
         }
     },
     {
@@ -1506,7 +2050,11 @@
             "coordinates": [1.1136104094, 41.0976700577]
         },
         "properties": {
-            "ABSCodi":"340"
+            "ABSCodi":"340",
+            "ABSCodiN":340,
+            "ABS":"VILA-SECA",
+            "Population":22097,
+            "Land Area":21657749.519
         }
     },
     {
@@ -1517,7 +2065,11 @@
             "coordinates": [1.1092381259, 41.1269866785]
         },
         "properties": {
-            "ABSCodi":"307"
+            "ABSCodi":"307",
+            "ABSCodiN":307,
+            "ABS":"REUS 5",
+            "Population":27816,
+            "Land Area":13472315.631
         }
     },
     {
@@ -1528,7 +2080,11 @@
             "coordinates": [1.0926234984, 41.1431088449]
         },
         "properties": {
-            "ABSCodi":"304"
+            "ABSCodi":"304",
+            "ABSCodiN":304,
+            "ABS":"REUS 2",
+            "Population":26991,
+            "Land Area":7501259.455
         }
     },
     {
@@ -1539,7 +2095,11 @@
             "coordinates": [1.1429043420, 41.1489294480]
         },
         "properties": {
-            "ABSCodi":"306"
+            "ABSCodi":"306",
+            "ABSCodiN":306,
+            "ABS":"REUS 4",
+            "Population":21428,
+            "Land Area":20667230.528
         }
     },
     {
@@ -1550,7 +2110,11 @@
             "coordinates": [1.1942813150, 41.1617476495]
         },
         "properties": {
-            "ABSCodi":"107"
+            "ABSCodi":"107",
+            "ABSCodiN":107,
+            "ABS":"CONSTANTÍ",
+            "Population":6771,
+            "Land Area":31036707.406
         }
     },
     {
@@ -1561,7 +2125,11 @@
             "coordinates": [1.4090087175, 41.1936206201]
         },
         "properties": {
-            "ABSCodi":"257"
+            "ABSCodi":"257",
+            "ABSCodiN":257,
+            "ABS":"TORREDEMBARRA",
+            "Population":36531,
+            "Land Area":123667834.220
         }
     },
     {
@@ -1572,7 +2140,11 @@
             "coordinates": [1.3907791990, 41.3384507712]
         },
         "properties": {
-            "ABSCodi":"262"
+            "ABSCodi":"262",
+            "ABSCodiN":262,
+            "ABS":"ALT CAMP EST",
+            "Population":11844,
+            "Land Area":407180560.487
         }
     },
     {
@@ -1583,7 +2155,11 @@
             "coordinates": [1.2314179998, 41.2017075220]
         },
         "properties": {
-            "ABSCodi":"166"
+            "ABSCodi":"166",
+            "ABSCodiN":166,
+            "ABS":"EL MORELL",
+            "Population":12182,
+            "Land Area":54026508.345
         }
     },
     {
@@ -1594,7 +2170,11 @@
             "coordinates": [1.2456889064, 41.2794783526]
         },
         "properties": {
-            "ABSCodi":"263"
+            "ABSCodi":"263",
+            "ABSCodiN":263,
+            "ABS":"VALLS URBÀ",
+            "Population":27243,
+            "Land Area":75686452.600
         }
     },
     {
@@ -1605,7 +2185,11 @@
             "coordinates": [1.1255070093, 41.2903446893]
         },
         "properties": {
-            "ABSCodi":"333"
+            "ABSCodi":"333",
+            "ABSCodiN":333,
+            "ABS":"ALT CAMP OEST",
+            "Population":6266,
+            "Land Area":105589167.812
         }
     },
     {
@@ -1616,7 +2200,11 @@
             "coordinates": [1.1345916222, 41.2184723847]
         },
         "properties": {
-            "ABSCodi":"354"
+            "ABSCodi":"354",
+            "ABSCodiN":354,
+            "ABS":"LA SELVA DEL CAMP",
+            "Population":7228,
+            "Land Area":61637902.064
         }
     },
     {
@@ -1627,7 +2215,11 @@
             "coordinates": [1.0923280715, 41.1805220806]
         },
         "properties": {
-            "ABSCodi":"305"
+            "ABSCodi":"305",
+            "ABSCodiN":305,
+            "ABS":"REUS 3",
+            "Population":22605,
+            "Land Area":15781368.822
         }
     },
     {
@@ -1638,7 +2230,11 @@
             "coordinates": [1.1727661820, 41.4270635844]
         },
         "properties": {
-            "ABSCodi":"162"
+            "ABSCodi":"162",
+            "ABSCodiN":162,
+            "ABS":"MONTBLANC",
+            "Population":15820,
+            "Land Area":436297655.686
         }
     },
     {
@@ -1649,7 +2245,11 @@
             "coordinates": [1.0305370772, 41.5721711643]
         },
         "properties": {
-            "ABSCodi":"081"
+            "ABSCodi":"081",
+            "ABSCodiN":81,
+            "ABS":"BELLPUIG",
+            "Population":7149,
+            "Land Area":185833506.623
         }
     },
     {
@@ -1660,7 +2260,11 @@
             "coordinates": [2.8750499578, 42.0570680486]
         },
         "properties": {
-            "ABSCodi":"231"
+            "ABSCodi":"231",
+            "ABSCodiN":231,
+            "ABS":"SARRIÀ DE TER",
+            "Population":13920,
+            "Land Area":70948534.282
         }
     },
     {
@@ -1671,7 +2275,11 @@
             "coordinates": [2.9256928182, 42.0255372270]
         },
         "properties": {
-            "ABSCodi":"101"
+            "ABSCodi":"101",
+            "ABSCodiN":101,
+            "ABS":"CELRÀ",
+            "Population":10082,
+            "Land Area":93229964.410
         }
     },
     {
@@ -1682,7 +2290,11 @@
             "coordinates": [3.1254448584, 42.0553765038]
         },
         "properties": {
-            "ABSCodi":"258"
+            "ABSCodi":"258",
+            "ABSCodiN":258,
+            "ABS":"TORROELLA DE MONTGRÍ",
+            "Population":15512,
+            "Land Area":132408627.739
         }
     },
     {
@@ -1693,7 +2305,11 @@
             "coordinates": [2.4622016501, 42.1213383364]
         },
         "properties": {
-            "ABSCodi":"347"
+            "ABSCodi":"347",
+            "ABSCodiN":347,
+            "ABS":"VALL D'EN BAS",
+            "Population":6374,
+            "Land Area":185359065.722
         }
     },
     {
@@ -1704,7 +2320,11 @@
             "coordinates": [1.8121839183, 42.1072287606]
         },
         "properties": {
-            "ABSCodi":"082"
+            "ABSCodi":"082",
+            "ABSCodiN":82,
+            "ABS":"BERGA",
+            "Population":21536,
+            "Land Area":382021592.481
         }
     },
     {
@@ -1715,7 +2335,11 @@
             "coordinates": [2.1596030140, 42.0886595172]
         },
         "properties": {
-            "ABSCodi":"217"
+            "ABSCodi":"217",
+            "ABSCodiN":217,
+            "ABS":"SANT QUIRZE DE BESORA",
+            "Population":4663,
+            "Land Area":164456286.120
         }
     },
     {
@@ -1726,7 +2350,11 @@
             "coordinates": [2.6793741495, 42.0475120286]
         },
         "properties": {
-            "ABSCodi":"127"
+            "ABSCodi":"127",
+            "ABSCodiN":127,
+            "ABS":"GIRONA 4",
+            "Population":15426,
+            "Land Area":178076622.121
         }
     },
     {
@@ -1737,7 +2365,11 @@
             "coordinates": [3.0889346802, 41.8624675235]
         },
         "properties": {
-            "ABSCodi":"173"
+            "ABSCodi":"173",
+            "ABSCodiN":173,
+            "ABS":"PALAMÓS",
+            "Population":28960,
+            "Land Area":52992580.843
         }
     },
     {
@@ -1748,7 +2380,11 @@
             "coordinates": [2.8627018566, 41.7299957534]
         },
         "properties": {
-            "ABSCodi":"142"
+            "ABSCodi":"142",
+            "ABSCodiN":142,
+            "ABS":"LLORET DE MAR",
+            "Population":40253,
+            "Land Area":86485796.853
         }
     },
     {
@@ -1759,7 +2395,11 @@
             "coordinates": [2.7893345285, 41.6905838771]
         },
         "properties": {
-            "ABSCodi":"085"
+            "ABSCodi":"085",
+            "ABSCodiN":85,
+            "ABS":"BLANES",
+            "Population":39161,
+            "Land Area":17743015.956
         }
     },
     {
@@ -1770,7 +2410,11 @@
             "coordinates": [2.3220850341, 41.4973165779]
         },
         "properties": {
-            "ABSCodi":"362"
+            "ABSCodi":"362",
+            "ABSCodiN":362,
+            "ABS":"OCATA-TEIÀ",
+            "Population":14745,
+            "Land Area":8555691.192
         }
     },
     {
@@ -1781,7 +2425,11 @@
             "coordinates": [2.3464195528, 41.5051449803]
         },
         "properties": {
-            "ABSCodi":"186"
+            "ABSCodi":"186",
+            "ABSCodiN":186,
+            "ABS":"PREMIÀ DE MAR",
+            "Population":38498,
+            "Land Area":8587626.136
         }
     },
     {
@@ -1792,7 +2440,11 @@
             "coordinates": [2.2949329581, 41.4938054723]
         },
         "properties": {
-            "ABSCodi":"361"
+            "ABSCodi":"361",
+            "ABSCodiN":361,
+            "ABS":"EL MASNOU-ALELLA",
+            "Population":24050,
+            "Land Area":11247353.035
         }
     },
     {
@@ -1803,7 +2455,11 @@
             "coordinates": [2.2708611956, 41.4827925083]
         },
         "properties": {
-            "ABSCodi":"319"
+            "ABSCodi":"319",
+            "ABSCodiN":319,
+            "ABS":"MONTGAT",
+            "Population":20045,
+            "Land Area":10769531.444
         }
     },
     {
@@ -1814,7 +2470,11 @@
             "coordinates": [1.6482063360, 41.2212176362]
         },
         "properties": {
-            "ABSCodi":"359"
+            "ABSCodi":"359",
+            "ABSCodiN":359,
+            "ABS":"CUBELLES-CUNIT",
+            "Population":27448,
+            "Land Area":28592055.487
         }
     },
     {
@@ -1825,7 +2485,11 @@
             "coordinates": [1.5156378039, 41.2450767857]
         },
         "properties": {
-            "ABSCodi":"013"
+            "ABSCodi":"013",
+            "ABSCodiN":13,
+            "ABS":"EL VENDRELL",
+            "Population":47252,
+            "Land Area":106771298.036
         }
     },
     {
@@ -1836,7 +2500,11 @@
             "coordinates": [1.5863710112, 41.2090337965]
         },
         "properties": {
-            "ABSCodi":"357"
+            "ABSCodi":"357",
+            "ABSCodiN":357,
+            "ABS":"CALAFELL",
+            "Population":24989,
+            "Land Area":20308435.265
         }
     },
     {
@@ -1847,7 +2515,11 @@
             "coordinates": [1.5572091963, 41.3102702867]
         },
         "properties": {
-            "ABSCodi":"314"
+            "ABSCodi":"314",
+            "ABSCodiN":314,
+            "ABS":"BAIX PENEDÈS - INTERIOR",
+            "Population":15102,
+            "Land Area":114788102.856
         }
     },
     {
@@ -1858,7 +2530,11 @@
             "coordinates": [1.7017565837, 41.2455770594]
         },
         "properties": {
-            "ABSCodi":"317"
+            "ABSCodi":"317",
+            "ABSCodiN":317,
+            "ABS":"VILANOVA I LA GELTRÚ 2",
+            "Population":24010,
+            "Land Area":22961423.188
         }
     },
     {
@@ -1869,7 +2545,11 @@
             "coordinates": [1.7289324486, 41.2598799927]
         },
         "properties": {
-            "ABSCodi":"394"
+            "ABSCodi":"394",
+            "ABSCodiN":394,
+            "ABS":"ROQUETES-CANYELLES",
+            "Population":18491,
+            "Land Area":21654187.636
         }
     },
     {
@@ -1880,7 +2560,11 @@
             "coordinates": [1.8116566322, 41.2827918072]
         },
         "properties": {
-            "ABSCodi":"393"
+            "ABSCodi":"393",
+            "ABSCodiN":393,
+            "ABS":"RIBES-OLIVELLA",
+            "Population":19128,
+            "Land Area":72033444.925
         }
     },
     {
@@ -1891,7 +2575,11 @@
             "coordinates": [1.8510684012, 41.2512950295]
         },
         "properties": {
-            "ABSCodi":"235"
+            "ABSCodi":"235",
+            "ABSCodiN":235,
+            "ABS":"SITGES",
+            "Population":25321,
+            "Land Area":37860410.563
         }
     },
     {
@@ -1902,7 +2590,11 @@
             "coordinates": [1.9560674960, 41.2737692999]
         },
         "properties": {
-            "ABSCodi":"366"
+            "ABSCodi":"366",
+            "ABSCodiN":366,
+            "ABS":"CASTELLDEFELS-2",
+            "Population":28489,
+            "Land Area":15953163.813
         }
     },
     {
@@ -1913,7 +2605,11 @@
             "coordinates": [2.0397944088, 41.2969206439]
         },
         "properties": {
-            "ABSCodi":"265"
+            "ABSCodi":"265",
+            "ABSCodiN":265,
+            "ABS":"VILADECANS 1",
+            "Population":24164,
+            "Land Area":15078317.362
         }
     },
     {
@@ -1924,7 +2620,11 @@
             "coordinates": [1.8087732311, 41.3600015833]
         },
         "properties": {
-            "ABSCodi":"176"
+            "ABSCodi":"176",
+            "ABSCodiN":176,
+            "ABS":"PENEDÈS RURAL",
+            "Population":33983,
+            "Land Area":387209468.474
         }
     },
     {
@@ -1935,7 +2635,11 @@
             "coordinates": [1.8979109051, 41.3170923973]
         },
         "properties": {
-            "ABSCodi":"373"
+            "ABSCodi":"373",
+            "ABSCodiN":373,
+            "ABS":"BEGUES",
+            "Population":6921,
+            "Land Area":50430163.959
         }
     },
     {
@@ -1946,7 +2650,11 @@
             "coordinates": [1.9701656600, 41.3545922098]
         },
         "properties": {
-            "ABSCodi":"374"
+            "ABSCodi":"374",
+            "ABSCodiN":374,
+            "ABS":"SANT VICENÇ DELS HORTS-1",
+            "Population":21226,
+            "Land Area":17661042.274
         }
     },
     {
@@ -1957,7 +2665,11 @@
             "coordinates": [1.9261490267, 41.3823774734]
         },
         "properties": {
-            "ABSCodi":"261"
+            "ABSCodi":"261",
+            "ABSCodiN":261,
+            "ABS":"VALLIRANA",
+            "Population":23269,
+            "Land Area":47889880.583
         }
     },
     {
@@ -1968,7 +2680,11 @@
             "coordinates": [1.9950193153, 41.3870054430]
         },
         "properties": {
-            "ABSCodi":"375"
+            "ABSCodi":"375",
+            "ABSCodiN":375,
+            "ABS":"SANT VICENÇ DELS HORTS-2",
+            "Population":12673,
+            "Land Area":5259946.672
         }
     },
     {
@@ -1979,7 +2695,11 @@
             "coordinates": [2.0226695029, 41.3630958131]
         },
         "properties": {
-            "ABSCodi":"203"
+            "ABSCodi":"203",
+            "ABSCodiN":203,
+            "ABS":"SANT BOI DE LLOBREGAT 2",
+            "Population":21901,
+            "Land Area":11377724.979
         }
     },
     {
@@ -1990,7 +2710,11 @@
             "coordinates": [1.9253397086, 41.4211025836]
         },
         "properties": {
-            "ABSCodi":"369"
+            "ABSCodi":"369",
+            "ABSCodiN":369,
+            "ABS":"CORBERA DE LLOBREGAT",
+            "Population":17290,
+            "Land Area":23686898.179
         }
     },
     {
@@ -2001,7 +2725,11 @@
             "coordinates": [1.9845525342, 41.4228269136]
         },
         "properties": {
-            "ABSCodi":"367"
+            "ABSCodi":"367",
+            "ABSCodiN":367,
+            "ABS":"PALLEJÀ",
+            "Population":11422,
+            "Land Area":8428282.439
         }
     },
     {
@@ -2012,7 +2740,11 @@
             "coordinates": [2.0354722836, 41.3850796666]
         },
         "properties": {
-            "ABSCodi":"209"
+            "ABSCodi":"209",
+            "ABSCodiN":209,
+            "ABS":"SANT FELIU DE LLOBREGAT 1",
+            "Population":18321,
+            "Land Area":3781160.606
         }
     },
     {
@@ -2023,7 +2755,11 @@
             "coordinates": [2.0293996023, 41.4251680470]
         },
         "properties": {
-            "ABSCodi":"160"
+            "ABSCodi":"160",
+            "ABSCodiN":160,
+            "ABS":"MOLINS DE REI",
+            "Population":29941,
+            "Land Area":24572999.030
         }
     },
     {
@@ -2034,7 +2770,9 @@
             "coordinates": [1.9786301709, 41.4677503175]
         },
         "properties": {
-            "ABSCodi":"399"
+            "ABSCodi":"399",
+            "ABSCodiN":399,
+            "ABS":""
         }
     },
     {
@@ -2045,7 +2783,11 @@
             "coordinates": [2.0546512369, 41.3989461324]
         },
         "properties": {
-            "ABSCodi":"210"
+            "ABSCodi":"210",
+            "ABSCodiN":210,
+            "ABS":"SANT FELIU DE LLOBREGAT 2",
+            "Population":26671,
+            "Land Area":8157132.862
         }
     },
     {
@@ -2056,7 +2798,11 @@
             "coordinates": [2.0935288932, 41.4451962412]
         },
         "properties": {
-            "ABSCodi":"389"
+            "ABSCodi":"389",
+            "ABSCodiN":389,
+            "ABS":"SANT CUGAT DEL VALLÈS-2",
+            "Population":31770,
+            "Land Area":32346355.924
         }
     },
     {
@@ -2067,7 +2813,11 @@
             "coordinates": [1.9590652900, 41.4528430184]
         },
         "properties": {
-            "ABSCodi":"201"
+            "ABSCodi":"201",
+            "ABSCodiN":201,
+            "ABS":"SANT ANDREU DE LA BARCA",
+            "Population":28033,
+            "Land Area":7430753.687
         }
     },
     {
@@ -2078,7 +2828,11 @@
             "coordinates": [1.9317066636, 41.4886015942]
         },
         "properties": {
-            "ABSCodi":"149"
+            "ABSCodi":"149",
+            "ABSCodiN":149,
+            "ABS":"MARTORELL",
+            "Population":29586,
+            "Land Area":28210576.417
         }
     },
     {
@@ -2089,7 +2843,11 @@
             "coordinates": [2.0096946419, 41.5025233959]
         },
         "properties": {
-            "ABSCodi":"378"
+            "ABSCodi":"378",
+            "ABSCodiN":378,
+            "ABS":"RUBÍ -3",
+            "Population":16552,
+            "Land Area":25702375.670
         }
     },
     {
@@ -2100,7 +2858,11 @@
             "coordinates": [1.9621289774, 41.5439823133]
         },
         "properties": {
-            "ABSCodi":"250"
+            "ABSCodi":"250",
+            "ABSCodiN":250,
+            "ABS":"TERRASSA D",
+            "Population":33123,
+            "Land Area":34129430.099
         }
     },
     {
@@ -2111,7 +2873,11 @@
             "coordinates": [1.9059641301, 41.5158759735]
         },
         "properties": {
-            "ABSCodi":"370"
+            "ABSCodi":"370",
+            "ABSCodiN":370,
+            "ABS":"ABRERA",
+            "Population":12234,
+            "Land Area":19966209.441
         }
     },
     {
@@ -2122,7 +2888,11 @@
             "coordinates": [1.8550797157, 41.4640879660]
         },
         "properties": {
-            "ABSCodi":"360"
+            "ABSCodi":"360",
+            "ABSCodiN":360,
+            "ABS":"MARTORELL RURAL",
+            "Population":27407,
+            "Land Area":96465838.154
         }
     },
     {
@@ -2133,7 +2903,11 @@
             "coordinates": [1.7498355784, 41.5197620340]
         },
         "properties": {
-            "ABSCodi":"338"
+            "ABSCodi":"338",
+            "ABSCodiN":338,
+            "ABS":"PIERA",
+            "Population":18081,
+            "Land Area":88151046.878
         }
     },
     {
@@ -2144,7 +2918,11 @@
             "coordinates": [1.8982675314, 41.5559274957]
         },
         "properties": {
-            "ABSCodi":"168"
+            "ABSCodi":"168",
+            "ABSCodiN":168,
+            "ABS":"OLESA DE MONTSERRAT",
+            "Population":24001,
+            "Land Area":16626007.725
         }
     },
     {
@@ -2155,7 +2933,11 @@
             "coordinates": [1.8069776898, 41.5848148218]
         },
         "properties": {
-            "ABSCodi":"115"
+            "ABSCodi":"115",
+            "ABSCodiN":115,
+            "ABS":"ESPARRAGUERA",
+            "Population":27678,
+            "Land Area":92740835.848
         }
     },
     {
@@ -2166,7 +2948,11 @@
             "coordinates": [1.8879415403, 41.6189323007]
         },
         "properties": {
-            "ABSCodi":"098"
+            "ABSCodi":"098",
+            "ABSCodiN":98,
+            "ABS":"MONTSERRAT",
+            "Population":13455,
+            "Land Area":98827600.744
         }
     },
     {
@@ -2177,7 +2963,11 @@
             "coordinates": [1.8722846500, 41.7598162855]
         },
         "properties": {
-            "ABSCodi":"211"
+            "ABSCodi":"211",
+            "ABSCodiN":211,
+            "ABS":"NAVARCLES - SANT FRUITÓS DE BAGES",
+            "Population":23446,
+            "Land Area":150683927.537
         }
     },
     {
@@ -2188,7 +2978,11 @@
             "coordinates": [1.9881923682, 41.8473424707]
         },
         "properties": {
-            "ABSCodi":"011"
+            "ABSCodi":"011",
+            "ABSCodiN":11,
+            "ABS":"ARTÉS",
+            "Population":11157,
+            "Land Area":226176350.518
         }
     },
     {
@@ -2199,7 +2993,11 @@
             "coordinates": [1.6745087868, 41.8288353455]
         },
         "properties": {
-            "ABSCodi":"237"
+            "ABSCodi":"237",
+            "ABSCodiN":237,
+            "ABS":"SÚRIA",
+            "Population":8777,
+            "Land Area":196022494.999
         }
     },
     {
@@ -2210,7 +3008,11 @@
             "coordinates": [1.8415930911, 41.6663644897]
         },
         "properties": {
-            "ABSCodi":"219"
+            "ABSCodi":"219",
+            "ABSCodiN":219,
+            "ABS":"SANT VICENÇ DE CASTELLET",
+            "Population":15374,
+            "Land Area":75158448.589
         }
     },
     {
@@ -2221,7 +3023,11 @@
             "coordinates": [2.0716130802, 41.5248149024]
         },
         "properties": {
-            "ABSCodi":"363"
+            "ABSCodi":"363",
+            "ABSCodiN":363,
+            "ABS":"SANT QUIRZE DEL VALLÈS",
+            "Population":18110,
+            "Land Area":13555459.814
         }
     },
     {
@@ -2232,7 +3038,11 @@
             "coordinates": [2.1104146385, 41.4949514224]
         },
         "properties": {
-            "ABSCodi":"104"
+            "ABSCodi":"104",
+            "ABSCodiN":104,
+            "ABS":"CERDANYOLA DEL VALLÈS 1",
+            "Population":23991,
+            "Land Area":11745131.558
         }
     },
     {
@@ -2243,7 +3053,11 @@
             "coordinates": [2.0427594691, 41.5022329043]
         },
         "properties": {
-            "ABSCodi":"309"
+            "ABSCodi":"309",
+            "ABSCodiN":309,
+            "ABS":"RUBÍ 1",
+            "Population":31854,
+            "Land Area":3790432.571
         }
     },
     {
@@ -2254,7 +3068,11 @@
             "coordinates": [2.0649169922, 41.4919785041]
         },
         "properties": {
-            "ABSCodi":"390"
+            "ABSCodi":"390",
+            "ABSCodiN":390,
+            "ABS":"SANT CUGAT DEL VALLÈS-3",
+            "Population":26405,
+            "Land Area":13781764.178
         }
     },
     {
@@ -2265,7 +3083,11 @@
             "coordinates": [2.0454306737, 41.5374929980]
         },
         "properties": {
-            "ABSCodi":"249"
+            "ABSCodi":"249",
+            "ABSCodiN":249,
+            "ABS":"TERRASSA C",
+            "Population":10947,
+            "Land Area":7047915.275
         }
     },
     {
@@ -2276,7 +3098,11 @@
             "coordinates": [1.3666938487, 41.5048852072]
         },
         "properties": {
-            "ABSCodi":"228"
+            "ABSCodi":"228",
+            "ABSCodiN":228,
+            "ABS":"SANTA COLOMA DE QUERALT",
+            "Population":3271,
+            "Land Area":232929938.977
         }
     },
     {
@@ -2287,7 +3113,11 @@
             "coordinates": [1.2915622505, 41.7063658529]
         },
         "properties": {
-            "ABSCodi":"106"
+            "ABSCodi":"106",
+            "ABSCodiN":106,
+            "ABS":"CERVERA",
+            "Population":20788,
+            "Land Area":484142307.233
         }
     },
     {
@@ -2298,7 +3128,11 @@
             "coordinates": [1.4920110073, 41.5621538710]
         },
         "properties": {
-            "ABSCodi":"131"
+            "ABSCodi":"131",
+            "ABSCodiN":131,
+            "ABS":"ANOIA RURAL",
+            "Population":10750,
+            "Land Area":430264195.074
         }
     },
     {
@@ -2309,7 +3143,11 @@
             "coordinates": [1.4978278667, 41.7975415407]
         },
         "properties": {
-            "ABSCodi":"088"
+            "ABSCodi":"088",
+            "ABSCodiN":88,
+            "ABS":"CALAF",
+            "Population":6769,
+            "Land Area":401229523.814
         }
     },
     {
@@ -2320,7 +3158,11 @@
             "coordinates": [1.6980703122, 41.7457145883]
         },
         "properties": {
-            "ABSCodi":"215"
+            "ABSCodi":"215",
+            "ABSCodiN":215,
+            "ABS":"SANT JOAN DE VILATORRADA",
+            "Population":13025,
+            "Land Area":157649938.874
         }
     },
     {
@@ -2331,7 +3173,11 @@
             "coordinates": [1.8206095637, 41.7417354115]
         },
         "properties": {
-            "ABSCodi":"146"
+            "ABSCodi":"146",
+            "ABSCodiN":146,
+            "ABS":"MANRESA 2",
+            "Population":23300,
+            "Land Area":5738864.608
         }
     },
     {
@@ -2342,7 +3188,11 @@
             "coordinates": [1.7114133878, 41.6809106561]
         },
         "properties": {
-            "ABSCodi":"145"
+            "ABSCodi":"145",
+            "ABSCodiN":145,
+            "ABS":"MANRESA 1",
+            "Population":22195,
+            "Land Area":116456928.798
         }
     },
     {
@@ -2353,7 +3203,11 @@
             "coordinates": [1.7916321562, 41.9164885376]
         },
         "properties": {
-            "ABSCodi":"167"
+            "ABSCodi":"167",
+            "ABSCodiN":167,
+            "ABS":"NAVÀS/BALSARENY",
+            "Population":9582,
+            "Land Area":206863893.200
         }
     },
     {
@@ -2364,7 +3218,11 @@
             "coordinates": [1.6996149137, 41.9490721889]
         },
         "properties": {
-            "ABSCodi":"096"
+            "ABSCodi":"096",
+            "ABSCodiN":96,
+            "ABS":"CARDONA",
+            "Population":5063,
+            "Land Area":126970105.606
         }
     },
     {
@@ -2375,7 +3233,11 @@
             "coordinates": [1.8903922578, 42.0198676455]
         },
         "properties": {
-            "ABSCodi":"128"
+            "ABSCodi":"128",
+            "ABSCodiN":128,
+            "ABS":"BAIX BERGUEDÀ",
+            "Population":11640,
+            "Land Area":221871592.350
         }
     },
     {
@@ -2386,7 +3248,11 @@
             "coordinates": [0.7479198639, 40.7251912574]
         },
         "properties": {
-            "ABSCodi":"113"
+            "ABSCodi":"113",
+            "ABSCodiN":113,
+            "ABS":"DELTEBRE",
+            "Population":14934,
+            "Land Area":166043559.418
         }
     },
     {
@@ -2397,7 +3263,11 @@
             "coordinates": [2.0553445712, 42.0097023349]
         },
         "properties": {
-            "ABSCodi":"185"
+            "ABSCodi":"185",
+            "ABSCodiN":185,
+            "ABS":"LLUÇANÈS",
+            "Population":5917,
+            "Land Area":295117023.166
         }
     },
     {
@@ -2408,7 +3278,11 @@
             "coordinates": [1.9081583719, 41.8391907551]
         },
         "properties": {
-            "ABSCodi":"200"
+            "ABSCodi":"200",
+            "ABSCodiN":200,
+            "ABS":"SALLENT",
+            "Population":6684,
+            "Land Area":64945070.549
         }
     },
     {
@@ -2419,7 +3293,11 @@
             "coordinates": [1.6692123804, 41.4593683442]
         },
         "properties": {
-            "ABSCodi":"218"
+            "ABSCodi":"218",
+            "ABSCodiN":218,
+            "ABS":"SANT SADURNÍ D'ANOIA",
+            "Population":22216,
+            "Land Area":131582517.262
         }
     },
     {
@@ -2430,7 +3308,11 @@
             "coordinates": [1.6674858266, 41.5179056372]
         },
         "properties": {
-            "ABSCodi":"337"
+            "ABSCodi":"337",
+            "ABSCodiN":337,
+            "ABS":"CAPELLADES",
+            "Population":10409,
+            "Land Area":31110626.124
         }
     },
     {
@@ -2441,7 +3323,11 @@
             "coordinates": [2.1807345562, 41.8929522478]
         },
         "properties": {
-            "ABSCodi":"351"
+            "ABSCodi":"351",
+            "ABSCodiN":351,
+            "ABS":"VIC-2 SUD",
+            "Population":25733,
+            "Land Area":59417406.581
         }
     },
     {
@@ -2452,7 +3338,11 @@
             "coordinates": [2.1057357934, 41.7964360804]
         },
         "properties": {
-            "ABSCodi":"159"
+            "ABSCodi":"159",
+            "ABSCodiN":159,
+            "ABS":"MOIÀ",
+            "Population":10163,
+            "Land Area":201357119.985
         }
     },
     {
@@ -2463,7 +3353,11 @@
             "coordinates": [2.2117804236, 42.0389595164]
         },
         "properties": {
-            "ABSCodi":"212"
+            "ABSCodi":"212",
+            "ABSCodiN":212,
+            "ABS":"SANT HIPÒLIT DE VOLTREGÀ",
+            "Population":6972,
+            "Land Area":58685129.905
         }
     },
     {
@@ -2474,7 +3368,11 @@
             "coordinates": [2.2316315529, 41.9615630401]
         },
         "properties": {
-            "ABSCodi":"350"
+            "ABSCodi":"350",
+            "ABSCodiN":350,
+            "ABS":"VIC-1 NORD",
+            "Population":27389,
+            "Land Area":62036313.764
         }
     },
     {
@@ -2485,7 +3383,11 @@
             "coordinates": [2.8539080346, 41.9876825072]
         },
         "properties": {
-            "ABSCodi":"124"
+            "ABSCodi":"124",
+            "ABSCodiN":124,
+            "ABS":"GIRONA 1",
+            "Population":22722,
+            "Land Area":16422018.899
         }
     },
     {
@@ -2496,7 +3398,11 @@
             "coordinates": [3.0304304769, 41.9638692629]
         },
         "properties": {
-            "ABSCodi":"084"
+            "ABSCodi":"084",
+            "ABSCodiN":84,
+            "ABS":"LA BISBAL D'EMPORDÀ",
+            "Population":16840,
+            "Land Area":239325035.341
         }
     },
     {
@@ -2507,7 +3413,11 @@
             "coordinates": [2.8565604052, 41.8709760495]
         },
         "properties": {
-            "ABSCodi":"100"
+            "ABSCodi":"100",
+            "ABSCodiN":100,
+            "ABS":"CASSÀ DE LA SELVA",
+            "Population":32757,
+            "Land Area":258695466.044
         }
     },
     {
@@ -2518,7 +3428,11 @@
             "coordinates": [2.8067495595, 41.9676534778]
         },
         "properties": {
-            "ABSCodi":"125"
+            "ABSCodi":"125",
+            "ABSCodiN":125,
+            "ABS":"GIRONA 2",
+            "Population":32952,
+            "Land Area":3289879.265
         }
     },
     {
@@ -2529,7 +3443,11 @@
             "coordinates": [2.8260267824, 41.9595896720]
         },
         "properties": {
-            "ABSCodi":"126"
+            "ABSCodi":"126",
+            "ABSCodiN":126,
+            "ABS":"GIRONA 3",
+            "Population":35901,
+            "Land Area":10122576.424
         }
     },
     {
@@ -2540,7 +3458,11 @@
             "coordinates": [2.3052363832, 42.0667430919]
         },
         "properties": {
-            "ABSCodi":"254"
+            "ABSCodi":"254",
+            "ABSCodiN":254,
+            "ABS":"VALL DEL GES",
+            "Population":18778,
+            "Land Area":75051491.374
         }
     },
     {
@@ -2551,7 +3473,11 @@
             "coordinates": [2.2789838137, 42.0090046159]
         },
         "properties": {
-            "ABSCodi":"144"
+            "ABSCodi":"144",
+            "ABSCodiN":144,
+            "ABS":"MANLLEU",
+            "Population":20938,
+            "Land Area":17234022.655
         }
     },
     {
@@ -2562,7 +3488,11 @@
             "coordinates": [2.4050358603, 42.0100724080]
         },
         "properties": {
-            "ABSCodi":"377"
+            "ABSCodi":"377",
+            "ABSCodiN":377,
+            "ABS":"RODA DE TER",
+            "Population":9820,
+            "Land Area":180930876.356
         }
     },
     {
@@ -2573,7 +3503,11 @@
             "coordinates": [2.5069596791, 41.8788367806]
         },
         "properties": {
-            "ABSCodi":"008"
+            "ABSCodi":"008",
+            "ABSCodiN":8,
+            "ABS":"ARBÚCIES/SANT HILARI",
+            "Population":12358,
+            "Land Area":168636454.112
         }
     },
     {
@@ -2584,7 +3518,11 @@
             "coordinates": [2.5800206828, 41.9680265725]
         },
         "properties": {
-            "ABSCodi":"005"
+            "ABSCodi":"005",
+            "ABSCodiN":5,
+            "ABS":"ANGLÈS",
+            "Population":12109,
+            "Land Area":227915499.363
         }
     },
     {
@@ -2595,7 +3533,11 @@
             "coordinates": [2.3605839103, 41.8979295692]
         },
         "properties": {
-            "ABSCodi":"238"
+            "ABSCodi":"238",
+            "ABSCodiN":238,
+            "ABS":"SANTA EUGÈNIA DE BERGA",
+            "Population":17969,
+            "Land Area":223232875.732
         }
     },
     {
@@ -2606,7 +3548,11 @@
             "coordinates": [2.7492799698, 41.9443714350]
         },
         "properties": {
-            "ABSCodi":"199"
+            "ABSCodi":"199",
+            "ABSCodiN":199,
+            "ABS":"SALT",
+            "Population":43416,
+            "Land Area":74431557.758
         }
     },
     {
@@ -2617,7 +3563,11 @@
             "coordinates": [2.2833000713, 41.5450777801]
         },
         "properties": {
-            "ABSCodi":"164"
+            "ABSCodi":"164",
+            "ABSCodiN":164,
+            "ABS":"MONTORNÈS / MONTMELÓ",
+            "Population":33005,
+            "Land Area":39966505.717
         }
     },
     {
@@ -2628,7 +3578,11 @@
             "coordinates": [2.7424495748, 41.8023267240]
         },
         "properties": {
-            "ABSCodi":"234"
+            "ABSCodi":"234",
+            "ABSCodiN":234,
+            "ABS":"SILS/VIDRERES/MAÇANET DE LA SELVA",
+            "Population":22804,
+            "Land Area":171462804.326
         }
     },
     {
@@ -2639,7 +3593,11 @@
             "coordinates": [2.2212383113, 41.6425238379]
         },
         "properties": {
-            "ABSCodi":"315"
+            "ABSCodi":"315",
+            "ABSCodiN":315,
+            "ABS":"VALL DEL TENES",
+            "Population":36908,
+            "Land Area":75887788.787
         }
     },
     {
@@ -2650,7 +3608,11 @@
             "coordinates": [2.2822498185, 41.7198778345]
         },
         "properties": {
-            "ABSCodi":"121"
+            "ABSCodi":"121",
+            "ABSCodiN":121,
+            "ABS":"LA GARRIGA",
+            "Population":29200,
+            "Land Area":99290888.142
         }
     },
     {
@@ -2661,7 +3623,11 @@
             "coordinates": [2.1309423657, 41.6594635720]
         },
         "properties": {
-            "ABSCodi":"089"
+            "ABSCodi":"089",
+            "ABSCodiN":89,
+            "ABS":"CALDES DE MONTBUI",
+            "Population":23787,
+            "Land Area":68646137.831
         }
     },
     {
@@ -2672,7 +3638,11 @@
             "coordinates": [2.0684096596, 41.6488059117]
         },
         "properties": {
-            "ABSCodi":"097"
+            "ABSCodi":"097",
+            "ABSCodiN":97,
+            "ABS":"CASTELLAR DEL VALLÈS",
+            "Population":26231,
+            "Land Area":86355620.333
         }
     },
     {
@@ -2683,7 +3653,11 @@
             "coordinates": [2.2918235238, 41.8369565060]
         },
         "properties": {
-            "ABSCodi":"253"
+            "ABSCodi":"253",
+            "ABSCodiN":253,
+            "ABS":"TONA",
+            "Population":12383,
+            "Land Area":118362215.745
         }
     },
     {
@@ -2694,7 +3668,11 @@
             "coordinates": [2.2143686663, 41.7853194856]
         },
         "properties": {
-            "ABSCodi":"102"
+            "ABSCodi":"102",
+            "ABSCodiN":102,
+            "ABS":"CENTELLES",
+            "Population":12389,
+            "Land Area":58449636.026
         }
     },
     {
@@ -2705,7 +3683,11 @@
             "coordinates": [2.5008290943, 41.7163512949]
         },
         "properties": {
-            "ABSCodi":"207"
+            "ABSCodi":"207",
+            "ABSCodiN":207,
+            "ABS":"SANT CELONI",
+            "Population":35630,
+            "Land Area":212228478.177
         }
     },
     {
@@ -2716,7 +3698,11 @@
             "coordinates": [1.8502158679, 41.7110735694]
         },
         "properties": {
-            "ABSCodi":"148"
+            "ABSCodi":"148",
+            "ABSCodiN":148,
+            "ABS":"MANRESA 4",
+            "Population":22738,
+            "Land Area":11895916.888
         }
     },
     {
@@ -2727,7 +3713,11 @@
             "coordinates": [2.0756167228, 41.3913967306]
         },
         "properties": {
-            "ABSCodi":"216"
+            "ABSCodi":"216",
+            "ABSCodiN":216,
+            "ABS":"SANT JUST DESVERN",
+            "Population":18224,
+            "Land Area":7784897.866
         }
     },
     {
@@ -2738,7 +3728,11 @@
             "coordinates": [2.0530233926, 41.3635400149]
         },
         "properties": {
-            "ABSCodi":"213"
+            "ABSCodi":"213",
+            "ABSCodiN":213,
+            "ABS":"SANT JOAN DESPÍ 1",
+            "Population":20318,
+            "Land Area":4720869.129
         }
     },
     {
@@ -2749,7 +3743,11 @@
             "coordinates": [2.0879781229, 41.3801237123]
         },
         "properties": {
-            "ABSCodi":"117"
+            "ABSCodi":"117",
+            "ABSCodiN":117,
+            "ABS":"ESPLUGUES DE LLOBREGAT 2",
+            "Population":28873,
+            "Land Area":3335407.130
         }
     },
     {
@@ -2760,7 +3758,11 @@
             "coordinates": [2.6325730709, 41.8778615377]
         },
         "properties": {
-            "ABSCodi":"221"
+            "ABSCodi":"221",
+            "ABSCodiN":221,
+            "ABS":"SANTA COLOMA DE FARNERS",
+            "Population":16550,
+            "Land Area":103483705.697
         }
     },
     {
@@ -2771,7 +3773,11 @@
             "coordinates": [2.5732030608, 41.7777146256]
         },
         "properties": {
-            "ABSCodi":"330"
+            "ABSCodi":"330",
+            "ABSCodiN":330,
+            "ABS":"BREDA - HOSTALRIC",
+            "Population":12941,
+            "Land Area":123309008.261
         }
     },
     {
@@ -2782,7 +3788,11 @@
             "coordinates": [2.6815202395, 41.6951442571]
         },
         "properties": {
-            "ABSCodi":"336"
+            "ABSCodi":"336",
+            "ABSCodiN":336,
+            "ABS":"TORDERA",
+            "Population":17801,
+            "Land Area":116629785.923
         }
     },
     {
@@ -2793,7 +3803,11 @@
             "coordinates": [2.0187533656, 41.6127320319]
         },
         "properties": {
-            "ABSCodi":"252"
+            "ABSCodi":"252",
+            "ABSCodiN":252,
+            "ABS":"TERRASSA F",
+            "Population":42903,
+            "Land Area":32961379.731
         }
     },
     {
@@ -2804,7 +3818,11 @@
             "coordinates": [2.0790207011, 41.5764082353]
         },
         "properties": {
-            "ABSCodi":"194"
+            "ABSCodi":"194",
+            "ABSCodiN":194,
+            "ABS":"SABADELL 3B",
+            "Population":16259,
+            "Land Area":6052224.055
         }
     },
     {
@@ -2815,7 +3833,11 @@
             "coordinates": [2.1092434272, 41.5704708090]
         },
         "properties": {
-            "ABSCodi":"192"
+            "ABSCodi":"192",
+            "ABSCodiN":192,
+            "ABS":"SABADELL 2",
+            "Population":24621,
+            "Land Area":7679503.930
         }
     },
     {
@@ -2826,7 +3848,11 @@
             "coordinates": [3.0018330100, 41.8189392472]
         },
         "properties": {
-            "ABSCodi":"208"
+            "ABSCodi":"208",
+            "ABSCodiN":208,
+            "ABS":"SANT FELIU DE GUÍXOLS",
+            "Population":35945,
+            "Land Area":105282035.319
         }
     },
     {
@@ -2837,7 +3863,11 @@
             "coordinates": [3.1658411733, 41.9391089978]
         },
         "properties": {
-            "ABSCodi":"172"
+            "ABSCodi":"172",
+            "ABSCodiN":172,
+            "ABS":"PALAFRUGELL",
+            "Population":30694,
+            "Land Area":100082789.075
         }
     },
     {
@@ -2848,7 +3878,11 @@
             "coordinates": [0.5442383175, 40.6888058344]
         },
         "properties": {
-            "ABSCodi":"004"
+            "ABSCodi":"004",
+            "ABSCodiN":4,
+            "ABS":"AMPOSTA",
+            "Population":27621,
+            "Land Area":227690636.511
         }
     },
     {
@@ -2859,7 +3893,11 @@
             "coordinates": [0.6597095089, 40.7793457408]
         },
         "properties": {
-            "ABSCodi":"328"
+            "ABSCodi":"328",
+            "ABSCodiN":328,
+            "ABS":"L'ALDEA - CAMARLES - L'AMPOLLA",
+            "Population":10327,
+            "Land Area":96121734.734
         }
     },
     {
@@ -2870,7 +3908,11 @@
             "coordinates": [0.5483855204, 40.5982967092]
         },
         "properties": {
-            "ABSCodi":"206"
+            "ABSCodi":"206",
+            "ABSCodiN":206,
+            "ABS":"SANT CARLES DE LA RÀPITA",
+            "Population":23898,
+            "Land Area":132473480.331
         }
     },
     {
@@ -2881,7 +3923,11 @@
             "coordinates": [2.0093449191, 41.2858925227]
         },
         "properties": {
-            "ABSCodi":"123"
+            "ABSCodi":"123",
+            "ABSCodiN":123,
+            "ABS":"GAVÀ 2",
+            "Population":26254,
+            "Land Area":14205865.507
         }
     },
     {
@@ -2892,7 +3938,11 @@
             "coordinates": [2.2018118732, 41.4621821060]
         },
         "properties": {
-            "ABSCodi":"224"
+            "ABSCodi":"224",
+            "ABSCodiN":224,
+            "ABS":"SANTA COLOMA DE GRAMENET 3",
+            "Population":19500,
+            "Land Area":4183076.241
         }
     },
     {
@@ -2903,7 +3953,9 @@
             "coordinates": [2.1967771369, 41.4768629874]
         },
         "properties": {
-            "ABSCodi":"381"
+            "ABSCodi":"381",
+            "ABSCodiN":381,
+            "ABS":""
         }
     },
     {
@@ -2914,7 +3966,11 @@
             "coordinates": [2.1318779248, 41.4676200191]
         },
         "properties": {
-            "ABSCodi":"105"
+            "ABSCodi":"105",
+            "ABSCodiN":105,
+            "ABS":"CERDANYOLA DEL VALLÈS 2",
+            "Population":23995,
+            "Land Area":17826058.184
         }
     },
     {
@@ -2925,7 +3981,11 @@
             "coordinates": [2.2240762779, 41.4724462656]
         },
         "properties": {
-            "ABSCodi":"282"
+            "ABSCodi":"282",
+            "ABSCodiN":282,
+            "ABS":"BADALONA 11",
+            "Population":23217,
+            "Land Area":6130695.321
         }
     },
     {
@@ -2936,7 +3996,11 @@
             "coordinates": [2.1248765826, 41.3518854978]
         },
         "properties": {
-            "ABSCodi":"298"
+            "ABSCodi":"298",
+            "ABSCodiN":298,
+            "ABS":"L'HOSPITALET DE LLOBREGAT 11 - GORNAL",
+            "Population":8697,
+            "Land Area":2788264.052
         }
     },
     {
@@ -2947,7 +4011,11 @@
             "coordinates": [2.0869395930, 41.3349536473]
         },
         "properties": {
-            "ABSCodi":"182"
+            "ABSCodi":"182",
+            "ABSCodiN":182,
+            "ABS":"EL PRAT DE LLOBREGAT 1",
+            "Population":21657,
+            "Land Area":4775978.613
         }
     },
     {
@@ -2958,7 +4026,11 @@
             "coordinates": [2.0773520831, 41.3527291095]
         },
         "properties": {
-            "ABSCodi":"108"
+            "ABSCodi":"108",
+            "ABSCodiN":108,
+            "ABS":"CORNELLÀ DE LLOBREGAT 1",
+            "Population":32934,
+            "Land Area":5242230.001
         }
     },
     {
@@ -2969,7 +4041,11 @@
             "coordinates": [2.0276863009, 41.5434559091]
         },
         "properties": {
-            "ABSCodi":"356"
+            "ABSCodi":"356",
+            "ABSCodiN":356,
+            "ABS":"TERRASSA-G",
+            "Population":25320,
+            "Land Area":5950574.487
         }
     },
     {
@@ -2980,7 +4056,11 @@
             "coordinates": [2.0356672262, 41.4812820666]
         },
         "properties": {
-            "ABSCodi":"310"
+            "ABSCodi":"310",
+            "ABSCodiN":310,
+            "ABS":"RUBÍ 2",
+            "Population":40359,
+            "Land Area":2765431.048
         }
     },
     {
@@ -2991,7 +4071,11 @@
             "coordinates": [1.9868553969, 41.5883390754]
         },
         "properties": {
-            "ABSCodi":"251"
+            "ABSCodi":"251",
+            "ABSCodiN":251,
+            "ABS":"TERRASSA E",
+            "Population":63030,
+            "Land Area":33786762.764
         }
     },
     {
@@ -3002,7 +4086,11 @@
             "coordinates": [2.6989148402, 41.6437719995]
         },
         "properties": {
-            "ABSCodi":"325"
+            "ABSCodi":"325",
+            "ABSCodiN":325,
+            "ABS":"PINEDA",
+            "Population":30297,
+            "Land Area":22814710.661
         }
     },
     {
@@ -3013,7 +4101,11 @@
             "coordinates": [2.6479130253, 41.6228778773]
         },
         "properties": {
-            "ABSCodi":"090"
+            "ABSCodi":"090",
+            "ABSCodiN":90,
+            "ABS":"CALELLA",
+            "Population":19056,
+            "Land Area":8010270.262
         }
     },
     {
@@ -3024,7 +4116,11 @@
             "coordinates": [2.7338715900, 41.6639592786]
         },
         "properties": {
-            "ABSCodi":"143"
+            "ABSCodi":"143",
+            "ABSCodiN":143,
+            "ABS":"MALGRAT DE MAR",
+            "Population":27725,
+            "Land Area":25254844.835
         }
     },
     {
@@ -3035,7 +4131,11 @@
             "coordinates": [2.5306024979, 41.6052448700]
         },
         "properties": {
-            "ABSCodi":"009"
+            "ABSCodi":"009",
+            "ABSCodiN":9,
+            "ABS":"ARENYS DE MAR",
+            "Population":24380,
+            "Land Area":28127160.048
         }
     },
     {
@@ -3046,7 +4146,11 @@
             "coordinates": [2.5945302915, 41.6217871659]
         },
         "properties": {
-            "ABSCodi":"093"
+            "ABSCodi":"093",
+            "ABSCodiN":93,
+            "ABS":"CANET DE MAR",
+            "Population":23294,
+            "Land Area":46556165.066
         }
     },
     {
@@ -3057,7 +4161,11 @@
             "coordinates": [2.3964449212, 41.6787766007]
         },
         "properties": {
-            "ABSCodi":"376"
+            "ABSCodi":"376",
+            "ABSCodiN":376,
+            "ABS":"ALT MOGENT",
+            "Population":20821,
+            "Land Area":81725246.311
         }
     },
     {
@@ -3068,7 +4176,11 @@
             "coordinates": [2.4901123703, 41.5784813084]
         },
         "properties": {
-            "ABSCodi":"335"
+            "ABSCodi":"335",
+            "ABSCodiN":335,
+            "ABS":"SANT ANDREU DE LLAVANERES",
+            "Population":18868,
+            "Land Area":20722861.333
         }
     },
     {
@@ -3079,7 +4191,11 @@
             "coordinates": [2.4648607399, 41.5497018892]
         },
         "properties": {
-            "ABSCodi":"154"
+            "ABSCodi":"154",
+            "ABSCodiN":154,
+            "ABS":"MATARÓ 3",
+            "Population":18630,
+            "Land Area":4253701.834
         }
     },
     {
@@ -3090,7 +4206,11 @@
             "coordinates": [2.4508192151, 41.5393831144]
         },
         "properties": {
-            "ABSCodi":"153"
+            "ABSCodi":"153",
+            "ABSCodiN":153,
+            "ABS":"MATARÓ 2",
+            "Population":17597,
+            "Land Area":1118348.790
         }
     },
     {
@@ -3101,7 +4221,11 @@
             "coordinates": [2.4060777486, 41.5177450209]
         },
         "properties": {
-            "ABSCodi":"271"
+            "ABSCodi":"271",
+            "ABSCodiN":271,
+            "ABS":"VILASSAR DE MAR",
+            "Population":25293,
+            "Land Area":12914463.580
         }
     },
     {
@@ -3112,7 +4236,11 @@
             "coordinates": [0.5914014674, 41.6458678089]
         },
         "properties": {
-            "ABSCodi":"379"
+            "ABSCodi":"379",
+            "ABSCodiN":379,
+            "ABS":"LLEIDA 7 ONZE DE SETEMBRE",
+            "Population":17381,
+            "Land Area":24324352.294
         }
     },
     {
@@ -3123,7 +4251,11 @@
             "coordinates": [0.6297625008, 41.6175661333]
         },
         "properties": {
-            "ABSCodi":"135"
+            "ABSCodi":"135",
+            "ABSCodiN":135,
+            "ABS":"LLEIDA 1 CENTRE HISTÒRIC-RAMBLA FERRAN",
+            "Population":17856,
+            "Land Area":1047807.208
         }
     },
     {
@@ -3134,7 +4266,11 @@
             "coordinates": [0.6374269636, 41.6450837900]
         },
         "properties": {
-            "ABSCodi":"138"
+            "ABSCodi":"138",
+            "ABSCodiN":138,
+            "ABS":"LLEIDA 4 BALÀFIA-PARDINYES",
+            "Population":27056,
+            "Land Area":15710735.253
         }
     },
     {
@@ -3145,7 +4281,11 @@
             "coordinates": [0.5496352554, 41.6279040776]
         },
         "properties": {
-            "ABSCodi":"137"
+            "ABSCodi":"137",
+            "ABSCodiN":137,
+            "ABS":"LLEIDA 3 EIXAMPLE",
+            "Population":21214,
+            "Land Area":15894627.804
         }
     },
     {
@@ -3156,7 +4296,11 @@
             "coordinates": [2.0489697975, 41.5690351431]
         },
         "properties": {
-            "ABSCodi":"248"
+            "ABSCodi":"248",
+            "ABSCodiN":248,
+            "ABS":"TERRASSA B",
+            "Population":27907,
+            "Land Area":7055788.224
         }
     },
     {
@@ -3167,7 +4311,11 @@
             "coordinates": [2.0985785256, 41.5397500851]
         },
         "properties": {
-            "ABSCodi":"196"
+            "ABSCodi":"196",
+            "ABSCodiN":196,
+            "ABS":"SABADELL 5",
+            "Population":19827,
+            "Land Area":4695386.611
         }
     },
     {
@@ -3178,7 +4326,11 @@
             "coordinates": [2.0188662971, 41.5660577625]
         },
         "properties": {
-            "ABSCodi":"247"
+            "ABSCodi":"247",
+            "ABSCodiN":247,
+            "ABS":"TERRASSA A",
+            "Population":41754,
+            "Land Area":2438333.774
         }
     },
     {
@@ -3189,7 +4341,11 @@
             "coordinates": [2.0783085471, 41.5561937227]
         },
         "properties": {
-            "ABSCodi":"345"
+            "ABSCodi":"345",
+            "ABSCodiN":345,
+            "ABS":"SABADELL 4-B",
+            "Population":24233,
+            "Land Area":3087174.837
         }
     },
     {
@@ -3200,7 +4356,11 @@
             "coordinates": [2.1075574482, 41.5473990931]
         },
         "properties": {
-            "ABSCodi":"190"
+            "ABSCodi":"190",
+            "ABSCodiN":190,
+            "ABS":"SABADELL 1A",
+            "Population":34054,
+            "Land Area":2493045.499
         }
     },
     {
@@ -3211,7 +4371,11 @@
             "coordinates": [2.0924831271, 41.5584848571]
         },
         "properties": {
-            "ABSCodi":"344"
+            "ABSCodi":"344",
+            "ABSCodiN":344,
+            "ABS":"SABADELL 4-A",
+            "Population":15001,
+            "Land Area":745843.626
         }
     },
     {
@@ -3222,7 +4386,11 @@
             "coordinates": [2.1189028134, 41.5387970021]
         },
         "properties": {
-            "ABSCodi":"191"
+            "ABSCodi":"191",
+            "ABSCodiN":191,
+            "ABS":"SABADELL 1B",
+            "Population":21175,
+            "Land Area":1570879.251
         }
     },
     {
@@ -3233,7 +4401,11 @@
             "coordinates": [2.1040240879, 41.5202012466]
         },
         "properties": {
-            "ABSCodi":"197"
+            "ABSCodi":"197",
+            "ABSCodiN":197,
+            "ABS":"SABADELL 6",
+            "Population":30823,
+            "Land Area":3866213.948
         }
     },
     {
@@ -3244,7 +4416,11 @@
             "coordinates": [2.1308167145, 41.5541055600]
         },
         "properties": {
-            "ABSCodi":"198"
+            "ABSCodi":"198",
+            "ABSCodiN":198,
+            "ABS":"SABADELL 7",
+            "Population":9121,
+            "Land Area":6491524.431
         }
     },
     {
@@ -3255,7 +4431,11 @@
             "coordinates": [2.1126149961, 41.5104342501]
         },
         "properties": {
-            "ABSCodi":"322"
+            "ABSCodi":"322",
+            "ABSCodiN":322,
+            "ABS":"CIUTAT BADIA",
+            "Population":13873,
+            "Land Area":931497.766
         }
     },
     {
@@ -3266,7 +4446,11 @@
             "coordinates": [2.4529553801, 41.5605610310]
         },
         "properties": {
-            "ABSCodi":"155"
+            "ABSCodi":"155",
+            "ABSCodiN":155,
+            "ABS":"MATARÓ 4",
+            "Population":22345,
+            "Land Area":11939446.679
         }
     },
     {
@@ -3277,7 +4461,11 @@
             "coordinates": [2.4101938577, 41.5807261421]
         },
         "properties": {
-            "ABSCodi":"010"
+            "ABSCodi":"010",
+            "ABSCodiN":10,
+            "ABS":"ARGENTONA",
+            "Population":17754,
+            "Land Area":71518337.178
         }
     },
     {
@@ -3288,7 +4476,11 @@
             "coordinates": [2.4262081968, 41.5461206369]
         },
         "properties": {
-            "ABSCodi":"156"
+            "ABSCodi":"156",
+            "ABSCodiN":156,
+            "ABS":"MATARÓ 5",
+            "Population":21720,
+            "Land Area":1091256.016
         }
     },
     {
@@ -3299,7 +4491,11 @@
             "coordinates": [2.4235039240, 41.5378815927]
         },
         "properties": {
-            "ABSCodi":"157"
+            "ABSCodi":"157",
+            "ABSCodiN":157,
+            "ABS":"MATARÓ 6",
+            "Population":15649,
+            "Land Area":742066.889
         }
     },
     {
@@ -3310,7 +4506,11 @@
             "coordinates": [2.0952844515, 41.3751173840]
         },
         "properties": {
-            "ABSCodi":"116"
+            "ABSCodi":"116",
+            "ABSCodiN":116,
+            "ABS":"ESPLUGUES DE LLOBREGAT 1",
+            "Population":18458,
+            "Land Area":1163306.422
         }
     },
     {
@@ -3321,7 +4521,11 @@
             "coordinates": [2.0994949775, 41.3580781069]
         },
         "properties": {
-            "ABSCodi":"288"
+            "ABSCodi":"288",
+            "ABSCodiN":288,
+            "ABS":"L'HOSPITALET DE LLOBREGAT 1 - CENTRE",
+            "Population":29344,
+            "Land Area":1749795.283
         }
     },
     {
@@ -3332,7 +4536,11 @@
             "coordinates": [2.0690651416, 41.3692472537]
         },
         "properties": {
-            "ABSCodi":"214"
+            "ABSCodi":"214",
+            "ABSCodiN":214,
+            "ABS":"SANT JOAN DESPÍ 2",
+            "Population":13819,
+            "Land Area":1502208.559
         }
     },
     {
@@ -3343,7 +4551,11 @@
             "coordinates": [2.0734572626, 41.3638175589]
         },
         "properties": {
-            "ABSCodi":"111"
+            "ABSCodi":"111",
+            "ABSCodiN":111,
+            "ABS":"CORNELLÀ DE LLOBREGAT 4",
+            "Population":17057,
+            "Land Area":813698.552
         }
     },
     {
@@ -3354,7 +4566,11 @@
             "coordinates": [2.1069150944, 41.3478332310]
         },
         "properties": {
-            "ABSCodi":"299"
+            "ABSCodi":"299",
+            "ABSCodiN":299,
+            "ABS":"L'HOSPITALET DE LLOBREGAT 12 (BELLVITGE)",
+            "Population":25501,
+            "Land Area":2830375.892
         }
     },
     {
@@ -3365,7 +4581,11 @@
             "coordinates": [2.1001239412, 41.3664516601]
         },
         "properties": {
-            "ABSCodi":"297"
+            "ABSCodi":"297",
+            "ABSCodiN":297,
+            "ABS":"L'HOSPITALET DE LLOBREGAT 10 - CSERRA",
+            "Population":10396,
+            "Land Area":282061.493
         }
     },
     {
@@ -3376,7 +4596,11 @@
             "coordinates": [2.0845332297, 41.3624128068]
         },
         "properties": {
-            "ABSCodi":"109"
+            "ABSCodi":"109",
+            "ABSCodiN":109,
+            "ABS":"CORNELLÀ DE LLOBREGAT 2",
+            "Population":26297,
+            "Land Area":590895.009
         }
     },
     {
@@ -3387,7 +4611,11 @@
             "coordinates": [2.1103882739, 41.3606363191]
         },
         "properties": {
-            "ABSCodi":"289"
+            "ABSCodi":"289",
+            "ABSCodiN":289,
+            "ABS":"L'HOSPITALET DE LLOBREGAT 2 -SJOSEP",
+            "Population":23044,
+            "Land Area":1194000.474
         }
     },
     {
@@ -3398,7 +4626,11 @@
             "coordinates": [2.1099362566, 41.3689976066]
         },
         "properties": {
-            "ABSCodi":"295"
+            "ABSCodi":"295",
+            "ABSCodiN":295,
+            "ABS":"L'HOSPITALET DE LLOBREGAT 8-FLORIDA S",
+            "Population":23342,
+            "Land Area":535895.534
         }
     },
     {
@@ -3409,7 +4641,11 @@
             "coordinates": [2.1051401715, 41.3746510560]
         },
         "properties": {
-            "ABSCodi":"296"
+            "ABSCodi":"296",
+            "ABSCodiN":296,
+            "ABS":"L'HOSPITALET DE LLOBREGAT 9-PUBILLA C",
+            "Population":29909,
+            "Land Area":593908.348
         }
     },
     {
@@ -3420,7 +4656,11 @@
             "coordinates": [2.1176939859, 41.3737218733]
         },
         "properties": {
-            "ABSCodi":"290"
+            "ABSCodi":"290",
+            "ABSCodiN":290,
+            "ABS":"L'HOSPITALET DE LLOBREGAT 3 - COLLBLANC",
+            "Population":25829,
+            "Land Area":510286.806
         }
     },
     {
@@ -3431,7 +4671,11 @@
             "coordinates": [2.1108935696, 41.3719960077]
         },
         "properties": {
-            "ABSCodi":"294"
+            "ABSCodi":"294",
+            "ABSCodiN":294,
+            "ABS":"L'HOSPITALET DE LLOBREGAT 7-FLORIDA N",
+            "Population":22329,
+            "Land Area":260166.581
         }
     },
     {
@@ -3442,7 +4686,11 @@
             "coordinates": [2.0756781259, 41.3591434679]
         },
         "properties": {
-            "ABSCodi":"110"
+            "ABSCodi":"110",
+            "ABSCodiN":110,
+            "ABS":"CORNELLÀ DE LLOBREGAT 3",
+            "Population":13402,
+            "Land Area":339538.083
         }
     },
     {
@@ -3453,7 +4701,11 @@
             "coordinates": [2.0300214330, 41.3456985194]
         },
         "properties": {
-            "ABSCodi":"202"
+            "ABSCodi":"202",
+            "ABSCodiN":202,
+            "ABS":"SANT BOI DE LLOBREGAT 1",
+            "Population":38865,
+            "Land Area":2712981.966
         }
     },
     {
@@ -3464,7 +4716,11 @@
             "coordinates": [1.9894934396, 41.3349053402]
         },
         "properties": {
-            "ABSCodi":"401"
+            "ABSCodi":"401",
+            "ABSCodiN":401,
+            "ABS":"VILADECANS 3",
+            "Population":23510,
+            "Land Area":13668902.811
         }
     },
     {
@@ -3475,7 +4731,11 @@
             "coordinates": [2.0520174349, 41.3177917733]
         },
         "properties": {
-            "ABSCodi":"205"
+            "ABSCodi":"205",
+            "ABSCodiN":205,
+            "ABS":"SANT BOI DE LLOBREGAT 4",
+            "Population":20966,
+            "Land Area":11439804.218
         }
     },
     {
@@ -3486,7 +4746,11 @@
             "coordinates": [2.0326017237, 41.3325284339]
         },
         "properties": {
-            "ABSCodi":"204"
+            "ABSCodi":"204",
+            "ABSCodiN":204,
+            "ABS":"SANT BOI DE LLOBREGAT 3",
+            "Population":11319,
+            "Land Area":3209638.294
         }
     },
     {
@@ -3497,7 +4761,11 @@
             "coordinates": [2.1407319157, 41.3628229359]
         },
         "properties": {
-            "ABSCodi":"383"
+            "ABSCodi":"383",
+            "ABSCodiN":383,
+            "ABS":"BARCELONA 3-H",
+            "Population":18936,
+            "Land Area":671507.088
         }
     },
     {
@@ -3508,7 +4776,11 @@
             "coordinates": [2.1238191445, 41.3710950571]
         },
         "properties": {
-            "ABSCodi":"291"
+            "ABSCodi":"291",
+            "ABSCodiN":291,
+            "ABS":"L'HOSPITALET DE LLOBREGAT 4 TORRASSA",
+            "Population":27524,
+            "Land Area":443521.701
         }
     },
     {
@@ -3519,7 +4791,11 @@
             "coordinates": [2.2457786748, 41.4741865596]
         },
         "properties": {
-            "ABSCodi":"283"
+            "ABSCodi":"283",
+            "ABSCodiN":283,
+            "ABS":"BADALONA 12",
+            "Population":11596,
+            "Land Area":6230117.880
         }
     },
     {
@@ -3530,7 +4806,11 @@
             "coordinates": [2.2142969984, 41.4579612183]
         },
         "properties": {
-            "ABSCodi":"223"
+            "ABSCodi":"223",
+            "ABSCodiN":223,
+            "ABS":"SANTA COLOMA DE GRAMENET 2",
+            "Population":15285,
+            "Land Area":678086.296
         }
     },
     {
@@ -3541,7 +4821,11 @@
             "coordinates": [2.2183766359, 41.4497699035]
         },
         "properties": {
-            "ABSCodi":"368"
+            "ABSCodi":"368",
+            "ABSCodiN":368,
+            "ABS":"SANTA COLOMA DE GRAMENET 6",
+            "Population":20817,
+            "Land Area":321497.882
         }
     },
     {
@@ -3552,7 +4836,11 @@
             "coordinates": [2.2110115035, 41.4517196946]
         },
         "properties": {
-            "ABSCodi":"222"
+            "ABSCodi":"222",
+            "ABSCodiN":222,
+            "ABS":"SANTA COLOMA DE GRAMENET 1",
+            "Population":22311,
+            "Land Area":459185.287
         }
     },
     {
@@ -3563,7 +4851,11 @@
             "coordinates": [2.2239249397, 41.4559307012]
         },
         "properties": {
-            "ABSCodi":"280"
+            "ABSCodi":"280",
+            "ABSCodiN":280,
+            "ABS":"BADALONA 9",
+            "Population":18458,
+            "Land Area":1095140.381
         }
     },
     {
@@ -3574,7 +4866,11 @@
             "coordinates": [2.2345002457, 41.4532180878]
         },
         "properties": {
-            "ABSCodi":"281"
+            "ABSCodi":"281",
+            "ABSCodiN":281,
+            "ABS":"BADALONA 10",
+            "Population":9976,
+            "Land Area":493075.466
         }
     },
     {
@@ -3585,7 +4881,11 @@
             "coordinates": [2.2300759563, 41.4479822928]
         },
         "properties": {
-            "ABSCodi":"279"
+            "ABSCodi":"279",
+            "ABSCodiN":279,
+            "ABS":"BADALONA 8",
+            "Population":14867,
+            "Land Area":683795.266
         }
     },
     {
@@ -3596,7 +4896,11 @@
             "coordinates": [2.2194541480, 41.4426626211]
         },
         "properties": {
-            "ABSCodi":"341"
+            "ABSCodi":"341",
+            "ABSCodiN":341,
+            "ABS":"BADALONA 7A",
+            "Population":19618,
+            "Land Area":417803.069
         }
     },
     {
@@ -3607,7 +4911,11 @@
             "coordinates": [2.2245867472, 41.4445043447]
         },
         "properties": {
-            "ABSCodi":"342"
+            "ABSCodi":"342",
+            "ABSCodiN":342,
+            "ABS":"BADALONA 7B",
+            "Population":19937,
+            "Land Area":493698.548
         }
     },
     {
@@ -3618,7 +4926,11 @@
             "coordinates": [2.2110224701, 41.4405879748]
         },
         "properties": {
-            "ABSCodi":"226"
+            "ABSCodi":"226",
+            "ABSCodiN":226,
+            "ABS":"SANTA COLOMA DE GRAMENET 5",
+            "Population":21182,
+            "Land Area":787999.531
         }
     },
     {
@@ -3629,7 +4941,11 @@
             "coordinates": [2.1921353596, 41.4539336289]
         },
         "properties": {
-            "ABSCodi":"070"
+            "ABSCodi":"070",
+            "ABSCodiN":70,
+            "ABS":"BARCELONA 9-F",
+            "Population":10738,
+            "Land Area":812238.407
         }
     },
     {
@@ -3640,7 +4956,11 @@
             "coordinates": [2.2045802913, 41.4498959418]
         },
         "properties": {
-            "ABSCodi":"225"
+            "ABSCodi":"225",
+            "ABSCodiN":225,
+            "ABS":"SANTA COLOMA DE GRAMENET 4",
+            "Population":22719,
+            "Land Area":578427.854
         }
     },
     {
@@ -3651,7 +4971,11 @@
             "coordinates": [2.2188687948, 41.4375318652]
         },
         "properties": {
-            "ABSCodi":"277"
+            "ABSCodi":"277",
+            "ABSCodiN":277,
+            "ABS":"BADALONA 6",
+            "Population":24300,
+            "Land Area":503535.004
         }
     },
     {
@@ -3662,7 +4986,11 @@
             "coordinates": [2.2255788349, 41.4338051437]
         },
         "properties": {
-            "ABSCodi":"276"
+            "ABSCodi":"276",
+            "ABSCodiN":276,
+            "ABS":"BADALONA 5",
+            "Population":19102,
+            "Land Area":749412.625
         }
     },
     {
@@ -3673,7 +5001,11 @@
             "coordinates": [2.2053331676, 41.4248779410]
         },
         "properties": {
-            "ABSCodi":"079"
+            "ABSCodi":"079",
+            "ABSCodiN":79,
+            "ABS":"BARCELONA 10-I",
+            "Population":12727,
+            "Land Area":605757.269
         }
     },
     {
@@ -3684,7 +5016,11 @@
             "coordinates": [1.6988108568, 41.2202449967]
         },
         "properties": {
-            "ABSCodi":"316"
+            "ABSCodi":"316",
+            "ABSCodiN":316,
+            "ABS":"VILANOVA I LA GELTRÚ 1",
+            "Population":24223,
+            "Land Area":6325827.598
         }
     },
     {
@@ -3695,7 +5031,11 @@
             "coordinates": [1.1867406396, 41.1265423978]
         },
         "properties": {
-            "ABSCodi":"239"
+            "ABSCodi":"239",
+            "ABSCodiN":239,
+            "ABS":"TARRAGONA 1",
+            "Population":14959,
+            "Land Area":4796466.503
         }
     },
     {
@@ -3706,7 +5046,11 @@
             "coordinates": [0.6262287823, 41.5992028265]
         },
         "properties": {
-            "ABSCodi":"139"
+            "ABSCodi":"139",
+            "ABSCodiN":139,
+            "ABS":"LLEIDA 5 CAPPONT",
+            "Population":15941,
+            "Land Area":5129340.146
         }
     },
     {
@@ -3717,7 +5061,11 @@
             "coordinates": [0.5858679750, 41.5935908588]
         },
         "properties": {
-            "ABSCodi":"136"
+            "ABSCodi":"136",
+            "ABSCodiN":136,
+            "ABS":"LLEIDA 2 PRIMER DE MAIG",
+            "Population":25799,
+            "Land Area":22988217.118
         }
     },
     {
@@ -3728,7 +5076,11 @@
             "coordinates": [1.1085225458, 41.1548755064]
         },
         "properties": {
-            "ABSCodi":"303"
+            "ABSCodi":"303",
+            "ABSCodiN":303,
+            "ABS":"REUS 1",
+            "Population":13596,
+            "Land Area":651961.484
         }
     },
     {
@@ -3739,7 +5091,11 @@
             "coordinates": [2.1219192815, 41.3621322384]
         },
         "properties": {
-            "ABSCodi":"293"
+            "ABSCodi":"293",
+            "ABSCodiN":293,
+            "ABS":"L'HOSPITALET DE LLOBREGAT 6-SEULÀLIA S",
+            "Population":23682,
+            "Land Area":744707.970
         }
     },
     {
@@ -3750,7 +5106,11 @@
             "coordinates": [2.1288167551, 41.3651025019]
         },
         "properties": {
-            "ABSCodi":"292"
+            "ABSCodi":"292",
+            "ABSCodiN":292,
+            "ABS":"L'HOSPITALET DE LLOBREGAT 5-SEULÀLIA N",
+            "Population":20206,
+            "Land Area":608933.301
         }
     },
     {
@@ -3761,7 +5121,11 @@
             "coordinates": [2.0917562424, 41.5670177121]
         },
         "properties": {
-            "ABSCodi":"193"
+            "ABSCodi":"193",
+            "ABSCodiN":193,
+            "ABS":"SABADELL 3A",
+            "Population":19885,
+            "Land Area":1167768.065
         }
     },
     {
@@ -3772,7 +5136,11 @@
             "coordinates": [2.0881950444, 41.4748446021]
         },
         "properties": {
-            "ABSCodi":"388"
+            "ABSCodi":"388",
+            "ABSCodiN":388,
+            "ABS":"SANT CUGAT DEL VALLÈS-1",
+            "Population":30923,
+            "Land Area":2106809.771
         }
     },
     {
@@ -3783,7 +5151,11 @@
             "coordinates": [2.1707464042, 41.5359974861]
         },
         "properties": {
-            "ABSCodi":"230"
+            "ABSCodi":"230",
+            "ABSCodiN":230,
+            "ABS":"SANTA PERPÈTUA DE LA MOGODA",
+            "Population":25445,
+            "Land Area":15524857.945
         }
     },
     {
@@ -3794,7 +5166,11 @@
             "coordinates": [2.1318297874, 41.5197881691]
         },
         "properties": {
-            "ABSCodi":"320"
+            "ABSCodi":"320",
+            "ABSCodiN":320,
+            "ABS":"BARBERÀ DEL VALLÈS",
+            "Population":32951,
+            "Land Area":8202997.944
         }
     },
     {
@@ -3805,7 +5181,11 @@
             "coordinates": [2.1408015523, 41.5985408621]
         },
         "properties": {
-            "ABSCodi":"392"
+            "ABSCodi":"392",
+            "ABSCodiN":392,
+            "ABS":"POLINYÀ-SENTMENAT",
+            "Population":17143,
+            "Land Area":37464034.504
         }
     },
     {
@@ -3816,7 +5196,11 @@
             "coordinates": [2.1422150301, 41.4985358730]
         },
         "properties": {
-            "ABSCodi":"384"
+            "ABSCodi":"384",
+            "ABSCodiN":384,
+            "ABS":"CERDANYOLA-RIPOLLET",
+            "Population":13539,
+            "Land Area":2460664.558
         }
     },
     {
@@ -3827,7 +5211,11 @@
             "coordinates": [2.1606195509, 41.4956710430]
         },
         "properties": {
-            "ABSCodi":"387"
+            "ABSCodi":"387",
+            "ABSCodiN":387,
+            "ABS":"RIPOLLET-2",
+            "Population":15064,
+            "Land Area":1361545.657
         }
     },
     {
@@ -3838,7 +5226,9 @@
             "coordinates": [2.1826310487, 41.4935252599]
         },
         "properties": {
-            "ABSCodi":"382"
+            "ABSCodi":"382",
+            "ABSCodiN":382,
+            "ABS":""
         }
     },
     {
@@ -3849,7 +5239,11 @@
             "coordinates": [2.1550884555, 41.5031376914]
         },
         "properties": {
-            "ABSCodi":"386"
+            "ABSCodi":"386",
+            "ABSCodiN":386,
+            "ABS":"RIPOLLET-1",
+            "Population":17943,
+            "Land Area":1745015.696
         }
     },
     {
@@ -3860,7 +5254,11 @@
             "coordinates": [0.5804826827, 40.8407895329]
         },
         "properties": {
-            "ABSCodi":"255"
+            "ABSCodi":"255",
+            "ABSCodiN":255,
+            "ABS":"TORTOSA 1 - EST",
+            "Population":23056,
+            "Land Area":201789178.371
         }
     },
     {
@@ -3871,7 +5269,11 @@
             "coordinates": [2.3595234042, 41.5244230331]
         },
         "properties": {
-            "ABSCodi":"353"
+            "ABSCodi":"353",
+            "ABSCodiN":353,
+            "ABS":"VILASSAR DE DALT",
+            "Population":16024,
+            "Land Area":15979929.333
         }
     },
     {
@@ -3882,7 +5284,11 @@
             "coordinates": [2.2466882746, 41.5153209671]
         },
         "properties": {
-            "ABSCodi":"150"
+            "ABSCodi":"150",
+            "ABSCodiN":150,
+            "ABS":"MARTORELLES",
+            "Population":14274,
+            "Land Area":21250513.115
         }
     },
     {
@@ -3893,7 +5299,11 @@
             "coordinates": [2.2212900352, 41.5401650521]
         },
         "properties": {
-            "ABSCodi":"348"
+            "ABSCodi":"348",
+            "ABSCodiN":348,
+            "ABS":"MOLLET DEL VALLÈS-EST",
+            "Population":28691,
+            "Land Area":4501710.094
         }
     },
     {
@@ -3904,7 +5314,11 @@
             "coordinates": [2.2005610886, 41.5147238595]
         },
         "properties": {
-            "ABSCodi":"300"
+            "ABSCodi":"300",
+            "ABSCodiN":300,
+            "ABS":"LA LLAGOSTA",
+            "Population":13882,
+            "Land Area":3019659.461
         }
     },
     {
@@ -3915,7 +5329,11 @@
             "coordinates": [2.1758814731, 41.5807392325]
         },
         "properties": {
-            "ABSCodi":"391"
+            "ABSCodi":"391",
+            "ABSCodiN":391,
+            "ABS":"PALAU-SOLITÀ I PLEGAMANS",
+            "Population":15071,
+            "Land Area":15382038.526
         }
     },
     {
@@ -3926,7 +5344,11 @@
             "coordinates": [2.2017505147, 41.5566519918]
         },
         "properties": {
-            "ABSCodi":"349"
+            "ABSCodi":"349",
+            "ABSCodiN":349,
+            "ABS":"MOLLET DEL VALLÈS-2 OEST",
+            "Population":23859,
+            "Land Area":6344594.739
         }
     },
     {
@@ -3937,7 +5359,11 @@
             "coordinates": [1.9739363354, 41.2861183176]
         },
         "properties": {
-            "ABSCodi":"365"
+            "ABSCodi":"365",
+            "ABSCodiN":365,
+            "ABS":"CASTELLDEFELS-1",
+            "Population":37250,
+            "Land Area":3201696.366
         }
     },
     {
@@ -3948,7 +5374,11 @@
             "coordinates": [1.9620722419, 41.3016320875]
         },
         "properties": {
-            "ABSCodi":"122"
+            "ABSCodi":"122",
+            "ABSCodiN":122,
+            "ABS":"GAVÀ 1",
+            "Population":19487,
+            "Land Area":16451245.204
         }
     },
     {
@@ -3959,7 +5389,11 @@
             "coordinates": [2.0021403674, 41.3172787959]
         },
         "properties": {
-            "ABSCodi":"266"
+            "ABSCodi":"266",
+            "ABSCodiN":266,
+            "ABS":"VILADECANS 2",
+            "Population":22541,
+            "Land Area":2495991.897
         }
     },
     {
@@ -3970,7 +5404,11 @@
             "coordinates": [1.8436305345, 41.7400041087]
         },
         "properties": {
-            "ABSCodi":"147"
+            "ABSCodi":"147",
+            "ABSCodiN":147,
+            "ABS":"MANRESA 3",
+            "Population":14720,
+            "Land Area":3995673.668
         }
     },
     {
@@ -3981,7 +5419,11 @@
             "coordinates": [2.2292794326, 41.5631233643]
         },
         "properties": {
-            "ABSCodi":"175"
+            "ABSCodi":"175",
+            "ABSCodiN":175,
+            "ABS":"PARETS DEL VALLÈS",
+            "Population":18846,
+            "Land Area":9117020.753
         }
     },
     {
@@ -3992,7 +5434,11 @@
             "coordinates": [2.3360287565, 41.5984633755]
         },
         "properties": {
-            "ABSCodi":"355"
+            "ABSCodi":"355",
+            "ABSCodiN":355,
+            "ABS":"LA ROCA DEL VALLÈS",
+            "Population":10398,
+            "Land Area":36901924.310
         }
     },
     {
@@ -4003,7 +5449,11 @@
             "coordinates": [2.2720344102, 41.6023868643]
         },
         "properties": {
-            "ABSCodi":"284"
+            "ABSCodi":"284",
+            "ABSCodiN":284,
+            "ABS":"GRANOLLERS 1 -OEST",
+            "Population":23226,
+            "Land Area":13679885.543
         }
     },
     {
@@ -4014,7 +5464,11 @@
             "coordinates": [2.2850583535, 41.5843708899]
         },
         "properties": {
-            "ABSCodi":"287"
+            "ABSCodi":"287",
+            "ABSCodiN":287,
+            "ABS":"GRANOLLERS 4 - SUD",
+            "Population":16437,
+            "Land Area":5294318.950
         }
     },
     {
@@ -4025,7 +5479,11 @@
             "coordinates": [2.3066474398, 41.6466699984]
         },
         "properties": {
-            "ABSCodi":"285"
+            "ABSCodi":"285",
+            "ABSCodiN":285,
+            "ABS":"GRANOLLERS 2 - NORD",
+            "Population":30472,
+            "Land Area":30275204.790
         }
     },
     {
@@ -4036,7 +5494,11 @@
             "coordinates": [2.2918424578, 41.6079680667]
         },
         "properties": {
-            "ABSCodi":"286"
+            "ABSCodi":"286",
+            "ABSCodiN":286,
+            "ABS":"GRANOLLERS 3 - CENTRE EST",
+            "Population":29228,
+            "Land Area":1873085.678
         }
     },
     {
@@ -4047,7 +5509,11 @@
             "coordinates": [2.3133333094, 41.6809502193]
         },
         "properties": {
-            "ABSCodi":"095"
+            "ABSCodi":"095",
+            "ABSCodiN":95,
+            "ABS":"CARDEDEU",
+            "Population":21554,
+            "Land Area":41409945.593
         }
     },
     {
@@ -4058,7 +5524,11 @@
             "coordinates": [1.5820264485, 41.5583373735]
         },
         "properties": {
-            "ABSCodi":"229"
+            "ABSCodi":"229",
+            "ABSCodiN":229,
+            "ABS":"SANTA MARGARIDA DE MONTBUI",
+            "Population":10338,
+            "Land Area":27602959.500
         }
     },
     {
@@ -4069,7 +5539,11 @@
             "coordinates": [1.6398528686, 41.5622250625]
         },
         "properties": {
-            "ABSCodi":"269"
+            "ABSCodi":"269",
+            "ABSCodiN":269,
+            "ABS":"VILANOVA DEL CAMÍ",
+            "Population":12635,
+            "Land Area":10479327.380
         }
     },
     {
@@ -4080,7 +5554,11 @@
             "coordinates": [1.6216585500, 41.5789121291]
         },
         "properties": {
-            "ABSCodi":"371"
+            "ABSCodi":"371",
+            "ABSCodiN":371,
+            "ABS":"IGUALADA-1",
+            "Population":20690,
+            "Land Area":2035876.729
         }
     },
     {
@@ -4091,7 +5569,11 @@
             "coordinates": [1.6168684360, 41.5895580503]
         },
         "properties": {
-            "ABSCodi":"372"
+            "ABSCodi":"372",
+            "ABSCodiN":372,
+            "ABS":"IGUALADA-2",
+            "Population":20532,
+            "Land Area":6164001.613
         }
     },
     {
@@ -4102,7 +5584,11 @@
             "coordinates": [1.7201133313, 41.3480094727]
         },
         "properties": {
-            "ABSCodi":"398"
+            "ABSCodi":"398",
+            "ABSCodiN":398,
+            "ABS":"VILAFRANCA DEL PENEDÈS 2",
+            "Population":21643,
+            "Land Area":13636671.530
         }
     },
     {
@@ -4113,7 +5599,11 @@
             "coordinates": [1.6815749196, 41.3384270697]
         },
         "properties": {
-            "ABSCodi":"397"
+            "ABSCodi":"397",
+            "ABSCodiN":397,
+            "ABS":"VILAFRANCA DEL PENEDÈS 1",
+            "Population":19932,
+            "Land Area":6233227.916
         }
     }    
     ]
