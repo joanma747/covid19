@@ -976,6 +976,7 @@ def main(href, layer, href_enc, href_type, href_delimiter, mmn, is_acc, add_var,
         #mmnfile.close()
         
         if mmn is not None:
+            #include it into the config.json
             mmnfile=open(pathmmn, "r", encoding='utf-8-sig')
             ParamCtrl=updateConfigJSON(mmnfile, layer, prefix_var, objectes, atrib, estil, dies, add_var, geojsonid if len(geojsonid) else geoid, geoid, geoid_type)
             mmnfile.close()
@@ -983,11 +984,11 @@ def main(href, layer, href_enc, href_type, href_delimiter, mmn, is_acc, add_var,
             json.dump(ParamCtrl, mmnfile, indent="\t")
             mmnfile.close()
         if export_geojson is not None:
+            #Export only the objects as a geojson file
+            capa=next((item for item in ParamCtrl["capa"] if item["nom"] == layer), None)
             mmnfile=open(export_geojson, "w", encoding='utf-8-sig')
-            json.dump(objectes, mmnfile, indent="\t")
-            mmnfile.close()
-            
-        #include it into the config.json
+            json.dump(capa["objectes"], mmnfile, indent="\t")
+            mmnfile.close()            
         
     except:
         log.exception('Exception from main():')
