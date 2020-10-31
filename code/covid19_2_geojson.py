@@ -426,11 +426,12 @@ def delayTimeTemplate(s, delay):
 @click.option('-remove-field', multiple=True, help="Fields that shuold be removed. Used only if -date is provided")
 @click.option('-population', help="Name of the field containing the population.")
 @click.option('-area', help="Name of the field containing the area in square meters.")
+@click.option('-dec-figures', type=int, help="Number of decimal figures to show.")
 @click.option('-a-circle', default=0.05, type=float, help="Area of the circle that is used as the bases for the circle radious")
 @click.option('-export-geojson', help="Name of the file to export the geojson result as an additional result.")
 
               
-def main(href, layer, href_enc, href_type, href_delimiter, mmn, is_acc, add_var, prefix_var, desc_var, color, long, lat, geoid, geoid_type, geojson, geojsonid, add_longlat, add_field, fdate, date, extract_field, accumulate, cond_field, cond_value, remove_field, population, area, a_circle, export_geojson):
+def main(href, layer, href_enc, href_type, href_delimiter, mmn, is_acc, add_var, prefix_var, desc_var, color, long, lat, geoid, geoid_type, geojson, geojsonid, add_longlat, add_field, fdate, date, extract_field, accumulate, cond_field, cond_value, remove_field, population, area, dec_figures, a_circle, export_geojson):
     """
     Import a COVID-19 csv file and edit a config.json to include this data in a vector capa
     The csv need to have a fields with a name that is a date in fdate format. These fields contains
@@ -451,47 +452,57 @@ def main(href, layer, href_enc, href_type, href_delimiter, mmn, is_acc, add_var,
     python covid19_2_geojson.py "p['cfr{time?f=ISO&day=-15}']-p['dead{time?f=ISO}']" -href-type formula world-covid-19 -mmn C:\inetpub\wwwroot\covid19 -add-var -prefix-var ree -desc-var "Recovered estimated" -color 0,128,0 -population Population -area "Land Area"
     python covid19_2_geojson.py "p['cfr{time?f=ISO}']-p['dead{time?f=ISO}']-p['rcv{time?f=ISO}']" -href-type formula world-covid-19 -mmn C:\inetpub\wwwroot\covid19 -add-var -prefix-var acr -desc-var "Active reported" -color 215,54,0 -population Population -area "Land Area"
     python covid19_2_geojson.py "p['cfr{time?f=ISO}']-p['cfr{time?f=ISO&day=-15}']" -href-type formula world-covid-19 -mmn C:\inetpub\wwwroot\covid19 -add-var -prefix-var ace -desc-var "Active estimated" -color 215,54,0 -population Population -area "Land Area"
-    python sort_config_json.py world-covid-19 -mmn C:\inetpub\wwwroot\covid19 -section atributs -i-item 0 -i-item 1 -i-item 2 -i-item 3 -i-item 4 -i-item 5 -i-item 37 -i-item 38 -i-item 36 -i-item 31 -i-item 32 -i-item 30 -i-item 7 -i-item 8 -i-item 6 -i-item 13 -i-item 14 -i-item 12 -i-item 25 -i-item 26 -i-item 24 -i-item 19 -i-item 20 -i-item 18 -i-item 39 -i-item 33 -i-item 9 -i-item 15 -i-item 27 -i-item 21 -i-item 40 -i-item 34 -i-item 10 -i-item 16 -i-item 28 -i-item 22 -i-item 41 -i-item 35 -i-item 11 -i-item 17 -i-item 29 -i-item 23 -i-item 42
+    python covid19_2_geojson.py "(p['cfr{time?f=ISO}']-p['cfr{time?f=ISO&day=-15}'])/(p['cfr{time?f=ISO&day=-5}']-p['cfr{time?f=ISO&day=-20}'])>2.5 ? 2.5 : (p['cfr{time?f=ISO}']-p['cfr{time?f=ISO&day=-15}'])/(p['cfr{time?f=ISO&day=-5}']-p['cfr{time?f=ISO&day=-20}'])" -href-type formula world-covid-19 -mmn C:\inetpub\wwwroot\covid19 -add-var -prefix-var rt -desc-var "Estimated effective reproduction rate" -is-not-acc -color 0,54,215 -dec-figures 2 -a-circle 2000
+    python sort_config_json.py world-covid-19 -mmn C:\inetpub\wwwroot\covid19 -section atributs -i-item 0 -i-item 1 -i-item 2 -i-item 3 -i-item 4 -i-item 5 -i-item 32 -i-item 33 -i-item 34 -i-item 31 -i-item 37 -i-item 7 -i-item 8 -i-item 9 -i-item 6 -i-item 10 -i-item 12 -i-item 13 -i-item 14 -i-item 11 -i-item 15 -i-item 35 -i-item 21 -i-item 22 -i-item 23 -i-item 24 -i-item 17 -i-item 18 -i-item 19 -i-item 16 -i-item 20 -i-item 26 -i-item 27 -i-item 28 -i-item 29 -i-item 30 -i-item 36 
     
     python covid19_2_geojson.py "https://cnecovid.isciii.es/covid19/resources/datos_provincias.csv" prov-spain-covid-19 -href-enc utf8 -mmn C:\inetpub\wwwroot\covid19 -geojson "D:\datacube\covid-19\centroidesProvSpain.geojson" -geoid provincia_iso -add-longlat -add-field PROV -add-field CCAA -add-field Population -add-field "Land Area" -accumulate "num_casos" -fdate dd/mm/yyyy -date fecha -remove-field num_casos_prueba_pcr -remove-field num_casos_prueba_test_ac -remove-field num_casos_prueba_otras -remove-field num_casos_prueba_desconocida -a-circle 0.3 -population Population -area "Land Area" -export-geojson D:\datacube\covid-19\github-covid19\datasets\covid19-prov-spain.geojson
     python covid19_2_geojson.py "p['cfr{time?f=ISO}']-p['cfr{time?f=ISO&day=-15}']" -href-type formula prov-spain-covid-19 -mmn C:\inetpub\wwwroot\covid19 -add-var -prefix-var ace -desc-var "Active estimated" -color 215,54,0 -population Population -area "Land Area"
+    python covid19_2_geojson.py "(p['cfr{time?f=ISO}']-p['cfr{time?f=ISO&day=-15}'])/(p['cfr{time?f=ISO&day=-5}']-p['cfr{time?f=ISO&day=-20}'])>2.5 ? 2.5 : (p['cfr{time?f=ISO}']-p['cfr{time?f=ISO&day=-15}'])/(p['cfr{time?f=ISO&day=-5}']-p['cfr{time?f=ISO&day=-20}'])" -href-type formula prov-spain-covid-19 -mmn C:\inetpub\wwwroot\covid19 -add-var -prefix-var rt -desc-var "Estimated effective reproduction rate" -is-not-acc -color 0,54,215 -dec-figures 2 -a-circle 2000
     fart c:\inetpub\wwwroot\covid19\config.json "\"descripcio\": \"provincia_iso\"" "\"descripcio\": \"C\xC3\xB3digo de Provincia\"" --c-style
     fart c:\inetpub\wwwroot\covid19\config.json "\"descripcio\": \"PROV\"" "\"descripcio\": \"Provincia\"" --c-style
     fart c:\inetpub\wwwroot\covid19\config.json "\"descripcio\": \"CCAA\"" "\"descripcio\": \"Comunidad aut\xC3\xB3noma\"" --c-style
-    python sort_config_json.py prov-spain-covid-19 -mmn C:\inetpub\wwwroot\covid19 -section atributs -i-item 0 -i-item 1 -i-item 2 -i-item 3 -i-item 4 -i-item 5 -i-item 13 -i-item 14 -i-item 12 -i-item 7 -i-item 8 -i-item 6 -i-item 15 -i-item 9 -i-item 16 -i-item 10 -i-item 17 -i-item 11 -i-item 18 
+    python sort_config_json.py prov-spain-covid-19 -mmn C:\inetpub\wwwroot\covid19 -section atributs -i-item 0 -i-item 1 -i-item 2 -i-item 3 -i-item 4 -i-item 5 -i-item 12 -i-item 13 -i-item 14 -i-item 11 -i-item 17 -i-item 7 -i-item 8 -i-item 9 -i-item 6 -i-item 10 -i-item 15 -i-item 16   
 
-    python covid19_2_geojson.py "D:\docs\Recerca\covid-19\España\ActualizacionCovidAgregat.csv" ccaa-spain-covid-19 -href-type local -href-delimiter ";" -mmn C:\inetpub\wwwroot\covid19 -geojson "D:\datacube\covid-19\centroides17CCAA.geojson" -geoid cod_ine -date Fecha -extract-field "CasosAcc" -add-longlat -add-field CCAA -add-field Population -add-field "Land Area" -a-circle 0.3 -population Population -area "Land Area"
-    python covid19_2_geojson.py "D:\docs\Recerca\covid-19\España\ActualizacionCovidAgregat.csv" ccaa-spain-covid-19 -href-type local -href-delimiter ";" -mmn C:\inetpub\wwwroot\covid19 -geojson "D:\datacube\covid-19\centroides17CCAA.geojson" -geoid cod_ine -date Fecha -extract-field "IngresadosAcc" -prefix-var hsp -desc-var "Hospitalized" -color 255,230,0 -a-circle 0.3 -add-var -add-longlat -population Population -area "Land Area"
-    python covid19_2_geojson.py "D:\docs\Recerca\covid-19\España\ActualizacionCovidAgregat.csv" ccaa-spain-covid-19 -href-type local -href-delimiter ";" -mmn C:\inetpub\wwwroot\covid19 -geojson "D:\datacube\covid-19\centroides17CCAA.geojson" -geoid cod_ine -date Fecha -extract-field "UCIAcc" -prefix-var uci -desc-var "Intensive Care" -color 200,127,50 -a-circle 0.3 -add-var -add-longlat -population Population -area "Land Area"
-    python covid19_2_geojson.py "D:\docs\Recerca\covid-19\España\ActualizacionCovidAgregat.csv" ccaa-spain-covid-19 -href-type local -href-delimiter ";" -mmn C:\inetpub\wwwroot\covid19 -geojson "D:\datacube\covid-19\centroides17CCAA.geojson" -geoid cod_ine -date Fecha -extract-field "FallecidosAcc" -prefix-var dead -desc-var Deaths -color 50,50,50 -a-circle 0.3 -add-var -add-longlat -population Population -area "Land Area"
+    python covid19_2_geojson.py "D:\datacube\covid-19\github-covid19\datasets\ActualizacionCovidAgregado.csv" ccaa-spain-covid-19 -href-type local -href-delimiter ";" -mmn C:\inetpub\wwwroot\covid19 -geojson "D:\datacube\covid-19\centroides17CCAA.geojson" -geoid cod_ine -date Fecha -extract-field "CasosAcc" -add-longlat -add-field CCAA -add-field Population -add-field "Land Area" -a-circle 0.3 -population Population -area "Land Area"
+    python covid19_2_geojson.py "D:\datacube\covid-19\github-covid19\datasets\ActualizacionCovidAgregado.csv" ccaa-spain-covid-19 -href-type local -href-delimiter ";" -mmn C:\inetpub\wwwroot\covid19 -geojson "D:\datacube\covid-19\centroides17CCAA.geojson" -geoid cod_ine -date Fecha -extract-field "IngresadosAcc" -prefix-var hsp -desc-var "Hospitalized" -color 255,230,0 -a-circle 0.3 -add-var -add-longlat -population Population -area "Land Area"
+    python covid19_2_geojson.py "D:\datacube\covid-19\github-covid19\datasets\ActualizacionCovidAgregado.csv" ccaa-spain-covid-19 -href-type local -href-delimiter ";" -mmn C:\inetpub\wwwroot\covid19 -geojson "D:\datacube\covid-19\centroides17CCAA.geojson" -geoid cod_ine -date Fecha -extract-field "UCIAcc" -prefix-var uci -desc-var "Intensive Care" -color 200,127,50 -a-circle 0.3 -add-var -add-longlat -population Population -area "Land Area"
+    python covid19_2_geojson.py "D:\datacube\covid-19\github-covid19\datasets\ActualizacionCovidAgregado.csv" ccaa-spain-covid-19 -href-type local -href-delimiter ";" -mmn C:\inetpub\wwwroot\covid19 -geojson "D:\datacube\covid-19\centroides17CCAA.geojson" -geoid cod_ine -date Fecha -extract-field "FallecidosAcc" -prefix-var dead -desc-var Deaths -color 50,50,50 -a-circle 0.3 -add-var -add-longlat -population Population -area "Land Area"
     python covid19_2_geojson.py "p['cfr{time?f=ISO&day=-15}']-p['dead{time?f=ISO}']" -href-type formula ccaa-spain-covid-19 -mmn C:\inetpub\wwwroot\covid19 -add-var -prefix-var ree -desc-var "Recovered estimated" -color 0,128,0 -population Population -area "Land Area"
     python covid19_2_geojson.py "p['cfr{time?f=ISO}']-p['cfr{time?f=ISO&day=-15}']" -href-type formula ccaa-spain-covid-19 -mmn C:\inetpub\wwwroot\covid19 -add-var -prefix-var ace -desc-var "Active estimated" -color 215,54,0 -population Population -area "Land Area"
-    python covid19_2_geojson.py "D:\docs\Recerca\covid-19\España\ActualizacionCovidAgregat.csv" ccaa-spain-covid-19 -href-type local -href-delimiter ";" -mmn C:\inetpub\wwwroot\covid19 -geojson "D:\datacube\covid-19\centroides17CCAA.geojson" -geoid cod_ine -date Fecha -extract-field "PCRDia" -prefix-var pcr -desc-var "Daily PCRs" -is-not-acc -color 50,50,50 -a-circle 0.3 -add-var -add-longlat -population Population -area "Land Area"
-    python covid19_2_geojson.py "D:\docs\Recerca\covid-19\España\ActualizacionCovidAgregat.csv" ccaa-spain-covid-19 -href-type local -href-delimiter ";" -mmn C:\inetpub\wwwroot\covid19 -geojson "D:\datacube\covid-19\centroides17CCAA.geojson" -geoid cod_ine -date Fecha -extract-field "Ingresados" -prefix-var chsp -desc-var "Currently Hospitalized" -is-not-acc -color 255,230,0 -a-circle 0.3 -add-var -add-longlat -population Population -area "Land Area"
-    python covid19_2_geojson.py "D:\docs\Recerca\covid-19\España\ActualizacionCovidAgregat.csv" ccaa-spain-covid-19 -href-type local -href-delimiter ";" -mmn C:\inetpub\wwwroot\covid19 -geojson "D:\datacube\covid-19\centroides17CCAA.geojson" -geoid cod_ine -date Fecha -extract-field "UCI" -prefix-var cuci -desc-var "Currently in Intensive Care" -is-not-acc -color 200,127,50 -a-circle 0.3 -add-var -add-longlat -population Population -area "Land Area"
-    python covid19_2_geojson.py "D:\docs\Recerca\covid-19\España\ActualizacionCovidAgregat.csv" ccaa-spain-covid-19 -href-type local -href-delimiter ";" -mmn C:\inetpub\wwwroot\covid19 -geojson "D:\datacube\covid-19\centroides17CCAA.geojson" -geoid cod_ine -date Fecha -extract-field "PorcenCamas" -prefix-var beds -desc-var "Current Occupied Beds Ratio" -is-not-acc -color 255,180,0 -a-circle 0.3 -add-var -add-longlat -population Population -area "Land Area"
-    python covid19_2_geojson.py "D:\docs\Recerca\covid-19\España\ActualizacionCovidAgregat.csv" ccaa-spain-covid-19 -href-type local -href-delimiter ";" -mmn C:\inetpub\wwwroot\covid19 -geojson "D:\datacube\covid-19\centroides17CCAA.geojson" -geoid cod_ine -date Fecha -extract-field "Ingressos24h" -prefix-var adm -desc-var "Daily Admitted" -is-not-acc -color "128,0,0" -a-circle 0.3 -add-var -add-longlat -population Population -area "Land Area"
-    python covid19_2_geojson.py "D:\docs\Recerca\covid-19\España\ActualizacionCovidAgregat.csv" ccaa-spain-covid-19 -href-type local -href-delimiter ";" -mmn C:\inetpub\wwwroot\covid19 -geojson "D:\datacube\covid-19\centroides17CCAA.geojson" -geoid cod_ine -date Fecha -extract-field "Altas24h" -prefix-var dis -desc-var "Daily Discharged" -is-not-acc -color 0,128,0 -a-circle 0.3 -add-var -add-longlat -population Population -area "Land Area" -export-geojson D:\datacube\covid-19\github-covid19\datasets\covid19-ccaa-spain.geojson
+    python covid19_2_geojson.py "(p['cfr{time?f=ISO}']-p['cfr{time?f=ISO&day=-15}'])/(p['cfr{time?f=ISO&day=-5}']-p['cfr{time?f=ISO&day=-20}'])>2.5 ? 2.5 : (p['cfr{time?f=ISO}']-p['cfr{time?f=ISO&day=-15}'])/(p['cfr{time?f=ISO&day=-5}']-p['cfr{time?f=ISO&day=-20}'])" -href-type formula ccaa-spain-covid-19 -mmn C:\inetpub\wwwroot\covid19 -add-var -prefix-var rt -desc-var "EStimated effective reproduction rate" -is-not-acc -color 0,54,215 -dec-figures 2 -a-circle 2000    
+    python covid19_2_geojson.py "D:\datacube\covid-19\github-covid19\datasets\ActualizacionCovidAgregado.csv" ccaa-spain-covid-19 -href-type local -href-delimiter ";" -mmn C:\inetpub\wwwroot\covid19 -geojson "D:\datacube\covid-19\centroides17CCAA.geojson" -geoid cod_ine -date Fecha -extract-field "PCRDia" -prefix-var pcr -desc-var "Daily PCRs" -is-not-acc -color 50,50,50 -a-circle 0.3 -add-var -add-longlat -population Population -area "Land Area"
+    python covid19_2_geojson.py "D:\datacube\covid-19\github-covid19\datasets\ActualizacionCovidAgregado.csv" ccaa-spain-covid-19 -href-type local -href-delimiter ";" -mmn C:\inetpub\wwwroot\covid19 -geojson "D:\datacube\covid-19\centroides17CCAA.geojson" -geoid cod_ine -date Fecha -extract-field "Ingresados" -prefix-var chsp -desc-var "Currently Hospitalized" -is-not-acc -color 255,230,0 -a-circle 0.3 -add-var -add-longlat -population Population -area "Land Area"
+    python covid19_2_geojson.py "D:\datacube\covid-19\github-covid19\datasets\ActualizacionCovidAgregado.csv" ccaa-spain-covid-19 -href-type local -href-delimiter ";" -mmn C:\inetpub\wwwroot\covid19 -geojson "D:\datacube\covid-19\centroides17CCAA.geojson" -geoid cod_ine -date Fecha -extract-field "UCI" -prefix-var cuci -desc-var "Currently in Intensive Care" -is-not-acc -color 200,127,50 -a-circle 0.3 -add-var -add-longlat -population Population -area "Land Area"
+    python covid19_2_geojson.py "D:\datacube\covid-19\github-covid19\datasets\ActualizacionCovidAgregado.csv" ccaa-spain-covid-19 -href-type local -href-delimiter ";" -mmn C:\inetpub\wwwroot\covid19 -geojson "D:\datacube\covid-19\centroides17CCAA.geojson" -geoid cod_ine -date Fecha -extract-field "PorcenCamas" -prefix-var beds -desc-var "Current Occupied Beds Ratio" -is-not-acc -color 255,180,0 -a-circle 10000 -add-var -add-longlat -population Population -area "Land Area"
+    python covid19_2_geojson.py "D:\datacube\covid-19\github-covid19\datasets\ActualizacionCovidAgregado.csv" ccaa-spain-covid-19 -href-type local -href-delimiter ";" -mmn C:\inetpub\wwwroot\covid19 -geojson "D:\datacube\covid-19\centroides17CCAA.geojson" -geoid cod_ine -date Fecha -extract-field "PorcenUCI" -prefix-var ucis -desc-var "Current Occupied Intensive Care Ratio" -is-not-acc -color 200,64,0 -a-circle 10000 -add-var -add-longlat -population Population -area "Land Area"
+    python covid19_2_geojson.py "D:\datacube\covid-19\github-covid19\datasets\ActualizacionCovidAgregado.csv" ccaa-spain-covid-19 -href-type local -href-delimiter ";" -mmn C:\inetpub\wwwroot\covid19 -geojson "D:\datacube\covid-19\centroides17CCAA.geojson" -geoid cod_ine -date Fecha -extract-field "Ingresos24h" -prefix-var adm -desc-var "Daily Admitted" -is-not-acc -color "128,0,0" -a-circle 0.3 -add-var -add-longlat -population Population -area "Land Area"
+    python covid19_2_geojson.py "D:\datacube\covid-19\github-covid19\datasets\ActualizacionCovidAgregado.csv" ccaa-spain-covid-19 -href-type local -href-delimiter ";" -mmn C:\inetpub\wwwroot\covid19 -geojson "D:\datacube\covid-19\centroides17CCAA.geojson" -geoid cod_ine -date Fecha -extract-field "Altas24h" -prefix-var dis -desc-var "Daily Discharged" -is-not-acc -color 0,128,0 -a-circle 0.3 -add-var -add-longlat -population Population -area "Land Area" -export-geojson D:\datacube\covid-19\github-covid19\datasets\covid19-ccaa-spain.geojson
     python covid19_2_geojson.py "p['adm{time?f=ISO}']-p['dis{time?f=ISO}']" -href-type formula ccaa-spain-covid-19 -mmn C:\inetpub\wwwroot\covid19 -add-var -is-not-acc -prefix-var hfl -desc-var "Daily Hospitalization Flow" -color 80,80,80 -population Population -area "Land Area"
-    python sort_config_json.py ccaa-spain-covid-19 -mmn C:\inetpub\wwwroot\covid19 -section atributs -i-item 0 -i-item 1 -i-item 2 -i-item 3 -i-item 4 -i-item 36 -i-item 37 -i-item 35 -i-item 6 -i-item 7 -i-item 5 -i-item 24 -i-item 25 -i-item 23 -i-item 30 -i-item 31 -i-item 29 -i-item 12 -i-item 13 -i-item 11 -i-item 18 -i-item 19 -i-item 17 -i-item 20 -i-item 38 -i-item 8 -i-item 26 -i-item 32 -i-item 14 -i-item 21 -i-item 39 -i-item 9 -i-item 27 -i-item 33 -i-item 15 -i-item 22 -i-item 40 -i-item 10 -i-item 28 -i-item 34 -i-item 16 -i-item 51 -i-item 61 -i-item 62 -i-item 60 -i-item 55 -i-item 56 -i-item 54 -i-item 58 -i-item 59 -i-item 57 -i-item 46 -i-item 47 -i-item 45 -i-item 49 -i-item 50 -i-item 48 -i-item 43 -i-item 44 -i-item 42 -i-item 41 
+    python sort_config_json.py ccaa-spain-covid-19 -mmn C:\inetpub\wwwroot\covid19 -section atributs -i-item 0 -i-item 1 -i-item 2 -i-item 3 -i-item 4 -i-item 31 -i-item 32 -i-item 33 -i-item 30 -i-item 36 -i-item 6 -i-item 7 -i-item 8 -i-item 5 -i-item 9 -i-item 21 -i-item 22 -i-item 23 -i-item 20 -i-item 24 -i-item 49 -i-item 53 -i-item 42 -i-item 43 -i-item 44 -i-item 41 -i-item 46 -i-item 47 -i-item 48 -i-item 45 -i-item 11 -i-item 12 -i-item 13 -i-item 10 -i-item 14 -i-item 16 -i-item 17 -i-item 18 -i-item 15 -i-item 19 -i-item 58 -i-item 59 -i-item 60 -i-item 57 -i-item 62 -i-item 63 -i-item 64 -i-item 61 -i-item 66 -i-item 67 -i-item 68 -i-item 65 -i-item 37 -i-item 38 -i-item 40 -i-item 34 -i-item 26 -i-item 27 -i-item 28 -i-item 25 -i-item 29 -i-item 35 
 
     python covid19_2_geojson.py "https://analisi.transparenciacatalunya.cat/api/views/xuwf-dxjd/rows.csv?accessType=DOWNLOAD&sorting=true" rs-cat-covid-19 -href-enc utf8 -mmn C:\inetpub\wwwroot\covid19 -geojson "D:\datacube\covid-19\centroidesRS_CAT.geojson" -geoid RegioSanitariaCodi -add-longlat -add-field Population -add-field "Land Area" -accumulate "NumCasos" -fdate dd/mm/yyyy -date TipusCasData -cond-field "TipusCasDescripcio" -cond-value "Positiu PCR" -cond-field "TipusCasDescripcio" -cond-value "Positiu per Test Ràpid" -cond-field "TipusCasDescripcio" -cond-value "Positiu per ELISA" -remove-field "SexeCodi" -remove-field "SexeDescripcio" -remove-field ABSCodi -remove-field ABSDescripcio -remove-field SectorSanitariCodi -remove-field SectorSanitariDescripcio -a-circle 0.3 -population Population -area "Land Area" -export-geojson D:\datacube\covid-19\github-covid19\datasets\covid19-rs-catalonia.geojson
     python covid19_2_geojson.py "p['cfr{time?f=ISO}']-p['cfr{time?f=ISO&day=-15}']" -href-type formula rs-cat-covid-19 -mmn C:\inetpub\wwwroot\covid19 -add-var -prefix-var ace -desc-var "Active estimated" -color 215,54,0 -population Population -area "Land Area"
+    python covid19_2_geojson.py "(p['cfr{time?f=ISO}']-p['cfr{time?f=ISO&day=-15}'])/(p['cfr{time?f=ISO&day=-5}']-p['cfr{time?f=ISO&day=-20}'])>2.5 ? 2.5 : (p['cfr{time?f=ISO}']-p['cfr{time?f=ISO&day=-15}'])/(p['cfr{time?f=ISO&day=-5}']-p['cfr{time?f=ISO&day=-20}'])" -href-type formula rs-cat-covid-19 -mmn C:\inetpub\wwwroot\covid19 -add-var -prefix-var rt -desc-var "Estimated effective reproduction rate" -is-not-acc -color 0,54,215 -dec-figures 2 -a-circle 2000
     python covid19_2_geojson.py "https://analisi.transparenciacatalunya.cat/api/views/xuwf-dxjd/rows.csv?accessType=DOWNLOAD&sorting=true" ss-cat-covid-19 -href-enc utf8 -mmn C:\inetpub\wwwroot\covid19 -geojson "D:\datacube\covid-19\centroidesSS_CAT.geojson" -geoid SectorSanitariCodi -add-longlat -add-field Population -add-field "Land Area" -accumulate "NumCasos" -fdate dd/mm/yyyy -date TipusCasData -cond-field "TipusCasDescripcio" -cond-value "Positiu PCR" -cond-field "TipusCasDescripcio" -cond-value "Positiu per Test Ràpid" -cond-field "TipusCasDescripcio" -cond-value "Positiu per ELISA" -remove-field "SexeCodi" -remove-field "SexeDescripcio" -remove-field ABSCodi -remove-field ABSDescripcio -a-circle 1 -population Population -area "Land Area" -export-geojson D:\datacube\covid-19\github-covid19\datasets\covid19-ss-catalonia.geojson
     python covid19_2_geojson.py "p['cfr{time?f=ISO}']-p['cfr{time?f=ISO&day=-15}']" -href-type formula ss-cat-covid-19 -mmn C:\inetpub\wwwroot\covid19 -add-var -prefix-var ace -desc-var "Active estimated" -color 215,54,0 -population Population -area "Land Area"
+    python covid19_2_geojson.py "(p['cfr{time?f=ISO}']-p['cfr{time?f=ISO&day=-15}'])/(p['cfr{time?f=ISO&day=-5}']-p['cfr{time?f=ISO&day=-20}'])>2.5 ? 2.5 : (p['cfr{time?f=ISO}']-p['cfr{time?f=ISO&day=-15}'])/(p['cfr{time?f=ISO&day=-5}']-p['cfr{time?f=ISO&day=-20}'])" -href-type formula ss-cat-covid-19 -mmn C:\inetpub\wwwroot\covid19 -add-var -prefix-var rt -desc-var "Estimated effective reproduction rate" -is-not-acc -color 0,54,215 -dec-figures 2 -a-circle 2000
     python covid19_2_geojson.py "https://analisi.transparenciacatalunya.cat/api/views/xuwf-dxjd/rows.csv?accessType=DOWNLOAD&sorting=true" abs-cat-covid-19 -href-enc utf8 -mmn C:\inetpub\wwwroot\covid19 -geojson "D:\datacube\covid-19\centroidesABS.geojson" -geoid ABSCodi -add-longlat -add-field Population -add-field "Land Area" -accumulate "NumCasos" -fdate dd/mm/yyyy -date TipusCasData -cond-field "TipusCasDescripcio" -cond-value "Positiu PCR" -cond-field "TipusCasDescripcio" -cond-value "Positiu per Test Ràpid" -cond-field "TipusCasDescripcio" -cond-value "Positiu per ELISA" -remove-field "SexeCodi" -remove-field "SexeDescripcio"  -a-circle 1.5 -population Population -area "Land Area" -export-geojson D:\datacube\covid-19\github-covid19\datasets\covid19-abs-catalonia.geojson
     python covid19_2_geojson.py "p['cfr{time?f=ISO}']-p['cfr{time?f=ISO&day=-15}']" -href-type formula abs-cat-covid-19 -mmn C:\inetpub\wwwroot\covid19 -add-var -prefix-var ace -desc-var "Active estimated" -color 215,54,0 -population Population -area "Land Area"
+    python covid19_2_geojson.py "(p['cfr{time?f=ISO}']-p['cfr{time?f=ISO&day=-15}'])/(p['cfr{time?f=ISO&day=-5}']-p['cfr{time?f=ISO&day=-20}'])>2.5 ? 2.5 : (p['cfr{time?f=ISO}']-p['cfr{time?f=ISO&day=-15}'])/(p['cfr{time?f=ISO&day=-5}']-p['cfr{time?f=ISO&day=-20}'])" -href-type formula abs-cat-covid-19 -mmn C:\inetpub\wwwroot\covid19 -add-var -prefix-var rt -desc-var "Estimated effective reproduction rate" -is-not-acc -color 0,54,215 -dec-figures 2 -a-circle 2000
     python covid19_2_geojson.py "https://analisi.transparenciacatalunya.cat/api/views/jj6z-iyrp/rows.csv?accessType=DOWNLOAD&sorting=true" coma-cat-covid-19 -href-enc utf8 -mmn C:\inetpub\wwwroot\covid19 -geojson "D:\datacube\covid-19\centroidesComaCat.geojson" -geoid ComarcaCodi -add-longlat -add-field Population -add-field "Land Area" -accumulate "NumCasos" -fdate dd/mm/yyyy -date TipusCasData -cond-field "TipusCasDescripcio" -cond-value "Positiu PCR" -cond-field "TipusCasDescripcio" -cond-value "Positiu per Test Ràpid" -remove-field "MunicipiCodi" -remove-field "MunicipiDescripcio" -remove-field "SexeCodi" -remove-field "SexeDescripcio"  -a-circle 1 -population Population -area "Land Area"
     python covid19_2_geojson.py "https://analisi.transparenciacatalunya.cat/api/views/uqk7-bf9s/rows.csv?accessType=DOWNLOAD&sorting=true" coma-cat-covid-19 -href-enc utf8 -mmn C:\inetpub\wwwroot\covid19 -geojson "D:\datacube\covid-19\centroidesComaCat.geojson" -geoid "Codi Comarca" -geoid-type int -geojsonid ComarcaCodi -add-longlat -add-var -prefix-var dead -desc-var Deaths -accumulate "Nombre defuncions" -fdate dd/mm/yyyy -date "Data defunció" -remove-field "Codi Sexe" -remove-field "Sexe"  -a-circle 1 -color 50,50,50 -population Population -area "Land Area" -export-geojson D:\datacube\covid-19\github-covid19\datasets\covid19-comarca-catalonia.geojson
+    python covid19_2_geojson.py "p['cfr{time?f=ISO}']-p['cfr{time?f=ISO&day=-15}']" -href-type formula coma-cat-covid-19 -mmn C:\inetpub\wwwroot\covid19 -add-var -prefix-var ace -desc-var "Active estimated" -color 215,54,0 -population Population -area "Land Area"
+    python covid19_2_geojson.py "(p['cfr{time?f=ISO}']-p['cfr{time?f=ISO&day=-15}'])/(p['cfr{time?f=ISO&day=-5}']-p['cfr{time?f=ISO&day=-20}'])>2.5 ? 2.5 : (p['cfr{time?f=ISO}']-p['cfr{time?f=ISO&day=-15}'])/(p['cfr{time?f=ISO&day=-5}']-p['cfr{time?f=ISO&day=-20}'])" -href-type formula coma-cat-covid-19 -mmn C:\inetpub\wwwroot\covid19 -add-var -prefix-var rt -desc-var "Estimated effective reproduction rate" -is-not-acc -color 0,54,215 -dec-figures 2 -a-circle 2000
     fart c:\inetpub\wwwroot\covid19\config.json "\"descripcio\": \"RegioSanitariaCodi\"" "\"descripcio\": \"Codi de Regi\xC3\xB3 Sanit\xC3\xA0ria\"" --c-style
     fart c:\inetpub\wwwroot\covid19\config.json "\"descripcio\": \"SectorSanitariCodi\"" "\"descripcio\": \"Codi de Sector Sanitari\"" --c-style
     fart c:\inetpub\wwwroot\covid19\config.json "\"descripcio\": \"SectorSanitariDescripcio\"" "\"descripcio\": \"Sector Sanitari\"" --c-style
     fart c:\inetpub\wwwroot\covid19\config.json "\"descripcio\": \"RegioSanitariaDescripcio\"" "\"descripcio\": \"Regi\xC3\xB3 Sanit\xC3\xA0ria\"" --c-style
     fart c:\inetpub\wwwroot\covid19\config.json "\"descripcio\": \"ABSCodi\"" "\"descripcio\": \"Codi d\'ABS\"" --c-style
     fart c:\inetpub\wwwroot\covid19\config.json "\"descripcio\": \"ABSDescripcio\"" "\"descripcio\": \"ABS\""
-    python sort_config_json.py rs-cat-covid-19 -mmn C:\inetpub\wwwroot\covid19 -section atributs -i-item 0 -i-item 1 -i-item 2 -i-item 3 -i-item 4 -i-item 12 -i-item 13 -i-item 11 -i-item 6 -i-item 7 -i-item 5 -i-item 14 -i-item 8 -i-item 15 -i-item 9 -i-item 16 -i-item 10 -i-item 17
-    python sort_config_json.py ss-cat-covid-19 -mmn C:\inetpub\wwwroot\covid19 -section atributs -i-item 0 -i-item 1 -i-item 2 -i-item 3 -i-item 4 -i-item 5 -i-item 6 -i-item 14 -i-item 15 -i-item 13 -i-item 8 -i-item 9 -i-item 7 -i-item 16 -i-item 10 -i-item 17 -i-item 11 -i-item 18 -i-item 12 -i-item 19
-    python sort_config_json.py abs-cat-covid-19 -mmn C:\inetpub\wwwroot\covid19 -section atributs -i-item 0 -i-item 1 -i-item 2 -i-item 3 -i-item 4 -i-item 5 -i-item 6 -i-item 7 -i-item 8 -i-item 17 -i-item 16 -i-item 15 -i-item 10 -i-item 11 -i-item 9 -i-item 18 -i-item 12 -i-item 19 -i-item 13 -i-item 20 -i-item 14 -i-item 21
+    python sort_config_json.py rs-cat-covid-19 -mmn C:\inetpub\wwwroot\covid19 -section atributs -i-item 0 -i-item 1 -i-item 2 -i-item 3 -i-item 4 -i-item 11 -i-item 12 -i-item 13 -i-item 10 -i-item 16 -i-item 14 -i-item 6 -i-item 7 -i-item 8 -i-item 5 -i-item 9 -i-item 15 
+    python sort_config_json.py ss-cat-covid-19 -mmn C:\inetpub\wwwroot\covid19 -section atributs -i-item 0 -i-item 1 -i-item 2 -i-item 3 -i-item 4 -i-item 5 -i-item 6 -i-item 13 -i-item 14 -i-item 15 -i-item 12 -i-item 18 -i-item 8 -i-item 9 -i-item 10 -i-item 7 -i-item 11 -i-item 16 -i-item 17 
+    python sort_config_json.py abs-cat-covid-19 -mmn C:\inetpub\wwwroot\covid19 -section atributs -i-item 0 -i-item 1 -i-item 2 -i-item 3 -i-item 4 -i-item 5 -i-item 6 -i-item 7 -i-item 8 -i-item 15 -i-item 16 -i-item 17 -i-item 14 -i-item 20 -i-item 10 -i-item 11 -i-item 12 -i-item 9 -i-item 13 -i-item 18 -i-item 19 
+    python sort_config_json.py coma-cat-covid-19 -mmn C:\inetpub\wwwroot\covid19 -section atributs -i-item 0 -i-item 1 -i-item 2 -i-item 3 -i-item 4 -i-item 16 -i-item 17 -i-item 18 -i-item 15 -i-item 21 -i-item 6 -i-item 7 -i-item 8 -i-item 5 -i-item 9 -i-item 11 -i-item 12 -i-item 13 -i-item 10 -i-item 14 -i-item 19 -i-item 20 
 
 
     copy C:\inetpub\wwwroot\covid19\config.json \\158.109.46.20\c$\inetpub\wwwroot\covid19\.
@@ -625,6 +636,9 @@ def main(href, layer, href_enc, href_type, href_delimiter, mmn, is_acc, add_var,
                           "mostrar": "si",
                           "serieTemporal": {"color": rgb_string_to_hex(color)}
                     })
+            if dec_figures is not None:
+                    atrib[-1]["NDecimals"]=dec_figures
+
             #lastDay="p['"+prefix_var+"{time?f=ISO}']"
             #beforeLastDay="p['"+prefix_var+"{time?f=ISO&day=-1}']"
             #beforeBeforeLastDay="p['"+prefix_var+"{time?f=ISO&day=-2}']"
@@ -657,14 +671,23 @@ def main(href, layer, href_enc, href_type, href_delimiter, mmn, is_acc, add_var,
                           "mostrar": "si",
                           "serieTemporal": {"color": rgb_string_to_hex(color)}
                     })
+            if dec_figures is not None:
+                    atrib[-1]["NDecimals"]=dec_figures
         if population is not None:
-            atrib.append({
+            atrib.extend([{
 					"nom": nameAtrib+"Pop",
 					"descripcio": desc_var+" per 100000 hab.",
 					"FormulaConsulta": "("+t4+"/p['"+population+"']*100000)",
 					"NDecimals": 2,
 					"mostrar": "si"
-				})
+				},
+                {
+					"nom": nameAtrib+"Cap",
+					"descripcio": desc_var+" per capita; 1 in",
+					"FormulaConsulta": "(p['"+population+"']/"+t4+")",
+					"NDecimals": 0,
+					"mostrar": "si"
+				}])
         if area is not None:
             atrib.append({
 					"nom": nameAtrib+"Area",
@@ -675,7 +698,7 @@ def main(href, layer, href_enc, href_type, href_delimiter, mmn, is_acc, add_var,
 					"mostrar": "si"
 				})
 
-        estil.extend([{"nom": None, "desc": ("Count of " if is_acc else "")+desc_var, 
+        estil.append({"nom": None, "desc": ("Count of " if is_acc else "")+desc_var, 
                         "DescItems": desc_var,
               		    "TipusObj": "P",
                 		"ItemLleg":	[
@@ -706,7 +729,9 @@ def main(href, layer, href_enc, href_type, href_delimiter, mmn, is_acc, add_var,
                                 }
               				}]
               			}
-              		},
+              		})
+        if population is not None:
+            estil.append(
                      {"nom": None, "desc": ("Count of " if is_acc else "")+desc_var+"/100000 hab", 
                         "DescItems": desc_var,
               		    "TipusObj": "P",
@@ -738,8 +763,7 @@ def main(href, layer, href_enc, href_type, href_delimiter, mmn, is_acc, add_var,
                                 }
               				}]
               			}
-              		}
-                ])
+              		})
         if is_acc:
             atrib.extend([
 #             {"nom": prefix_var+"NewCases",
@@ -776,21 +800,23 @@ def main(href, layer, href_enc, href_type, href_delimiter, mmn, is_acc, add_var,
                 "NDecimals": 0,
 				"mostrar": "si",
                 "serieTemporal": {"color": rgb_string_to_hex(color)}
-            },{"nom": prefix_var+"PercentCumulCases5",
-				"descripcio": "Increase in cumulated "+desc_var+ " (av. 5)",
-				"FormulaConsulta": "(isNaN("+t6+") ? ("+t4+"-"+t3+")/"+t3+"*100 : ("+t6+"-"+t1+")/("+t5+"+"+t4+"+"+t3+"+"+t2+"+"+t1+")*100)",
-				"NDecimals": 2,
-                "unitats": "%",
-				"mostrar": "si",
-                "serieTemporal": {"color": rgb_string_to_hex(color)}
-			},{"nom": prefix_var+"Acceleration5",
-				"descripcio": "Last day Acceleration in "+desc_var+ " (av. 5)",
-                "unitats": "cases/day²",
-				"FormulaConsulta": "(isNaN("+t6+") ? "+t4+"-2*"+t3+"+"+t2+" : ("+t6+"-"+t5+"+"+t0+"-"+t1+")/5)",
-				"NDecimals": 2,
-				"mostrar": "si",
-                "serieTemporal": {"color": rgb_string_to_hex(color)}
-			}
+            }
+            
+#             ,{"nom": prefix_var+"PercentCumulCases5",
+# 				"descripcio": "Increase in cumulated "+desc_var+ " (av. 5)",
+# 				"FormulaConsulta": "(isNaN("+t6+") ? ("+t4+"-"+t3+")/"+t3+"*100 : ("+t6+"-"+t1+")/("+t5+"+"+t4+"+"+t3+"+"+t2+"+"+t1+")*100)",
+# 				"NDecimals": 2,
+#                 "unitats": "%",
+# 				"mostrar": "si",
+#                 "serieTemporal": {"color": rgb_string_to_hex(color)}
+# 			},{"nom": prefix_var+"Acceleration5",
+# 				"descripcio": "Last day Acceleration in "+desc_var+ " (av. 5)",
+#                 "unitats": "cases/day²",
+# 				"FormulaConsulta": "(isNaN("+t6+") ? "+t4+"-2*"+t3+"+"+t2+" : ("+t6+"-"+t5+"+"+t0+"-"+t1+")/5)",
+# 				"NDecimals": 2,
+# 				"mostrar": "si",
+#                 "serieTemporal": {"color": rgb_string_to_hex(color)}
+# 			}
 #       ,{"nom": prefix_var+"PercentAccel5",
 # 				"descripcio": "Last day Percentual Acceleration in "+desc_var+" (av. 5)",
 # 				"FormulaConsulta": "(("+t6+"-"+t5+"+"+t0+"-"+t1+")/("+t5+"-"+t0+")*100)",
